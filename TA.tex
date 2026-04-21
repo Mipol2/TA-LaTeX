@@ -67,7 +67,9 @@
 %   https://ctan.org/pkg/fontspec
 % - Selamat menyusun dokumen tugas akhir Anda!
 %
-\documentclass[12pt,a4paper]{book}
+
+% --- oneside ditambahkan untuk menghilangkan blank page di seluruh dokumen ---
+\documentclass[12pt,a4paper,oneside]{book}
 
 % --- Main packages ---
 \usepackage[utf8]{inputenc} % for UTF-8 encoding
@@ -349,19 +351,18 @@
 \input{4 Pernyataan Penggunaan AI.tex}
 \input{5 Abstrak.tex}
 \input{6 Kata Pengantar.tex}
-% ==========================================
-% --- Atur margin halaman untuk double-sided format (bolak-balik) ---
-% --- Comment baris di bawah ini jika ingin tetap menggunakan single-sided format ---
-% --- atau pindahkan ke bagian setelah \mainmatter jika hanya ingin halaman utama saja yang bolak-balik ---
 
-\newgeometry{
-      twoside,
-      a4paper,
-      inner=4cm,
-      outer=3cm,
-      top=3cm,
-      bottom=3cm
-}
+% ==========================================
+% --- \newgeometry{twoside} di-comment untuk menghilangkan blank page ---
+% --- Uncomment kembali hanya jika dokumen akan dicetak bolak-balik (duplex) ---
+% \newgeometry{
+%       twoside,
+%       a4paper,
+%       inner=4cm,
+%       outer=3cm,
+%       top=3cm,
+%       bottom=3cm
+% }
 % ==========================================
 
 
@@ -406,7 +407,7 @@
 % ==========================================
 % DAFTAR PUSTAKA
 % ==========================================
-\cleardoublepage
+\clearpage
 \printbibliography[title={DAFTAR PUSTAKA}]
 
 % ==========================================
@@ -425,4 +426,3 @@
 \backmatter
 
 \end{document}
- 
