@@ -3,42 +3,17 @@
 
 \begin{center}
 
-    \textbf{Implementasi Sistem Smart Scale Berbasis IoT dengan Arsitektur Desentralisasi untuk Optimalisasi Rantai Pasok Jeruk di Tingkat Lapak} \\
+    \textbf{\MakeUppercase{Pengembangan Sistem \protect\textit{Smart Waste Bin} Berbasis \protect\textit{Internet of Things} untuk Analisis Pola Pembuangan Sampah}} \\
     \vspace{0.4cm}
     oleh \\
     \vspace{0.4cm}
-    John Doe\\
-    123456789\\
+    Jazmy Izzati Alamsyah\\
+    18221124\\
 \end{center}
 
 
 \begin{spacing}{1.0}
-Proses manual dalam rantai pasok jeruk di tingkat lapak, yang mencakup sortir,
-timbang, dan catat, terbukti tidak efisien, memakan waktu, dan rentan terhadap
-kesalahan. Meskipun solusi berbasis Internet of Things (IoT) dapat mengatasi
-masalah ini, arsitektur terpusat konvensional berbasis cloud justru menimbulkan
-masalah baru berupa latensi tinggi yang menghambat alur kerja real-time.
-Penelitian ini bertujuan untuk merancang dan mengimplementasikan sebuah
-purwarupa sistem smart scale berbasis IoT dengan pendekatan desentralisasi (edge
-computing) untuk meminimalkan latensi dan meningkatkan efisiensi operasional.
-Metode yang digunakan adalah Model Purwarupa, yang diwujudkan dalam bentuk
-perangkat keras dengan arsitektur prosesor ganda (Raspberry Pi 5 dan ESP32) yang
-mampu mengintegrasikan fungsi timbang dan analisis kualitas citra secara
-simultan. Hasil evaluasi menunjukkan bahwa purwarupa dengan arsitektur edge
-computing yang diimplementasikan mampu memberikan respons 43,5\% lebih cepat
-(latensi rata-rata 18,05 detik) dibandingkan dengan simulasi arsitektur terpusat.
-Selain itu, sistem ini berhasil meningkatkan efisiensi waktu kerja secara
-keseluruhan sebesar 58,32\% jika dibandingkan dengan metode manual
-konvensional. Pengujian Penerimaan Pengguna (UAT) yang melibatkan 30
-partisipan juga menunjukkan penerimaan yang sangat positif, dengan skor rata-rata
-untuk kemudahan penggunaan (5,0/5,0), kejelasan antarmuka (4,87/5,0) dan
-persepsi kinerja (4,95/5,0). Kesimpulannya, implementasi sistem smart scale
-dengan arsitektur desentralisasi terbukti merupakan solusi yang valid dan efektif
-untuk menjawab permasalahan latensi dan inefisiensi di lapak. Sistem ini tidak
-hanya unggul secara teknis dalam hal performa, tetapi juga fungsional dan dapat
-diterima dengan baik oleh pengguna akhir, serta berpotensi besar untuk modernisasi
-rantai pasok agribisnis.
+Pengelolaan sampah di lingkungan kampus menghadapi tantangan berupa kurangnya data terstruktur mengenai pola pembuangan sampah, sehingga menyulitkan pengambilan keputusan berbasis data dalam jadwal pengangkutan dan alokasi sumber daya. Penelitian ini mengembangkan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things} (IoT) yang mampu mengotomasi pengumpulan data dan menganalisis pola pembuangan sampah di Gedung Labtek VIII Institut Teknologi Bandung, khususnya pada area depan Laboratorium IoT Lantai 4. Sistem dirancang menggunakan arsitektur IoT 4-\textit{layer} yang terdiri dari \textit{Perception Layer} (mikrokontroler ESP32, sensor jarak VL53L0X, sensor arus INA219, dan modul GSM SIM800L), \textit{Network Layer} berbasis protokol MQTT, \textit{Middleware Layer} menggunakan Node-RED untuk pemrosesan aliran data, serta \textit{Application Layer} dengan basis data Supabase dan \textit{dashboard} Next.js untuk visualisasi dan analisis. Selama periode observasi 37 hari, tiga unit perangkat sensor berhasil mengumpulkan 805 \textit{records} data dengan tingkat keberhasilan pengiriman sebesar 90,7\%. Hasil analisis data historis mengidentifikasi empat pola temporal pembuangan sampah, di antaranya: \textit{peak hour} konsisten pada pukul 14:00--17:00, seluruh aktivitas pembuangan terkonsentrasi pada jam kerja (07:00--19:00) di hari kerja, dominasi sampah anorganik yang menyumbang 13 dari 27 \textit{event} penambahan (48,1\% dari total \textit{event}) dengan kontribusi volume sebesar 51,7\% dari total delta positif, serta penurunan aktivitas pembuangan pada hari libur nasional. Perangkat bawaan pihak ketiga dioptimasi melalui lima peningkatan \textit{firmware}, di mana empat di antaranya terbukti efektif dalam meningkatkan reliabilitas dan konsistensi pengukuran. Seluruh 10 kebutuhan fungsional dan 7 dari 8 kebutuhan nonfungsional sistem berhasil dipenuhi. Penelitian ini menunjukkan bahwa sistem IoT berbasis data mampu menghasilkan wawasan yang terstruktur untuk mendukung pengelolaan sampah kampus.
 
-Kata kunci: Smart Scale, Internet of Things, Edge Computing, Rantai Pasok Jeruk.
+Kata kunci: \textit{smart waste bin}, \textit{Internet of Things}, ESP32, VL53L0X, MQTT, pola pembuangan sampah, analisis temporal.
 \end{spacing}
-
