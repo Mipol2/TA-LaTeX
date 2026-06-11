@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.13)  24 APR 2026 17:46
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.14)  10 JUN 2026 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,7 +1006,7 @@ Package biblatex Info: ... and expl3
 (d:/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 )))
-Package hyperref Info: Option `colorlinks' set `true' on input line 155.
+Package hyperref Info: Option `colorlinks' set `true' on input line 86.
 \c@myequations=\count512
 \cftbeforemyequationsskip=\skip139
 \cftmyequationsindent=\skip140
@@ -1024,36 +1024,32 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'indonesian'.
-(csquotes)                Using fallback style on input line 333.
+(csquotes)                Using fallback style on input line 218.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
-(./TA.aux
-(d:/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
-Package babel Info: Importing data for english
-(babel)             from babel-en.ini. Reported on input line 59.
-)
+No file TA.aux.
 \openout1 = `TA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 333.
-LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1061,64 +1057,64 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 333.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 333.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 333.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 333.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 333.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 333.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 333.
-LaTeX Font Info:    Redeclaring math accent \check on input line 333.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 333.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 333.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 333.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 333.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 333.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 218.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 218.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 218.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 218.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 218.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 218.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 218.
+LaTeX Font Info:    Redeclaring math accent \check on input line 218.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 218.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 218.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 218.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 218.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 333.
+(Font)              `operators' in the math version `normal' on input line 218.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 3
-33.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
+18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 333.
+(Font)              `operators' in the math version `bold' on input line 218.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-333.
+218.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 333.
+input line 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 333.
+ 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-333.
+218.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 333.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 333.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 218.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 333.
+input line 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 333.
+e 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 333.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 218.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 333.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 218.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -1126,7 +1122,6 @@ Package caption Info: floatrow package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
 (d:/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
@@ -1177,13 +1172,13 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 333.
-Package microtype Info: Applying patch `item' on input line 333.
-Package microtype Info: Applying patch `toc' on input line 333.
-Package microtype Info: Applying patch `eqnum' on input line 333.
-Package microtype Info: Applying patch `footnote' on input line 333.
-Package microtype Info: Applying patch `verbatim' on input line 333.
-LaTeX Info: Redefining \microtypesetup on input line 333.
+LaTeX Info: Redefining \microtypecontext on input line 218.
+Package microtype Info: Applying patch `item' on input line 218.
+Package microtype Info: Applying patch `toc' on input line 218.
+Package microtype Info: Applying patch `eqnum' on input line 218.
+Package microtype Info: Applying patch `footnote' on input line 218.
+Package microtype Info: Applying patch `verbatim' on input line 218.
+LaTeX Info: Redefining \microtypesetup on input line 218.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1193,23 +1188,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `TimesNewRoman' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 333.
-(./TA.out) (./TA.out)
+Package hyperref Info: Link coloring ON on input line 218.
 \@outlinefile=\write4
 \openout4 = `TA.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package biblatex Info: Trying to load language 'indonesian'...
 Package biblatex Info: ... file 'indonesian.lbx' not found.
 
-
 Package biblatex Warning: Language 'indonesian' not supported.
-(biblatex)                Using dummy definitions on input line 333.
+(biblatex)                Using dummy definitions on input line 218.
 
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
-)
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1217,22 +1208,14 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `TA.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'TA.bbl' found.
- (./TA.bbl)
-Package biblatex Info: Reference section=0 on input line 333.
-Package biblatex Info: Reference segment=0 on input line 333.
-
+Package biblatex Info: ... file 'TA.bbl' not found.
+No file TA.bbl.
+Package biblatex Info: Reference section=0 on input line 218.
+Package biblatex Info: Reference segment=0 on input line 218.
 (./1 Halaman Judul.tex
 File: images/ganesha.jpg Graphic file (type bmp)
 <images/ganesha.jpg>
-
-
-Package datetime2 Warning: Region `bahasai' has ignored 
-(datetime2)                the following settings:
-(datetime2)                showmonthname=true
- on input line 33.
-
-[1
+ [1
 
 
 
@@ -1259,269 +1242,1777 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Overfull \hbox (64.45271pt too wide) in paragraph at lines 29--34
+File: images/ttd-fadhil.png Graphic file (type bmp)
+<images/ttd-fadhil.png>
+File: images/ttd-arry.png Graphic file (type bmp)
+<images/ttd-arry.png>
+
+Overfull \hbox (64.45271pt too wide) in paragraph at lines 29--36
  [][] 
  []
 
 ) (./3 Pernyataan Orisinalitas.tex [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
-
- []
-
-) (./4 Pernyataan Penggunaan AI.tex [2
+File: images/ttd-jazmy.png Graphic file (type bmp)
+<images/ttd-jazmy.png>
+) (./4 Pernyataan Penggunaan AI.tex
+[2
 
 ]
-Overfull \hbox (3.43965pt too wide) in paragraph at lines 9--9
+Overfull \hbox (0.5942pt too wide) in paragraph at lines 13--13
 []|\TU/TimesNewRoman(0)/b/n/12 No.| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 13--13
-[]|\TU/TimesNewRoman(0)/m/n/12 Microsoft Co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 []|\TU/TimesNewRoman(0)/m/n/12 Pencarian informasi
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 21--21
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Google Ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 mini, Claude
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 25--25
 []|\TU/TimesNewRoman(0)/m/n/12 Penyusunan kode pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\TU/TimesNewRoman(0)/m/n/12 Penyusunan formula
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Penyusunan formu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/m/n/12 la atau perhitungan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
 []|\TU/TimesNewRoman(0)/m/n/12 Penyusunan kesimpul-
  []
 
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.36 \hline
+           
+? 
 
-Overfull \hbox (13.72078pt too wide) in paragraph at lines 7--32
- [][] 
+Overfull \hbox (14.03032pt too wide) in paragraph at lines 10--36
+[] 
  []
 
+File: images/ttd-jazmy.png Graphic file (type bmp)
+<images/ttd-jazmy.png>
 ) (./5 Abstrak.tex [3
 
 ]) (./6 Kata Pengantar.tex [4
 
-]) (./7 Daftar Isi.tex
+]
+File: images/ttd-jazmy.png Graphic file (type bmp)
+<images/ttd-jazmy.png>
+) (./7 Daftar Isi.tex
 [5
 
-] (./TA.toc [6
-
-])
+]
+No file TA.toc.
 \tf@toc=\write5
 \openout5 = `TA.toc'.
 
-) (./8 Daftar Gambar.tex [7] (./TA.lof)
+) (./8 Daftar Gambar.tex [6
+
+]
+No file TA.lof.
 \tf@lof=\write6
 \openout6 = `TA.lof'.
 
-)
-(./9 Daftar Tabel.tex [8
+) (./9 Daftar Tabel.tex [7
 
-] (./TA.lot
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (58.8302pt too wide) in paragraph at lines 14--14
- \TU/TimesNewRoman(0)/m/n/12 kolom secara fleksibel. Selain itu, tabel ini juga
- menggunakan \TU/lmtt/m/n/12 threeparttable 
- []
-
-)
+]
+No file TA.lot.
 \tf@lot=\write7
 \openout7 = `TA.lot'.
 
-) (./10 Daftar Persamaan.tex [9
+) (./10 Daftar Persamaan.tex [8
 
-] (./TA.equ)
+]
+No file TA.equ.
 \tf@equ=\write8
 \openout8 = `TA.equ'.
 
-) (./11 Daftar Algoritma.tex
-[10
-
-
-] (./TA.loa)
-\tf@loa=\write9
-\openout9 = `TA.loa'.
-
-) (./12 Daftar Listing.tex [11
-
-
-] (./TA.lol)
-\tf@lol=\write10
-\openout10 = `TA.lol'.
-
-)
-(./13 Daftar Simbol.tex [12
+) (./12 Daftar Listing.tex [9
 
 
 ]
-Overfull \hbox (16.93071pt too wide) in alignment at lines 15--104
+No file TA.lol.
+\tf@lol=\write9
+\openout9 = `TA.lol'.
+
+) (./13 Daftar Simbol.tex [10
+
+
+]
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 19.
+
+
+
+LaTeX Warning: Reference `eq:battery-percent' on page xi undefined on input lin
+e 20.
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 21.
+
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 22.
+
+
+
+LaTeX Warning: Reference `sec:perancangan-dashboard' on page xi undefined on in
+put line 23.
+
+
+LaTeX Warning: Reference `sec:perancangan-firmware' on page xi undefined on inp
+ut line 24.
+
+
+LaTeX Warning: Reference `tab:statistik-interval' on page xi undefined on input
+ line 25.
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 30.
+
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 31.
+
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 32.
+
+
+
+LaTeX Warning: Reference `eq:battery-percent' on page xi undefined on input lin
+e 33.
+
+
+LaTeX Warning: Reference `tab:fungsi-komponen' on page xi undefined on input li
+ne 34.
+
+
+LaTeX Warning: Reference `tab:fungsi-komponen' on page xi undefined on input li
+ne 35.
+
+
+LaTeX Warning: Reference `eq:battery-percent' on page xi undefined on input lin
+e 36.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 41.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 42.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 43.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 44.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 45.
+
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page xi undefined on inpu
+t line 46.
+
+
+LaTeX Warning: Reference `tab:dfd-alur' on page xi undefined on input line 51.
+
+
+LaTeX Warning: Reference `tab:statistik-interval' on page xi undefined on input
+ line 52.
+
+
+LaTeX Warning: Reference `sec:perancangan-middleware' on page xi undefined on i
+nput line 53.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xi undefined on input lin
+e 54.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xi undefined on input lin
+e 55.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xi undefined on input lin
+e 56.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xi undefined on input lin
+e 57.
+
+
+LaTeX Warning: Reference `eq:fill-level' on page xi undefined on input line 62.
+
+
+
+LaTeX Warning: Reference `eq:battery-percent' on page xi undefined on input lin
+e 63.
+
+
+LaTeX Warning: Reference `tab:hasil-ina219' on page xi undefined on input line 
+64.
+
+
+LaTeX Warning: Reference `tab:hasil-ina219' on page xi undefined on input line 
+65.
+
+
+LaTeX Warning: Reference `tab:pemilihan-teknologi' on page xi undefined on inpu
+t line 66.
+
+
+LaTeX Warning: Reference `tab:hasil-nodered' on page xi undefined on input line
+ 67.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 69.
+
+
+ignored: Infinite glue shrinkage found in box being split [11
+
+]) (./14 Daftar Singkatan.tex [12]
+
+LaTeX Warning: Reference `sec:analisis-solusi' on page xiii undefined on input 
+line 16.
+
+
+LaTeX Warning: Reference `sec:perancangan-dashboard' on page xiii undefined on 
+input line 17.
+
+
+LaTeX Warning: Reference `tab:hasil-gprs' on page xiii undefined on input line 
+18.
+
+
+LaTeX Warning: Reference `tab:perbandingan-mcu' on page xiii undefined on input
+ line 19.
+
+
+LaTeX Warning: Reference `sec:perancangan-database' on page xiii undefined on i
+nput line 20.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xiii undefined on input l
+ine 21.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xiii undefined on input l
+ine 22.
+
+
+LaTeX Warning: Reference `sec:impl-dashboard' on page xiii undefined on input l
+ine 23.
+
+
+LaTeX Warning: Reference `tab:teknologi-dashboard' on page xiii undefined on in
+put line 24.
+
+
+LaTeX Warning: Reference `sec:gambaran-umum' on page xiii undefined on input li
+ne 25.
+
+
+LaTeX Warning: Reference `tab:konfigurasi-lingkungan' on page xiii undefined on
+ input line 26.
+
+
+LaTeX Warning: Reference `sec:perancangan-firmware' on page xiii undefined on i
+nput line 27.
+
+
+LaTeX Warning: Reference `tab:konfigurasi-lingkungan' on page xiii undefined on
+ input line 28.
+
+
+LaTeX Warning: Reference `sec:studi-protokol' on page xiii undefined on input l
+ine 29.
+
+
+LaTeX Warning: Reference `sec:studi-protokol' on page xiii undefined on input l
+ine 30.
+
+
+LaTeX Warning: Reference `tab:pemilihan-teknologi' on page xiii undefined on in
+put line 31.
+
+
+LaTeX Warning: Reference `chap:pendahuluan' on page xiii undefined on input lin
+e 32.
+
+
+LaTeX Warning: Reference `chap:pendahuluan' on page xiii undefined on input lin
+e 33.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 34.
+
+
+LaTeX Warning: Reference `tab:payload-data' on page xiii undefined on input lin
+e 35.
+
+
+LaTeX Warning: Reference `tab:kebutuhan-fungsional' on page xiii undefined on i
+nput line 36.
+
+
+LaTeX Warning: Reference `tab:kebutuhan-nonfungsional' on page xiii undefined o
+n input line 37.
+
+
+LaTeX Warning: Reference `chap:pendahuluan' on page xiii undefined on input lin
+e 38.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 39.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 40.
+
+
+LaTeX Warning: Reference `tab:teknologi-dashboard' on page xiii undefined on in
+put line 41.
+
+
+LaTeX Warning: Reference `sec:diskusi-evaluasi' on page xiii undefined on input
+ line 42.
+
+
+LaTeX Warning: Reference `sec:perancangan-middleware' on page xiii undefined on
+ input line 43.
+
+
+LaTeX Warning: Reference `tab:perbandingan-mcu' on page xiii undefined on input
+ line 44.
+
+
+LaTeX Warning: Reference `sec:perancangan-database' on page xiii undefined on i
+nput line 45.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page xiii undefined on input l
+ine 46.
+
+
+LaTeX Warning: Reference `sec:analisis-kebutuhan' on page xiii undefined on inp
+ut line 47.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 48.
+
+
+LaTeX Warning: Reference `sec:metode-evaluasi' on page xiii undefined on input 
+line 49.
+
+
+LaTeX Warning: Reference `tab:pemilihan-teknologi' on page xiii undefined on in
+put line 50.
+
+
+LaTeX Warning: Reference `sec:perancangan-iot' on page xiii undefined on input 
+line 51.
+
+
+LaTeX Warning: Reference `sec:perancangan-database' on page xiii undefined on i
+nput line 52.
+
+
+LaTeX Warning: Reference `sec:analisis-solusi' on page xiii undefined on input 
+line 53.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 54.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 55.
+
+
+LaTeX Warning: Reference `chap:pendahuluan' on page xiii undefined on input lin
+e 56.
+
+
+LaTeX Warning: Reference `chap:studi-literatur' on page xiii undefined on input
+ line 57.
+
+
+LaTeX Warning: Reference `tab:hasil-ui' on page xiii undefined on input line 58
+.
+
+
+LaTeX Warning: Reference `tab:perbandingan-mcu' on page xiii undefined on input
+ line 59.
+
+
+LaTeX Warning: Reference `tab:tautan-penting' on page xiii undefined on input l
+ine 60.
+
+
+Overfull \hbox (2.66713pt too wide) in alignment at lines 14--62
  [] [] [] 
  []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 2 on input line 62.
 
 
 ignored: Infinite glue shrinkage found in box being split [13
 
-]
-ignored: Infinite glue shrinkage found in box being split [14]) (./14 Daftar Singkatan.
-tex [15]
-Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
- [] [] [] 
- []
-
-) [16
-
-] (./Bab I - Pendahuluan.tex
+]) [14] (./Bab I - Pendahuluan.tex
 Bab I.
+
+LaTeX Warning: Citation 'kaza2018' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'LCI2024' on page 1 undefined on input line 13.
+
 [1
 
 
 
-]
+] [2] [3]
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 38.
+LaTeX Warning: Citation 'peffers2007' on page 4 undefined on input line 89.
 
-
-Overfull \hbox (1.58914pt too wide) in paragraph at lines 38--39
-\TU/TimesNewRoman(0)/m/n/12 aktivitas orang yang menggunakan teknologi tersebut
- untuk mendukung
+[4]
+Overfull \hbox (1.99487pt too wide) in paragraph at lines 130--131
+[]\TU/TimesNewRoman(0)/m/n/12 Mengevaluasi pemenuhan Kebutuhan Fungsional dan N
+onfungsional sis-
  []
 
-[2]
-Overfull \hbox (6.8829pt too wide) in paragraph at lines 67--69
-\TU/TimesNewRoman(0)/m/n/12 yang harus dilakukan dalam pelaksanaan tugas akhir,
- sehingga pertanyaan-pertanyaan
- []
-
-[3] [4]) (./Bab II - Studi.tex [5]
+[5]) (./Bab II - Studi.tex [6]
 Bab II.
 
-Overfull \hbox (1.26251pt too wide) in paragraph at lines 5--8
-[]\TU/TimesNewRoman(0)/m/n/12 Studi literatur biasanya berisi tentang tinjauan 
-pustaka, landasan teori, dan penelitian-
- []
+LaTeX Warning: Citation 'giurea2024' on page 7 undefined on input line 11.
 
-[6
+
+LaTeX Warning: Citation 'ec2008' on page 7 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'geissdoerfer2017' on page 7 undefined on input line 17
+.
+
+
+LaTeX Warning: Citation 'giurea2024' on page 7 undefined on input line 17.
+
+[7
 
 
 ]
-File: images/gambar1.png Graphic file (type bmp)
-<images/gambar1.png>
- [7]
-File: images/gambar1.png Graphic file (type bmp)
-<images/gambar1.png>
- [8]
 
-LaTeX Warning: Reference `tab:tabel3' on page 9 undefined on input line 80.
+LaTeX Warning: Citation 'un2015' on page 8 undefined on input line 19.
 
 
-LaTeX Warning: Reference `tab:tabel3' on page 9 undefined on input line 94.
+LaTeX Warning: Citation 'bahcelioglu2020' on page 8 undefined on input line 23.
 
-[9] (./tables/tabel1.tex
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./tables/longtable1.tex
-ignored: Infinite glue shrinkage found in box being split [10]
+LaTeX Warning: Citation 'rodriguez2024' on page 8 undefined on input line 25.
 
-ignored: Infinite glue shrinkage found in box being split [11]) [12] [13]
-(./listings/binary-search-python.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 7.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 6--227
 
+LaTeX Warning: Citation 'bahcelioglu2020' on page 8 undefined on input line 25.
+
+
+
+LaTeX Warning: Citation 'bahcelioglu2020' on page 8 undefined on input line 27.
+
+
+
+LaTeX Warning: Citation 'sensoneo2024' on page 8 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'roadrunner2024' on page 8 undefined on input line 29.
+
+[8]
+
+LaTeX Warning: Citation 'sensoneo2024' on page 9 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'sensoneo2024' on page 9 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'sensoneo2024' on page 9 undefined on input line 39.
+
+
+Overfull \hbox (2.82742pt too wide) in paragraph at lines 39--40
+\TU/TimesNewRoman(0)/m/n/12 ganggu akurasi pelaporan keberlanjutan dan menghamb
+at perencanaan strategis yang
  []
 
-(./algorithms/binary-search-alg.tex
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 4.
- [14])) (./Bab III - Analisis.tex [15]
-[16]
+
+LaTeX Warning: Citation 'pires2025' on page 9 undefined on input line 41.
+
+[9]
+
+LaTeX Warning: Citation 'bahcelioglu2020' on page 10 undefined on input line 43
+.
+
+
+LaTeX Warning: Citation 'ashton2009' on page 10 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'atzori2010' on page 10 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'itu2012' on page 10 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'iotec2014' on page 10 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'sethi2017' on page 10 undefined on input line 57.
+
+[10]
+
+LaTeX Warning: Citation 'sethi2017' on page 11 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'sethi2017' on page 11 undefined on input line 60.
+
+File: images/iot-3layer.png Graphic file (type bmp)
+<images/iot-3layer.png>
+
+LaTeX Warning: Reference `fig:iot-3layer' on page 11 undefined on input line 67
+.
+
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 11 undefined on input line 72.
+
+[11]
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 12 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 12 undefined on input line 84.
+
+[12]
+
+LaTeX Warning: Reference `tab:perbandingan-mcu' on page 13 undefined on input l
+ine 98.
+
+
+Overfull \hbox (6.99644pt too wide) in paragraph at lines 98--99
+[]\TU/TimesNewRoman(0)/m/n/12 Tabel [] menyajikan perbandingan empat \TU/TimesN
+ewRoman(0)/m/it/12 platform microcontroller \TU/TimesNewRoman(0)/m/n/12 yang um
+um
+ []
+
+
+LaTeX Warning: Citation 'ooko2019' on page 13 undefined on input line 101.
+
+
+LaTeX Warning: Citation 'espressif2021' on page 13 undefined on input line 101.
+
+
+
+LaTeX Warning: Citation 'ooko2019' on page 13 undefined on input line 101.
+
+
+LaTeX Warning: Citation 'espressif2021' on page 13 undefined on input line 101.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/b/n/12 Raspberry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/b/n/12 ESP8266
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 ESP8266
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Espressif
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/it/12 Microcontro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Mini Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/it/12 Microcontro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/it/12 Microcontro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Atmel,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Dual-Core
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/n/12 Xtensa 32-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 160–240
+ []
+
+
+Underfull \hbox (badness 6268) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Hingga 128
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 520 KB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 Hingga 16
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 SPI, I2C,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/n/12 UART,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 UART,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\TU/TimesNewRoman(0)/m/n/12 UART,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/n/12 GPIO, Wi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/m/n/12 Fi, BLE,
+ []
+
+
+LaTeX Warning: Citation 'espressif2021' on page 13 undefined on input line 128.
+
+
+[13]
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 14 undefined on input line 139.
+
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 14 undefined on input line 144.
+
+[14]
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 15 undefined on input line 150.
+
+
+LaTeX Warning: Citation 'alfuqaha2015' on page 15 undefined on input line 154.
+
+
+LaTeX Warning: Citation 'openjs2024' on page 15 undefined on input line 163.
+
+
+LaTeX Warning: Citation 'blackstock2016' on page 15 undefined on input line 165
+.
+
+[15]
+
+LaTeX Warning: Citation 'clerissi2018' on page 16 undefined on input line 167.
+
+
+LaTeX Warning: Citation 'latifah2021' on page 16 undefined on input line 177.
+
+
+LaTeX Warning: Citation '' on page 16 undefined on input line 177.
+
+
+Overfull \hbox (3.6203pt too wide) in paragraph at lines 177--178
+[][][] \TU/TimesNewRoman(0)/m/n/12 mengembangkan sistem \TU/TimesNewRoman(0)/m/
+it/12 Automated Trash Volume Mo-
+ []
+
+
+LaTeX Warning: Citation 'pires2025' on page 16 undefined on input line 181.
+
+
+LaTeX Warning: Citation '' on page 16 undefined on input line 181.
+
+
+Overfull \hbox (15.99373pt too wide) in paragraph at lines 181--182
+\TU/TimesNewRoman(0)/m/n/12 penuhan tempat sampah secara \TU/TimesNewRoman(0)/m
+/it/12 real-time\TU/TimesNewRoman(0)/m/n/12 . Penelitian ini menggunakan sensor
+ VL53L0X
+ []
+
+[16]) (./Bab III - Analisis.tex [17]
 Bab III.
-[17
+[18
 
 
-] [18]) (./Bab IV - Perancangan.tex [19]
+] [19]
+
+LaTeX Warning: Reference `tab:kebutuhan-fungsional' on page 20 undefined on inp
+ut line 63.
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 80--81
+[]|\TU/TimesNewRoman(0)/m/n/12 Sistem harus dapat mengi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]|\TU/TimesNewRoman(0)/m/n/12 Sistem dapat menyediakan
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 96--97
+\TU/TimesNewRoman(0)/m/n/12 an grafik pola pembuangan
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 96--97
+\TU/TimesNewRoman(0)/m/n/12 per jam, per hari, dan per
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table III.1 on input line 98.
+
+
+ignored: Infinite glue shrinkage found in box being split [20]
+
+LaTeX Warning: Reference `tab:mapping-rm-kf' on page 21 undefined on input line
+ 100.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]|\TU/TimesNewRoman(0)/m/n/12 RM-1: Rancangan dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+\TU/TimesNewRoman(0)/m/n/12 mampu mengumpulkan
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 115--115
+\TU/TimesNewRoman(0)/m/n/12 data secara periodik dan
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 115--115
+[]|\TU/TimesNewRoman(0)/m/n/12 RM-2: Pola pembuangan
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 115--115
+\TU/TimesNewRoman(0)/m/n/12 tem dan validasinya terha-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+\TU/TimesNewRoman(0)/m/it/12 re \TU/TimesNewRoman(0)/m/n/12 agar perangkat \TU/
+TimesNewRoman(0)/m/it/12 Smart
+ []
+
+[21]
+
+LaTeX Warning: Reference `tab:kebutuhan-nonfungsional' on page 22 undefined on 
+input line 120.
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 145--145
+[]|\TU/TimesNewRoman(0)/m/n/12 Sistem IoT harus bero-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\TU/TimesNewRoman(0)/m/n/12 dengan toleransi keter-
+ []
+
+[22] [23]
+
+LaTeX Warning: Reference `tab:pemenuhan-kf' on page 24 undefined on input line 
+175.
+
+[24]
+Overfull \hbox (11.6496pt too wide) in paragraph at lines 199--200
+\TU/TimesNewRoman(0)/m/it/12 cal Hierarchy Process \TU/TimesNewRoman(0)/m/n/12 
+(AHP). Metode ini dipilih karena dapat mengakomodasi kriteria-
+ []
+
+File: images/kriteria-ahp.png Graphic file (type bmp)
+<images/kriteria-ahp.png>
+
+LaTeX Warning: Reference `fig:kriteria-ahp' on page 25 undefined on input line 
+209.
+
+
+LaTeX Warning: Reference `tab:kriteria-ahp' on page 25 undefined on input line 
+209.
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 226--226
+[]|\TU/TimesNewRoman(0)/m/n/12 Kemudahan implementasi dengan kemampuan
+ []
+
+[25]
+
+LaTeX Warning: Reference `tab:matriks-kriteria' on page 26 undefined on input l
+ine 229.
+
+
+LaTeX Warning: Reference `tab:bobot-kriteria' on page 26 undefined on input lin
+e 251.
+
+[26]
+
+LaTeX Warning: Reference `tab:justifikasi-kriteria' on page 27 undefined on inp
+ut line 275.
+
+
+LaTeX Warning: Reference `tab:bobot-lokal' on page 27 undefined on input line 2
+95.
+
+
+LaTeX Warning: Reference `tab:skor-global' on page 27 undefined on input line 3
+13.
+
+[27]
+
+LaTeX Warning: Reference `tab:skor-global' on page 28 undefined on input line 3
+31.
+
+
+LaTeX Warning: Reference `sec:analisis-kondisi' on page 28 undefined on input l
+ine 333.
+
+) (./Bab IV - Perancangan.tex [28]
 Bab IV.
-) (./Bab V - Implementasi.tex [20
+
+LaTeX Warning: Reference `sec:analisis-kondisi' on page 29 undefined on input l
+ine 7.
+
+
+LaTeX Warning: Reference `fig:arsitektur-sistem' on page 29 undefined on input 
+line 20.
+
+[29
 
 
 ]
+File: images/arsitektur-sistem.png Graphic file (type bmp)
+<images/arsitektur-sistem.png>
+
+
+LaTeX Warning: Reference `fig:arsitektur-sistem' on page 30 undefined on input 
+line 29.
+
+[30]
+Overfull \hbox (3.10431pt too wide) in paragraph at lines 38--39
+[]\TU/TimesNewRoman(0)/m/n/12 Arsitektur sistem juga membedakan komponen berdas
+arkan tanggung jawab pengem-
+ []
+
+
+LaTeX Warning: Reference `fig:dfd-level0' on page 31 undefined on input line 44
+.
+
+File: images/dfd-level0.png Graphic file (type bmp)
+<images/dfd-level0.png>
+[31]
+
+LaTeX Warning: Reference `fig:dfd-level0' on page 32 undefined on input line 53
+.
+
+
+LaTeX Warning: Reference `fig:dfd-level1' on page 32 undefined on input line 55
+.
+
+File: images/dfd-level1.png Graphic file (type bmp)
+<images/dfd-level1.png>
+[32]
+
+LaTeX Warning: Reference `tab:dfd-komponen' on page 33 undefined on input line 
+64.
+
+
+LaTeX Warning: Reference `tab:dfd-alur' on page 33 undefined on input line 84.
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 105--105
+[]|\TU/TimesNewRoman(0)/m/n/12 Data sensor (\TU/TimesNewRoman(0)/m/it/12 fillLe
+vel\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 sensor_id\TU/Time
+sNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 times-
+ []
+
+[33]
+
+LaTeX Warning: Reference `tab:pemilihan-teknologi' on page 34 undefined on inpu
+t line 110.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+[]|\TU/TimesNewRoman(0)/m/it/12 Dual-core processor\TU/TimesNewRoman(0)/m/n/12 
+, kon-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 125--126
+\TU/TimesNewRoman(0)/m/n/12 sumsi daya rendah dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+\TU/TimesNewRoman(0)/m/n/12 akurasi tinggi, jangkauan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+[]|\TU/TimesNewRoman(0)/m/n/12 Mengukur tegangan, arus,
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 129--130
+\TU/TimesNewRoman(0)/m/n/12 dan daya untuk \TU/TimesNewRoman(0)/m/it/12 monitor
+ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[]|\TU/TimesNewRoman(0)/m/it/12 Overhead \TU/TimesNewRoman(0)/m/n/12 rendah (\T
+U/TimesNewRoman(0)/m/it/12 header
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 135--136
+\TU/TimesNewRoman(0)/m/n/12 2 \TU/TimesNewRoman(0)/m/it/12 bytes\TU/TimesNewRom
+an(0)/m/n/12 ), arsitektur \TU/TimesNewRoman(0)/m/it/12 publish-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+[]|\TU/TimesNewRoman(0)/m/n/12 PostgreSQL dengan REST
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table IV.3 on input line 147.
+
+
+ignored: Infinite glue shrinkage found in box being split [34]
+
+LaTeX Warning: Reference `fig:blok-fungsional' on page 35 undefined on input li
+ne 158.
+
+File: images/blok-fungsional.png Graphic file (type bmp)
+<images/blok-fungsional.png>
+[35]
+
+LaTeX Warning: Reference `tab:fungsi-komponen' on page 36 undefined on input li
+ne 167.
+
+
+LaTeX Warning: Reference `eq:fill-level' on page 36 undefined on input line 189
+.
+
+
+LaTeX Warning: Reference `eq:battery-percent' on page 36 undefined on input lin
+e 197.
+
+[36]
+
+LaTeX Warning: Reference `tab:spesifikasi-mqtt' on page 37 undefined on input l
+ine 209.
+
+
+LaTeX Warning: Reference `tab:payload-data' on page 37 undefined on input line 
+229.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]|\TU/TimesNewRoman(0)/m/n/12 Status ketersediaan sensor
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 264--264
+[]|\TU/TimesNewRoman(0)/m/n/12 Ketersediaan sensor (1=\TU/TimesNewRoman(0)/m/it
+/12 availa-
+ []
+
+
+Overfull \hbox (13.43477pt too wide) in alignment at lines 243--268
+ [] [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table IV.6 on input line 268.
+
+
+ignored: Infinite glue shrinkage found in box being split [37]
+
+LaTeX Warning: Reference `fig:payload-contoh' on page 38 undefined on input lin
+e 270.
+
+File: images/payload-contoh.png Graphic file (type bmp)
+<images/payload-contoh.png>
+
+LaTeX Warning: Reference `sec:analisis-kondisi' on page 38 undefined on input l
+ine 284.
+
+
+LaTeX Warning: Reference `tab:peningkatan-firmware' on page 38 undefined on inp
+ut line 284.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]|\TU/TimesNewRoman(0)/m/it/12 Auto-recovery \TU/TimesNewRoman(0)/m/n/12 denga
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]|\TU/TimesNewRoman(0)/m/n/12 GPIO \TU/TimesNewRoman(0)/m/it/12 isolation \TU/
+TimesNewRoman(0)/m/n/12 untuk
+ []
+
+[38] [39]
+
+LaTeX Warning: Reference `tab:urutan-shutdown' on page 40 undefined on input li
+ne 324.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\TU/TimesNewRoman(0)/m/n/12 Menghentikan mode pembacaan kontinyu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\TU/TimesNewRoman(0)/m/n/12 Set semua GPIO ke LOW (TRIG,
+ []
+
+
+LaTeX Warning: Reference `chap:implementasi' on page 40 undefined on input line
+ 359.
+
+[40]
+
+LaTeX Warning: Reference `fig:flow-nodered' on page 41 undefined on input line 
+363.
+
+File: images/rancangan-flow-middleware.png Graphic file (type bmp)
+<images/rancangan-flow-middleware.png>
+
+LaTeX Warning: Reference `fig:flow-nodered' on page 41 undefined on input line 
+374.
+
+
+LaTeX Warning: Reference `tab:tipe-node' on page 41 undefined on input line 374
+.
+
+[41]
+
+LaTeX Warning: Reference `sec:impl-middleware' on page 42 undefined on input li
+ne 400.
+
+
+LaTeX Warning: Reference `tab:deployment-nodered' on page 42 undefined on input
+ line 404.
+
+
+Overfull \hbox (0.80894pt too wide) in paragraph at lines 404--405
+[]\TU/TimesNewRoman(0)/m/n/12 Tabel [] menyajikan spesifikasi \TU/TimesNewRoman
+(0)/m/it/12 deployment \TU/TimesNewRoman(0)/m/n/12 dan operasional \TU/TimesNew
+Roman(0)/m/it/12 middleware \TU/TimesNewRoman(0)/m/n/12 Node-RED
+ []
+
+
+LaTeX Warning: Reference `tab:spesifikasi-database' on page 42 undefined on inp
+ut line 435.
+
+[42]
+
+LaTeX Warning: Reference `fig:tabel-sensordata' on page 43 undefined on input l
+ine 461.
+
+File: images/tabel-sensordata.png Graphic file (type bmp)
+<images/tabel-sensordata.png>
+[43]
+
+LaTeX Warning: Reference `tab:detail-sensordata' on page 44 undefined on input 
+line 470.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
+[]|\TU/TimesNewRoman(0)/m/n/12 PK, Auto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+[]|\TU/TimesNewRoman(0)/m/n/12 Status ketersediaan sensor
+ []
+
+
+Overfull \hbox (6.36267pt too wide) in paragraph at lines 505--505
+[]|\TU/lmtt/m/n/12 vl53l0x_avail| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+[]|\TU/TimesNewRoman(0)/m/n/12 Ketersediaan sensor
+ []
+
+
+Overfull \hbox (7.4373pt too wide) in paragraph at lines 511--511
+[]|\TU/TimesNewRoman(0)/m/n/12 timestamptz| 
+ []
+
+
+Overfull \hbox (7.4373pt too wide) in paragraph at lines 513--513
+[]|\TU/TimesNewRoman(0)/m/n/12 timestamptz| 
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [44]
+Overfull \hbox (16.22203pt too wide) in paragraph at lines 517--518
+[]\TU/TimesNewRoman(0)/m/it/12 Field \TU/lmtt/m/n/12 timestamp \TU/TimesNewRoma
+n(0)/m/n/12 mencatat waktu pembacaan di perangkat IoT, sedangkan \TU/lmtt/m/n/1
+2 created_at
+ []
+
+
+LaTeX Warning: Reference `tab:teknologi-dashboard' on page 45 undefined on inpu
+t line 528.
+
+
+LaTeX Warning: Reference `tab:spesifikasi-api' on page 45 undefined on input li
+ne 554.
+
+
+Overfull \hbox (76.11815pt too wide) in paragraph at lines 554--555
+[]\TU/TimesNewRoman(0)/m/it/12 Dashboard \TU/TimesNewRoman(0)/m/n/12 berkomunik
+asi dengan \TU/TimesNewRoman(0)/m/it/12 database \TU/TimesNewRoman(0)/m/n/12 me
+lalui API Routes pada endpoint \TU/lmtt/m/n/12 /api/sensor-data\TU/TimesNewRoma
+n(0)/m/n/12 .
+ []
+
+[45]
+
+LaTeX Warning: Reference `tab:parameter-timerange' on page 46 undefined on inpu
+t line 574.
+
+
+LaTeX Warning: Reference `tab:hosting-dashboard' on page 46 undefined on input 
+line 611.
+
+[46]) (./Bab V - Implementasi.tex [47]
 Bab V.
-) (./Bab VI - Evaluasi.tex [21
+
+LaTeX Warning: Reference `sec:perancangan-firmware' on page 48 undefined on inp
+ut line 15.
+
+
+Overfull \hbox (6.67303pt too wide) in paragraph at lines 15--16
+[]\TU/TimesNewRoman(0)/m/n/12 Implementasi peningkatan \TU/TimesNewRoman(0)/m/i
+t/12 firmware \TU/TimesNewRoman(0)/m/n/12 dilakukan pada perangkat \TU/TimesNew
+Roman(0)/m/it/12 Smart Waste Bin \TU/TimesNewRoman(0)/m/n/12 meng-
+ []
+
+
+LaTeX Warning: Reference `lst:interval' on page 48 undefined on input line 19.
+
+(d:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(d:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(d:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 21.
+
+
+LaTeX Warning: Reference `lst:median' on page 48 undefined on input line 31.
+
+[48
 
 
 ]
+
+LaTeX Warning: Reference `lst:recovery' on page 49 undefined on input line 71.
+
+
+LaTeX Warning: Reference `lst:powercycle' on page 49 undefined on input line 71
+.
+
+[49]
+
+LaTeX Warning: Reference `lst:warmup' on page 50 undefined on input line 110.
+
+
+Overfull \hbox (2.02518pt too wide) in paragraph at lines 110--111
+[]\TU/TimesNewRoman(0)/m/n/12 Mekanisme \TU/TimesNewRoman(0)/m/it/12 warm-up \T
+U/TimesNewRoman(0)/m/n/12 diimplementasikan sebagai bagian dari fungsi \TU/lmtt
+/m/n/12 initVL53L0X()
+ []
+
+[50]
+
+LaTeX Warning: Reference `lst:gpio' on page 51 undefined on input line 130.
+
+
+LaTeX Warning: Reference `sec:perancangan-middleware' on page 51 undefined on i
+nput line 152.
+
+
+LaTeX Warning: Reference `chap:perancangan' on page 51 undefined on input line 
+152.
+
+
+LaTeX Warning: Reference `fig:flow-nodered-impl' on page 51 undefined on input 
+line 154.
+
+File: images/flow-nodered-impl.png Graphic file (type bmp)
+<images/flow-nodered-impl.png>
+[51]
+
+LaTeX Warning: Reference `tab:konfigurasi-mqtt-node' on page 52 undefined on in
+put line 167.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\TU/TimesNewRoman(0)/m/n/12 Port default
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\TU/TimesNewRoman(0)/m/n/12 Otomatis de-
+ []
+
+
+LaTeX Warning: Reference `tab:impl-konfigurasi-json' on page 52 undefined on in
+put line 189.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\TU/TimesNewRoman(0)/m/n/12 Mengubah
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\TU/TimesNewRoman(0)/m/n/12 string ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\TU/TimesNewRoman(0)/m/n/12 Lokasi data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\TU/TimesNewRoman(0)/m/n/12 yang dikon-
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 204--204
+\TU/TimesNewRoman(0)/m/n/12 objek, bukan
+ []
+
+[52]
+
+LaTeX Warning: Reference `tab:konfigurasi-http' on page 53 undefined on input l
+ine 209.
+
+
+LaTeX Warning: Reference `tab:konfigurasi-headers' on page 53 undefined on inpu
+t line 209.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]|\TU/lmtt/m/n/12 https://[project-ref].supabase.co/rest/v1
+ []
+
+
+LaTeX Warning: Reference `tab:impl-konfigurasi-debug' on page 53 undefined on i
+nput line 249.
+
+[53]
+
+LaTeX Warning: Reference `tab:impl-konfigurasi-inject' on page 54 undefined on 
+input line 267.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
+[]|\TU/lmtt/m/n/12 battPercent $\OML/cmm/m/it/12 <$ \TU/TimesNewRoman(0)/m/n/12
+ 30%,
+ []
+
+
+Overfull \hbox (26.87811pt too wide) in paragraph at lines 298--299
+[]\TU/TimesNewRoman(0)/m/it/12 Database \TU/TimesNewRoman(0)/m/n/12 diimplement
+asikan menggunakan Supabase yang merupakan \TU/TimesNewRoman(0)/m/it/12 platfor
+m Backend-
+ []
+
+
+Overfull \hbox (35.19806pt too wide) in paragraph at lines 298--299
+\TU/TimesNewRoman(0)/m/it/12 as-a-Service \TU/TimesNewRoman(0)/m/n/12 berbasis 
+PostgreSQL. Implementasi mencakup pembuatan tabel \TU/lmtt/m/n/12 sensor_data
+ []
+
+
+LaTeX Warning: Reference `fig:tabel-sensordata' on page 54 undefined on input l
+ine 300.
+
+
+LaTeX Warning: Reference `tab:impl-detail-sensordata' on page 54 undefined on i
+nput line 300.
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]|\TU/TimesNewRoman(0)/m/n/12 Identifier perangkat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]|\TU/TimesNewRoman(0)/m/n/12 Ketersediaan sensor
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 339--339
+[]|\TU/TimesNewRoman(0)/m/it/12 Topic \TU/TimesNewRoman(0)/m/n/12 MQTT sumber
+ []
+
+
+Overfull \hbox (16.22203pt too wide) in paragraph at lines 342--343
+[]\TU/TimesNewRoman(0)/m/it/12 Field \TU/lmtt/m/n/12 timestamp \TU/TimesNewRoma
+n(0)/m/n/12 mencatat waktu pembacaan di perangkat IoT, sedangkan \TU/lmtt/m/n/1
+2 created_at
+ []
+
+[55]
+
+LaTeX Warning: Reference `fig:api-response' on page 56 undefined on input line 
+353.
+
+File: images/api-response.png Graphic file (type bmp)
+<images/api-response.png>
+
+LaTeX Warning: Reference `tab:state-variable' on page 56 undefined on input lin
+e 366.
+
+[56]
+Overfull \hbox (23.70523pt too wide) in paragraph at lines 410--411
+[]\TU/TimesNewRoman(0)/m/it/12 Dashboard \TU/TimesNewRoman(0)/m/n/12 mengimplem
+entasikan \TU/TimesNewRoman(0)/m/it/12 auto-refresh \TU/TimesNewRoman(0)/m/n/12
+ setiap 30 detik menggunakan \TU/lmtt/m/n/12 useEffect
+ []
+
+[57]
+
+LaTeX Warning: Reference `tab:impl-hosting' on page 58 undefined on input line 
+414.
+
+) (./Bab VI - Evaluasi.tex [58]
 Bab VI.
 
-Overfull \hbox (20.82396pt too wide) in paragraph at lines 23--29
- [][] 
- []
+LaTeX Warning: Reference `tab:detail-unit-swb' on page 59 undefined on input li
+ne 27.
 
-[22
-
-
-] [23]) (./Bab VII - Penutup.tex [24]
-Bab VII.
-) [25
+[59
 
 
 ]
-Overfull \hbox (4.9412pt too wide) in paragraph at lines 411--411
-[][]\TU/TimesNewRoman(0)/m/n/12 Laudon, Kenneth C., dan Jane P. Laudon. 2020. \
-TU/TimesNewRoman(0)/m/it/12 Sistem Informasi Manajemen. \TU/TimesNewRoman(0)/m/
-n/12 Jakarta:
+
+LaTeX Warning: Reference `tab:konfigurasi-lingkungan' on page 60 undefined on i
+nput line 47.
+
+
+LaTeX Warning: Reference `tab:mapping-skenario' on page 60 undefined on input l
+ine 78.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/it/12 Waste Bin \TU/TimesNewRoman(0)/m/n/12 berbasis
  []
 
-(./Lampiran-A.tex [26
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 IoT yang mampu
+ []
 
 
-]
-Lampiran A.
-(./listings/binary-search-python.tex [27
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 mengumpulkan data
+ []
 
 
-])) (./Lampiran-B.tex [28]
-Lampiran B.
-) [29
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 secara periodik dan
+ []
 
 
-] (./TA.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
- ***********
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 SE-01: Evaluasi
+ []
 
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 1424) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 SE-02: Evaluasi Pe-
+ []
 
-Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: ECCFCBD918BC9E44FAB8CDF1C361CB19;11114.
-Package logreq Info: Writing requests to 'TA.run.xml'.
-\openout1 = `TA.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 34804 strings out of 468168
- 677499 string characters out of 5436524
- 2231612 words of memory out of 5000000
- 63035 multiletter control sequences out of 15000+600000
- 634681 words of font info for 99 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 73i,14n,95p,2118b,6745s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 Pola pembuangan
+ []
 
-Output written on TA.pdf (46 pages).
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 sampah yang dapat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 diidentifikasi berda-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 validasinya terhadap
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 SE-04: Evaluasi Pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 Mengevaluasi efek-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 tivitas peningkatan
+ []
+
+[60]
+
+LaTeX Warning: Reference `sec:metode-evaluasi' on page 61 undefined on input li
+ne 104.
+
+
+LaTeX Warning: Reference `tab:pengujian-fungsionalitas' on page 61 undefined on
+ input line 110.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/it/12 Monitoring \TU/TimesNewRoman(0)/m/n/12 tegangan
+
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/n/12 Koneksi GPRS ke ja-
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/n/12 Berhasil terhubung ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/n/12 Data terkirim dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/it/12 Rendering \TU/TimesNewRoman(0)/m/n/12 komponen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\TU/TimesNewRoman(0)/m/n/12 Data ditampilkan de-
+ []
+
+[61]
+
+LaTeX Warning: Reference `tab:hasil-vlx' on page 62 undefined on input line 139
+.
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 159--159
+[]|\TU/TimesNewRoman(0)/b/n/12 Jarak Aktual (cm, \TU/TimesNewRoman(0)/b/it/12 f
+i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]|\TU/TimesNewRoman(0)/b/n/12 Pembacaan Sensor
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 159--159
+[]|\TU/TimesNewRoman(0)/b/n/12 Pembacaan Sensor (\TU/TimesNewRoman(0)/b/it/12 f
+i-
+ []
+
+[62]
+
+LaTeX Warning: Reference `tab:hasil-ina219' on page 63 undefined on input line 
+164.
+
+
+LaTeX Warning: Reference `tab:hasil-gprs' on page 63 undefined on input line 18
+8.
+
+
+LaTeX Warning: Reference `tab:hasil-mqtt' on page 63 undefined on input line 21
+1.
+
+[63]
+
+LaTeX Warning: Reference `tab:hasil-nodered' on page 64 undefined on input line
+ 234.
+
+
+LaTeX Warning: Reference `tab:hasil-api' on page 64 undefined on input line 257
+.
+
+
+Overfull \hbox (3.25737pt too wide) in paragraph at lines 279--279
+[]|\TU/lmtt/m/n/12 /api/sensor-data?sensorId=1| 
+ []
+
+
+Overfull \hbox (3.25737pt too wide) in paragraph at lines 279--279
+[]|\TU/lmtt/m/n/12 /api/sensor-data?sensorId=2| 
+ []
+
+
+Overfull \hbox (3.25737pt too wide) in paragraph at lines 279--279
+[]|\TU/lmtt/m/n/12 /api/sensor-data?sensorId=3| 
+ []
+
+
+Overfull \hbox (21.79736pt too wide) in paragraph at lines 279--279
+[]|\TU/lmtt/m/n/12 /api/sensor-data?timerange=24h| 
+ []
+
+
+Overfull \hbox (15.61737pt too wide) in paragraph at lines 279--279
+[]|\TU/lmtt/m/n/12 /api/sensor-data?timerange=7d| 
+ []
+
+[64]
+
+LaTeX Warning: Reference `tab:hasil-ui' on page 65 undefined on input line 282.
+
+
+
+LaTeX Warning: Reference `tab:detail-pengumpulan' on page 65 undefined on input
+ line 317.
+
+[65]
+
+LaTeX Warning: Reference `tab:volume-data' on page 66 undefined on input line 3
+46.
+
+
+LaTeX Warning: Reference `tab:statistik-interval' on page 66 undefined on input
+ line 372.
+
+[66]
+
+LaTeX Warning: Reference `tab:analisis-dataloss' on page 67 undefined on input 
+line 396.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
+[]|\TU/TimesNewRoman(0)/m/n/12 Dalam batas toleransi
+ []
+
+
+LaTeX Warning: Reference `tab:jenis-data-kotor' on page 67 undefined on input l
+ine 417.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+[]|\TU/TimesNewRoman(0)/m/n/12 tegangan = arus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+\TU/TimesNewRoman(0)/m/n/12 = batt = 999,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+\TU/TimesNewRoman(0)/m/it/12 fillLevel \TU/TimesNewRoman(0)/m/n/12 = -1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+\TU/lmtt/m/n/12 vl53l0x_avail \TU/TimesNewRoman(0)/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 431--431
+[]|\TU/TimesNewRoman(0)/m/it/12 fillLevel \TU/TimesNewRoman(0)/m/n/12 di luar 0
+–
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+[]|\TU/TimesNewRoman(0)/m/n/12 VL53L0X \TU/TimesNewRoman(0)/m/it/12 timeout
+ []
+
+
+LaTeX Warning: Reference `tab:kualitas-data' on page 67 undefined on input line
+ 438.
+
+[67]
+
+LaTeX Warning: Reference `tab:distribusi-jam' on page 68 undefined on input lin
+e 471.
+
+
+LaTeX Warning: Reference `tab:distribusi-hari' on page 68 undefined on input li
+ne 471.
+
+[68]
+
+LaTeX Warning: Reference `tab:statistik-filllevel' on page 69 undefined on inpu
+t line 535.
+
+File: images/statistik-filllevel.png Graphic file (type bmp)
+<images/statistik-filllevel.png>
+[69]
+
+LaTeX Warning: Reference `fig:statistik-filllevel' on page 70 undefined on inpu
+t line 569.
+
+
+LaTeX Warning: Reference `tab:distribusi-filllevel' on page 70 undefined on inp
+ut line 573.
+
+
+LaTeX Warning: Reference `tab:pola-harian' on page 70 undefined on input line 6
+00.
+
+
+LaTeX Warning: Reference `fig:pola-harian' on page 70 undefined on input line 6
+00.
+
+[70]
+File: images/pola-harian.png Graphic file (type bmp)
+<images/pola-harian.png>
+
+
+LaTeX Warning: Reference `tab:pola-mingguan' on page 71 undefined on input line
+ 635.
+
+
+LaTeX Warning: Reference `fig:pola-mingguan' on page 71 undefined on input line
+ 635.
+
+[71]
+File: images/pola-mingguan.png Graphic file (type bmp)
+<images/pola-mingguan.png>
+
+
+LaTeX Warning: Reference `tab:pola-libur' on page 72 undefined on input line 67
+3.
+
+
+LaTeX Warning: Reference `fig:pola-libur' on page 72 undefined on input line 67
+3.
+
+[72]
+File: images/pola-libur.png Graphic file (type bmp)
+<images/pola-libur.png>
+
+
+LaTeX Warning: Reference `tab:analisis-delta' on page 73 undefined on input lin
+e 703.
+
+
+LaTeX Warning: Reference `tab:delta-perjam' on page 73 undefined on input line 
+724.
+
+[73]
+File: images/distribusi-delta.png Graphic file (type bmp)
+<images/distribusi-delta.png>
+
+
+LaTeX Warning: Reference `fig:distribusi-delta' on page 74 undefined on input l
+ine 758.
+
+
+LaTeX Warning: Reference `tab:pola-jenis' on page 74 undefined on input line 76
+2.
+
+[74

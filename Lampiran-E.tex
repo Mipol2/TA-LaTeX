@@ -1,0 +1,240 @@
+\chapter{PERHITUNGAN AHP}
+\label{chap:lampiran-e}
+
+\section*{E.1 Normalisasi Matriks Perbandingan Kriteria}
+
+\begin{table}[H]
+  \caption{Normalisasi Matriks Perbandingan Kriteria}
+  \label{tab:norm-kriteria}
+  \centering
+  \begin{tabular}{| l | c | c | c | c | c |}
+    \hline
+    & \textbf{C-1} & \textbf{C-2} & \textbf{C-3} & \textbf{C-4} & \textbf{Bobot ($w_i$)} \\
+    \hline
+    C-1 & 0,2703 & 0,2530 & 0,3158 & 0,3125 & 0,2879 \\
+    \hline
+    C-2 & 0,5405 & 0,5060 & 0,4737 & 0,4375 & 0,4894 \\
+    \hline
+    C-3 & 0,1351 & 0,1687 & 0,1579 & 0,1875 & 0,1623 \\
+    \hline
+    C-4 & 0,0541 & 0,0723 & 0,0526 & 0,0625 & 0,0604 \\
+    \hline
+    \textbf{Jumlah} & 1,0000 & 1,0000 & 1,0000 & 1,0000 & 1,0000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section*{E.2 Uji Konsistensi Matriks Kriteria}
+
+Uji konsistensi dilakukan dengan menghitung \textit{Consistency Ratio} (CR). Langkah: (1) hitung vektor tertimbang $A \times w$, (2) hitung $\lambda$ per baris $= (A \times w)/w$, (3) $\lambda_{max}$ = rata-rata $\lambda$, (4) $CI = (\lambda_{max} - n)/(n-1)$, (5) $CR = CI/RI$.
+
+\begin{table}[H]
+  \caption{Uji Konsistensi Matriks Kriteria}
+  \label{tab:uji-konsistensi-kriteria}
+  \centering
+  \begin{tabular}{| l | c | c | c |}
+    \hline
+    \textbf{Kriteria} & \textbf{Bobot ($w_i$)} & \textbf{$(A \times w)_i$} & \textbf{$\lambda_i = (A \times w)_i / w_i$} \\
+    \hline
+    C-1 & 0,2879 & 1,1591 & 4,0260 \\
+    \hline
+    C-2 & 0,4894 & 1,9747 & 4,0346 \\
+    \hline
+    C-3 & 0,1623 & 0,6505 & 4,0080 \\
+    \hline
+    C-4 & 0,0604 & 0,2420 & 4,0082 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Dengan $n = 4$ dan $RI = 0{,}90$:
+
+\begin{align*}
+  \lambda_{max} &= 4{,}019 \\
+  CI &= \frac{\lambda_{max} - n}{n - 1} = \frac{4{,}0192 - 4}{4 - 1} = 0{,}0064 \\
+  CR &= \frac{CI}{RI} = \frac{0{,}0064}{0{,}90} = 0{,}71\% < 10\% \quad \checkmark
+\end{align*}
+
+\section*{E.3 Matriks Perbandingan Alternatif per Kriteria}
+
+\subsection*{E.3.1 C-1 (Kelayakan Teknis)}
+
+\begin{table}[H]
+  \caption{Matriks Berpasangan Alternatif --- C-1 (Kelayakan Teknis)}
+  \label{tab:matriks-c1}
+  \centering
+  \begin{tabular}{| l | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot lokal ($w_i$)} \\
+    \hline
+    Alt-1 & 1     & 2   & 3 & 0,539 \\
+    \hline
+    Alt-2 & 1/2   & 1   & 2 & 0,297 \\
+    \hline
+    Alt-3 & 1/3   & 1/2 & 1 & 0,164 \\
+    \hline
+    \textbf{Jumlah kolom} & 1,833 & 3,500 & 6,000 & 1,000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \caption{Normalisasi dan Uji Konsistensi --- C-1 (Kelayakan Teknis)}
+  \label{tab:norm-c1}
+  \centering
+  \begin{tabular}{| l | c | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot ($w_i$)} & \textbf{$\lambda_i$} \\
+    \hline
+    Alt-1 & 0,5455 & 0,5714 & 0,5000 & 0,5390 & 3,0147 \\
+    \hline
+    Alt-2 & 0,2727 & 0,2857 & 0,3333 & 0,2973 & 3,0085 \\
+    \hline
+    Alt-3 & 0,1818 & 0,1429 & 0,1667 & 0,1638 & 3,0044 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+$\lambda_{max} = 3{,}0092$, $CI = 0{,}0046$, $RI = 0{,}58$, $CR = 0{,}79\% < 10\%$ $\checkmark$
+
+\subsection*{E.3.2 C-2 (Kesesuaian Tujuan)}
+
+\begin{table}[H]
+  \caption{Matriks Berpasangan Alternatif --- C-2 (Kesesuaian Tujuan)}
+  \label{tab:matriks-c2}
+  \centering
+  \begin{tabular}{| l | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot lokal ($w_i$)} \\
+    \hline
+    Alt-1 & 1 & 1/5 & 1/3 & 0,110 \\
+    \hline
+    Alt-2 & 5 & 1   & 2   & 0,581 \\
+    \hline
+    Alt-3 & 3 & 1/2 & 1   & 0,309 \\
+    \hline
+    \textbf{Jumlah kolom} & 9,000 & 1,700 & 3,333 & 1,000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \caption{Normalisasi dan Uji Konsistensi --- C-2 (Kesesuaian Tujuan)}
+  \label{tab:norm-c2}
+  \centering
+  \begin{tabular}{| l | c | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot ($w_i$)} & \textbf{$\lambda_i$} \\
+    \hline
+    Alt-1 & 0,1111 & 0,1176 & 0,1000 & 0,1096 & 3,0012 \\
+    \hline
+    Alt-2 & 0,5556 & 0,5882 & 0,6000 & 0,5813 & 3,0064 \\
+    \hline
+    Alt-3 & 0,3333 & 0,2941 & 0,3000 & 0,3092 & 3,0035 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+$\lambda_{max} = 3{,}0037$, $CI = 0{,}0018$, $RI = 0{,}58$, $CR = 0{,}32\% < 10\%$ $\checkmark$
+
+\subsection*{E.3.3 C-3 (Waktu Pengembangan)}
+
+\begin{table}[H]
+  \caption{Matriks Berpasangan Alternatif --- C-3 (Waktu Pengembangan)}
+  \label{tab:matriks-c3}
+  \centering
+  \begin{tabular}{| l | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot lokal ($w_i$)} \\
+    \hline
+    Alt-1 & 1   & 5 & 2   & 0,581 \\
+    \hline
+    Alt-2 & 1/5 & 1 & 1/3 & 0,110 \\
+    \hline
+    Alt-3 & 1/2 & 3 & 1   & 0,309 \\
+    \hline
+    \textbf{Jumlah kolom} & 1,700 & 9,000 & 3,333 & 1,000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \caption{Normalisasi dan Uji Konsistensi --- C-3 (Waktu Pengembangan)}
+  \label{tab:norm-c3}
+  \centering
+  \begin{tabular}{| l | c | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot ($w_i$)} & \textbf{$\lambda_i$} \\
+    \hline
+    Alt-1 & 0,5882 & 0,5556 & 0,6000 & 0,5813 & 3,0064 \\
+    \hline
+    Alt-2 & 0,1176 & 0,1111 & 0,1000 & 0,1096 & 3,0012 \\
+    \hline
+    Alt-3 & 0,2941 & 0,3333 & 0,3000 & 0,3092 & 3,0035 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+$\lambda_{max} = 3{,}0037$, $CI = 0{,}0018$, $RI = 0{,}58$, $CR = 0{,}32\% < 10\%$ $\checkmark$
+
+\subsection*{E.3.4 C-4 (Biaya)}
+
+\begin{table}[H]
+  \caption{Matriks Berpasangan Alternatif --- C-4 (Biaya)}
+  \label{tab:matriks-c4}
+  \centering
+  \begin{tabular}{| l | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot lokal ($w_i$)} \\
+    \hline
+    Alt-1 & 1 & 1   & 1/2 & 0,250 \\
+    \hline
+    Alt-2 & 1 & 1   & 1/2 & 0,250 \\
+    \hline
+    Alt-3 & 2 & 2   & 1   & 0,500 \\
+    \hline
+    \textbf{Jumlah kolom} & 4,000 & 4,000 & 2,000 & 1,000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \caption{Normalisasi dan Uji Konsistensi --- C-4 (Biaya)}
+  \label{tab:norm-c4}
+  \centering
+  \begin{tabular}{| l | c | c | c | c | c |}
+    \hline
+    & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} & \textbf{Bobot ($w_i$)} & \textbf{$\lambda_i$} \\
+    \hline
+    Alt-1 & 0,2500 & 0,2500 & 0,2500 & 0,2500 & 3,0000 \\
+    \hline
+    Alt-2 & 0,2500 & 0,2500 & 0,2500 & 0,2500 & 3,0000 \\
+    \hline
+    Alt-3 & 0,5000 & 0,5000 & 0,5000 & 0,5000 & 3,0000 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+$\lambda_{max} = 3{,}0000$, $CI = 0{,}0000$, $RI = 0{,}58$, $CR = 0{,}00\% < 10\%$ $\checkmark$
+
+\section*{E.4 Rincian Perhitungan Skor Global}
+
+Skor global dihitung dengan rumus: $S(\text{Alt}_i) = \sum_j w_j \times w_{ij}$, di mana $w_j$ adalah bobot kriteria ke-$j$ dan $w_{ij}$ adalah bobot lokal alternatif $i$ pada kriteria $j$.
+
+\begin{table}[H]
+  \caption{Rincian Perhitungan Skor Global}
+  \label{tab:skor-global-detail}
+  \begin{tabularx}{\textwidth}{| l | X | X | X | X | c |}
+    \hline
+    \textbf{Alt} & \textbf{C-1 ($w$=0,288)} & \textbf{C-2 ($w$=0,489)} & \textbf{C-3 ($w$=0,162)} & \textbf{C-4 ($w$=0,060)} & \textbf{Skor Global} \\
+    \hline
+    Alt-1 & $0{,}539 \times 0{,}288 = 0{,}1552$ & $0{,}110 \times 0{,}489 = 0{,}0536$ & $0{,}581 \times 0{,}162 = 0{,}0943$ & $0{,}250 \times 0{,}060 = 0{,}0151$ & 0,318 (31,8\%) \\
+    \hline
+    Alt-2 & $0{,}297 \times 0{,}288 = 0{,}0856$ & $0{,}581 \times 0{,}489 = 0{,}2845$ & $0{,}110 \times 0{,}162 = 0{,}0178$ & $0{,}250 \times 0{,}060 = 0{,}0151$ & \textbf{0,403 (40,3\%)} \\
+    \hline
+    Alt-3 & $0{,}164 \times 0{,}288 = 0{,}0472$ & $0{,}309 \times 0{,}489 = 0{,}1513$ & $0{,}309 \times 0{,}162 = 0{,}0502$ & $0{,}500 \times 0{,}060 = 0{,}0302$ & 0,279 (27,9\%) \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+\textbf{Alternatif 2} (SWB + \textit{Backend Custom} + \textit{Dashboard}) terpilih sebagai solusi terbaik dengan skor global tertinggi 0,403 (40,3\%).

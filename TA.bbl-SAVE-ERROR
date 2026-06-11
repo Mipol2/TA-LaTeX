@@ -19,94 +19,903 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global/global}
-    \entry{BPBI}{misc}{}{}
+    \entry{ashton2009}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2710e37a7e37dd6f0a784ffd7e37e589}{%
+           family={Ashton},
+           familyi={A\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{fullhash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{fullhashraw}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{bibnamehash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{authorbibnamehash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{authornamehash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{authorfullhash}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \strng{authorfullhashraw}{2710e37a7e37dd6f0a784ffd7e37e589}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{RFID Journal}
+      \field{langid}{english}
+      \field{title}{That `Internet of Things' Thing}
+      \field{year}{2009}
+    \endentry
+    \entry{atzori2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ad2aa762c0a8006a1914b9298952e5d8}{%
+           family={Atzori},
+           familyi={A\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dbff5b960cb21204fc50b6941f42947}{%
+           family={Iera},
+           familyi={I\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04b46031fe439f48519cec659c1d7e36}{%
+           family={Morabito},
+           familyi={M\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{fullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{fullhashraw}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{bibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authorbibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authornamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authorfullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authorfullhashraw}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Computer Networks}
+      \field{langid}{english}
+      \field{number}{15}
+      \field{title}{The Internet of Things: A survey}
+      \field{volume}{54}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1016/j.comnet.2010.05.010
+      \endverb
+    \endentry
+    \entry{bahcelioglu2020}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6ae13d6d3580608a39135f42438a96fe}{%
+           family={Bahçelioğlu},
+           familyi={B\bibinitperiod},
+           given={Ecem},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23c6714e9750e0ac180bd73baba3345b}{%
+           family={Bugd̆ayc{ı}},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi Selin},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8435f7bbb59586615d5a700225719d03}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Nazl{ı}\bibnamedelima B.},
+           giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4d86ade92a94b1634ad89ee6b19a78b}{%
+           family={Şimşek},
+           familyi={Ş\bibinitperiod},
+           given={Naz},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c642246013e7b47993439ab7f665778}{%
+           family={Kaya},
+           familyi={K\bibinitperiod},
+           given={Sinan\bibnamedelima Ö.},
+           giveni={S\bibinitperiod\bibinitdelim Ö\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=015e69ba8b25aa114b1fe7faea785dcf}{%
+           family={Alp},
+           familyi={A\bibinitperiod},
+           given={Emre},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af09e8310ae2885cff47bf65ae4013bb}
+      \strng{fullhash}{17a30260b094e144a94570fcfe2f0834}
+      \strng{fullhashraw}{17a30260b094e144a94570fcfe2f0834}
+      \strng{bibnamehash}{17a30260b094e144a94570fcfe2f0834}
+      \strng{authorbibnamehash}{17a30260b094e144a94570fcfe2f0834}
+      \strng{authornamehash}{af09e8310ae2885cff47bf65ae4013bb}
+      \strng{authorfullhash}{17a30260b094e144a94570fcfe2f0834}
+      \strng{authorfullhashraw}{17a30260b094e144a94570fcfe2f0834}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Buku {Praktis} {Bahasa} {Indonesia} 1/{Kata} - {Wikisumber} bahasa {Indonesia}}
-      \field{urlday}{22}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
-      \endverb
-      \verb{url}
-      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{langid}{english}
+      \field{title}{Integrated solid waste management strategy of a large campus: A comprehensive study on METU campus, Turkey}
+      \field{volume}{265}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2020.121715
       \endverb
     \endentry
-    \entry{laudon2020}{book}{}{}
+    \entry{blackstock2016}{inproceedings}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
-           family={Laudon},
-           familyi={L\bibinitperiod},
-           given={Kenneth\bibnamedelima C.},
-           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+        {{un=0,uniquepart=base,hash=892f283a744a8d17379bfd3fa7ef768c}{%
+           family={Blackstock},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
-           family={Laudon},
+        {{un=0,uniquepart=base,hash=9be388e7ee4f45379a54e2d7c5327d78}{%
+           family={Lea},
            familyi={L\bibinitperiod},
-           given={Jane\bibnamedelima P.},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Rodger},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Jakarta}%
+      \strng{namehash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{fullhash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{fullhashraw}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{bibnamehash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{authorbibnamehash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{authornamehash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{authorfullhash}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \strng{authorfullhashraw}{9f0f8ad3fcf9cea7b36189a035ffc836}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 6th International Workshop on Web of Things}
+      \field{langid}{english}
+      \field{title}{Toward a Distributed Data Flow Platform for the Web of Things}
+      \field{year}{2016}
+    \endentry
+    \entry{clerissi2018}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6b9288c3a2635d6582abdb4807203006}{%
+           family={Clerissi},
+           familyi={C\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=195bbef5226e67489c0979057feee037}{%
+           family={Leotta},
+           familyi={L\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ee41f96d413672a97365aa556a0c8d8}{%
+           family={Ricca},
+           familyi={R\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c977e7cd1f47850ac92ef8d8f8a35ec}{%
+           family={Guerriero},
+           familyi={G\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6f6b46edfef263db4b30233521f1ade}
+      \strng{fullhash}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \strng{fullhashraw}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \strng{bibnamehash}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \strng{authorbibnamehash}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \strng{authornamehash}{d6f6b46edfef263db4b30233521f1ade}
+      \strng{authorfullhash}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \strng{authorfullhashraw}{38aa9ebf4f00dad9e89ee56ac3c1790c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE/ACM 1st International Workshop on Automated Specification Inference}
+      \field{langid}{english}
+      \field{title}{Towards Continuous Testing of IoT Compositions with Node-RED}
+      \field{year}{2018}
+    \endentry
+    \entry{espressif2021}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66589871a3c3f27bcbf3891133af42b1}{%
+           family={{Espressif Systems}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{fullhash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{fullhashraw}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{bibnamehash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{authorbibnamehash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{authornamehash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{authorfullhash}{66589871a3c3f27bcbf3891133af42b1}
+      \strng{authorfullhashraw}{66589871a3c3f27bcbf3891133af42b1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{ESP32 Datasheet}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+      \endverb
+    \endentry
+    \entry{ec2008}{legislation}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a1b813a6e85874b4c945aec2cdbea74c}{%
+           family={{European Commission}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{fullhash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{fullhashraw}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{bibnamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorbibnamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authornamehash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorfullhash}{a1b813a6e85874b4c945aec2cdbea74c}
+      \strng{authorfullhashraw}{a1b813a6e85874b4c945aec2cdbea74c}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Official Journal of the European Union}
+      \field{langid}{english}
+      \field{shortjournal}{Official Journal of the European Union}
+      \field{title}{Waste Framework Directive 2008/98/EC}
+      \field{volume}{312}
+      \field{year}{2008}
+    \endentry
+    \entry{alfuqaha2015}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8868a3dff96deabbbb427b120f6f2281}{%
+           family={Al-Fuqaha},
+           familyi={A\bibinithyphendelim F\bibinitperiod},
+           given={Ala},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05189762dbb0ad87814451304904fe83}{%
+           family={Guizani},
+           familyi={G\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9633357f28c5a519b419b285ed60085}{%
+           family={Mohammadi},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78f10d0d58461308e357653e5408e067}{%
+           family={Aledhari},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50592cee80fe18e8e597d8115457af3a}{%
+           family={Ayyash},
+           familyi={A\bibinitperiod},
+           given={Moussa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5a6233599e8a5aa0330c923abaa12bc8}
+      \strng{fullhash}{8ad1c27d8da8a64306a95163916d383f}
+      \strng{fullhashraw}{8ad1c27d8da8a64306a95163916d383f}
+      \strng{bibnamehash}{8ad1c27d8da8a64306a95163916d383f}
+      \strng{authorbibnamehash}{8ad1c27d8da8a64306a95163916d383f}
+      \strng{authornamehash}{5a6233599e8a5aa0330c923abaa12bc8}
+      \strng{authorfullhash}{8ad1c27d8da8a64306a95163916d383f}
+      \strng{authorfullhashraw}{8ad1c27d8da8a64306a95163916d383f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Internet of Things: A Survey on Enabling Technologies, Protocols, and Applications}
+      \field{volume}{17}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1109/COMST.2015.2444095
+      \endverb
+    \endentry
+    \entry{geissdoerfer2017}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ab8e4d36642d6675cf15f465fc622d9e}{%
+           family={Geissdoerfer},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8cd416af999dbab3b5c7ed4bb9a4c9f}{%
+           family={Savaget},
+           familyi={S\bibinitperiod},
+           given={Paulo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee04dc3b40a32c845c6529e0871edee8}{%
+           family={Bocken},
+           familyi={B\bibinitperiod},
+           given={Nancy\bibnamedelima M.P.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5509a1e201ce33cfb249143fc165b48f}{%
+           family={Hultink},
+           familyi={H\bibinitperiod},
+           given={Erik\bibnamedelima Jan},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c92691a44d772969bb3dd83f45e2973}
+      \strng{fullhash}{35a9d45cf10759fbbe17396a9595b8eb}
+      \strng{fullhashraw}{35a9d45cf10759fbbe17396a9595b8eb}
+      \strng{bibnamehash}{35a9d45cf10759fbbe17396a9595b8eb}
+      \strng{authorbibnamehash}{35a9d45cf10759fbbe17396a9595b8eb}
+      \strng{authornamehash}{6c92691a44d772969bb3dd83f45e2973}
+      \strng{authorfullhash}{35a9d45cf10759fbbe17396a9595b8eb}
+      \strng{authorfullhashraw}{35a9d45cf10759fbbe17396a9595b8eb}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{langid}{english}
+      \field{title}{The Circular Economy -- A new sustainability paradigm?}
+      \field{volume}{143}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/J.JCLEPRO.2016.12.048
+      \endverb
+    \endentry
+    \entry{giurea2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c8852796b005ae7757fc9a7550d3022f}{%
+           family={Giurea},
+           familyi={G\bibinitperiod},
+           given={Ramona},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=727339d5edc4deb57e3c73f9805b810e}{%
+           family={Carnevale\bibnamedelima Miino},
+           familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=665b1f059856acdd4eb57a5c2e9bfac8}{%
+           family={Torretta},
+           familyi={T\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a96750b3c6e1487846620bc65578ff8}{%
+           family={Rada},
+           familyi={R\bibinitperiod},
+           given={Elena\bibnamedelima Cristina},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59f5370c2a7052ca66f9d3925a54c3f1}
+      \strng{fullhash}{07be1789567b5e3dac2f2494f4467187}
+      \strng{fullhashraw}{07be1789567b5e3dac2f2494f4467187}
+      \strng{bibnamehash}{07be1789567b5e3dac2f2494f4467187}
+      \strng{authorbibnamehash}{07be1789567b5e3dac2f2494f4467187}
+      \strng{authornamehash}{59f5370c2a7052ca66f9d3925a54c3f1}
+      \strng{authorfullhash}{07be1789567b5e3dac2f2494f4467187}
+      \strng{authorfullhashraw}{07be1789567b5e3dac2f2494f4467187}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Frontiers in Environmental Science}
+      \field{langid}{english}
+      \field{title}{Approaching sustainability and circularity along waste management systems in universities: an overview and proposal of good practices}
+      \field{volume}{12}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3389/fenvs.2024.1363024
+      \endverb
+    \endentry
+    \entry{itu2012}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7ddfb261130d2af8916054bd686f0614}{%
+           family={{International Telecommunication Union}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ITU-T}%
+      }
+      \strng{namehash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{fullhash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{fullhashraw}{7ddfb261130d2af8916054bd686f0614}
+      \strng{bibnamehash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{authorbibnamehash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{authornamehash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{authorfullhash}{7ddfb261130d2af8916054bd686f0614}
+      \strng{authorfullhashraw}{7ddfb261130d2af8916054bd686f0614}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{Y.2060}
+      \field{title}{Overview of the Internet of Things}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{iotec2014}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf82c17c4b5952241647f23a5e115f32}{%
+           family={{Internet of Things European Research Cluster}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{fullhash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{fullhashraw}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{bibnamehash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{authorbibnamehash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{authornamehash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{authorfullhash}{cf82c17c4b5952241647f23a5e115f32}
+      \strng{authorfullhashraw}{cf82c17c4b5952241647f23a5e115f32}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{IoT Semantic Interoperability: Research Challenges, Best Practices, Recommendations and Next Steps}
+      \field{year}{2014}
+    \endentry
+    \entry{kaza2018}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=10160f41e48b7ecf7233cf4a7bc1b6cc}{%
+           family={Kaza},
+           familyi={K\bibinitperiod},
+           given={Silpa},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1e1b97ce092670e66f2d0cffcf425dd}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b53b61adfe1e09e19908b2ebf36df379}{%
+           family={Bhada-Tata},
+           familyi={B\bibinithyphendelim T\bibinitperiod},
+           given={Perinaz},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28a9a494133a7d3f36dcede2bee0baa7}{%
+           family={Van\bibnamedelima Woerden},
+           familyi={V\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Pearson Education}%
+        {World Bank}%
       }
-      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{fullhashraw}{a99ce1573b42821945806f73f25db5a4}
-      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
-      \strng{authorfullhashraw}{a99ce1573b42821945806f73f25db5a4}
+      \strng{namehash}{b4b233a7f35d274f38b58b9a9c597237}
+      \strng{fullhash}{bf077a8f669f06d717cf12cbb432f777}
+      \strng{fullhashraw}{bf077a8f669f06d717cf12cbb432f777}
+      \strng{bibnamehash}{bf077a8f669f06d717cf12cbb432f777}
+      \strng{authorbibnamehash}{bf077a8f669f06d717cf12cbb432f777}
+      \strng{authornamehash}{b4b233a7f35d274f38b58b9a9c597237}
+      \strng{authorfullhash}{bf077a8f669f06d717cf12cbb432f777}
+      \strng{authorfullhashraw}{bf077a8f669f06d717cf12cbb432f777}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{What a Waste 2.0: A Global Snapshot of Solid Waste Management to 2050}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1596/978-1-4648-1329-0
+      \endverb
+    \endentry
+    \entry{latifah2021}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4206b903bb7852c2e0a15c89a55ec57c}{%
+           family={Latifah},
+           familyi={L\bibinitperiod},
+           given={Annisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{fullhash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{fullhashraw}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{bibnamehash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{authorbibnamehash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{authornamehash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{authorfullhash}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \strng{authorfullhashraw}{bd3bed1aa31b1cfddfe4dbb083684e44}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Jurnal Informatika}
+      \field{langid}{english}
+      \field{title}{Automated Trash Volume Monitoring Based on Internet of Things}
+      \field{year}{2021}
+    \endentry
+    \entry{LCI2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=682c3e326b77f405c709b7c0401b891a}{%
+           family={{Layanan Cerdas Indonesia}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{fullhash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{fullhashraw}{682c3e326b77f405c709b7c0401b891a}
+      \strng{bibnamehash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{authorbibnamehash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{authornamehash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{authorfullhash}{682c3e326b77f405c709b7c0401b891a}
+      \strng{authorfullhashraw}{682c3e326b77f405c709b7c0401b891a}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Sistem Informasi Manajemen}
-      \field{year}{2020}
+      \field{langid}{indonesian}
+      \field{title}{Smart Waste Bin}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.lci.co.id
+      \endverb
+      \verb{url}
+      \verb https://www.lci.co.id
+      \endverb
     \endentry
-    \entry{pressman2019}{book}{}{}
+    \entry{ooko2019}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
-           family={Pressman},
-           familyi={P\bibinitperiod},
-           given={Roger\bibnamedelima S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+        {{un=0,uniquepart=base,hash=c9c88806623cd1eaf55ffa1304bde1ce}{%
+           family={Ooko},
+           familyi={O\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Yogyakarta}%
+      \strng{namehash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{fullhash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{fullhashraw}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{bibnamehash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{authorbibnamehash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{authornamehash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{authorfullhash}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \strng{authorfullhashraw}{c9c88806623cd1eaf55ffa1304bde1ce}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International Journal of Engineering Research}
+      \field{langid}{english}
+      \field{title}{Comparative Analysis of Microcontroller Platforms for IoT Applications}
+      \field{year}{2019}
+    \endentry
+    \entry{openjs2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=263642944f6c498301458458c276f5f3}{%
+           family={{OpenJS Foundation}},
+           familyi={O\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {McGraw-Hill Education}%
+      \strng{namehash}{263642944f6c498301458458c276f5f3}
+      \strng{fullhash}{263642944f6c498301458458c276f5f3}
+      \strng{fullhashraw}{263642944f6c498301458458c276f5f3}
+      \strng{bibnamehash}{263642944f6c498301458458c276f5f3}
+      \strng{authorbibnamehash}{263642944f6c498301458458c276f5f3}
+      \strng{authornamehash}{263642944f6c498301458458c276f5f3}
+      \strng{authorfullhash}{263642944f6c498301458458c276f5f3}
+      \strng{authorfullhashraw}{263642944f6c498301458458c276f5f3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Node-RED: Low-code programming for event-driven applications}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nodered.org
+      \endverb
+      \verb{url}
+      \verb https://nodered.org
+      \endverb
+    \endentry
+    \entry{pires2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c3856b1bb9326983ca25a2a261e1b5b6}{%
+           family={Pires},
+           familyi={P\bibinitperiod},
+           given={Luis\bibnamedelima Miguel},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8061c646dd64c3748f9447bcbfe6944b}{%
+           family={Figueiredo},
+           familyi={F\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7a2496f1c84a1e99f0474f1f8f9aea1}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c962a742ca429d1e76a4048dedd7634}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{fullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
-      \strng{authorfullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{namehash}{1daa6106c60d19ea64300c4892cd3dba}
+      \strng{fullhash}{b8d2c583870608c9ccd260724af15fff}
+      \strng{fullhashraw}{b8d2c583870608c9ccd260724af15fff}
+      \strng{bibnamehash}{b8d2c583870608c9ccd260724af15fff}
+      \strng{authorbibnamehash}{b8d2c583870608c9ccd260724af15fff}
+      \strng{authornamehash}{1daa6106c60d19ea64300c4892cd3dba}
+      \strng{authorfullhash}{b8d2c583870608c9ccd260724af15fff}
+      \strng{authorfullhashraw}{b8d2c583870608c9ccd260724af15fff}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{number}{7}
+      \field{title}{IoT-Enabled Real-Time Monitoring of Urban Garbage Levels Using Time-of-Flight Sensing Technology}
+      \field{volume}{25}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3390/s25072152
+      \endverb
+    \endentry
+    \entry{roadrunner2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6cc110b220b8543a28b27e394ed2c9d1}{%
+           family={{RoadRunner}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{fullhash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{fullhashraw}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{bibnamehash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{authorbibnamehash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{authornamehash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{authorfullhash}{6cc110b220b8543a28b27e394ed2c9d1}
+      \strng{authorfullhashraw}{6cc110b220b8543a28b27e394ed2c9d1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
-      \field{year}{2019}
+      \field{langid}{english}
+      \field{title}{How Colleges and Universities Can Overcome 3 Waste Challenges}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.roadrunnerwm.com/blog/how-colleges-and-universities-can-overcome-3-waste-challenges
+      \endverb
+      \verb{url}
+      \verb https://www.roadrunnerwm.com/blog/how-colleges-and-universities-can-overcome-3-waste-challenges
+      \endverb
+    \endentry
+    \entry{rodriguez2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c62314b991a8c17531597cd09fe8e444}{%
+           family={Rodríguez-Guerreiro},
+           familyi={R\bibinithyphendelim G\bibinitperiod},
+           given={María-Jesús},
+           giveni={M\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6ffd11e280206cc1228c51073c57319}{%
+           family={Torrijos},
+           familyi={T\bibinitperiod},
+           given={Verónica},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ef1b197eec96cf839fdcbc3e9f55c76}{%
+           family={Soto},
+           familyi={S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{fullhash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{fullhashraw}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{bibnamehash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{authorbibnamehash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{authornamehash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{authorfullhash}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \strng{authorfullhashraw}{b2d33cc0a9ba3373769418f7766f6f7d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Environments}
+      \field{langid}{english}
+      \field{number}{12}
+      \field{title}{A Review of Waste Management in Higher Education Institutions: The Road to Zero Waste and Sustainability}
+      \field{volume}{11}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3390/environments11120293
+      \endverb
+    \endentry
+    \entry{sensoneo2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=31504068738b31f1461af85d02550b14}{%
+           family={{Sensoneo}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31504068738b31f1461af85d02550b14}
+      \strng{fullhash}{31504068738b31f1461af85d02550b14}
+      \strng{fullhashraw}{31504068738b31f1461af85d02550b14}
+      \strng{bibnamehash}{31504068738b31f1461af85d02550b14}
+      \strng{authorbibnamehash}{31504068738b31f1461af85d02550b14}
+      \strng{authornamehash}{31504068738b31f1461af85d02550b14}
+      \strng{authorfullhash}{31504068738b31f1461af85d02550b14}
+      \strng{authorfullhashraw}{31504068738b31f1461af85d02550b14}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{5 Strategies to Transform Waste Management on Campuses}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sensoneo.com/waste-library/waste-management-campus/
+      \endverb
+      \verb{url}
+      \verb https://sensoneo.com/waste-library/waste-management-campus/
+      \endverb
+    \endentry
+    \entry{sethi2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=639d145fa302370f08079e884acb051e}{%
+           family={Sethi},
+           familyi={S\bibinitperiod},
+           given={Pallavi},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e818d8040d330778d932b7b9bdc40a1}{%
+           family={Sarangi},
+           familyi={S\bibinitperiod},
+           given={Smruti\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{fullhash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{fullhashraw}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{bibnamehash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{authorbibnamehash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{authornamehash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{authorfullhash}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \strng{authorfullhashraw}{c60e22bc75c2a462d1f2f20d3c99cf26}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Electrical and Computer Engineering}
+      \field{langid}{english}
+      \field{title}{Internet of Things: Architectures, Protocols, and Applications}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1155/2017/9324035
+      \endverb
+    \endentry
+    \entry{un2015}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3cc54e2c0d69c1b76b4d49edb22dd6d1}{%
+           family={{United Nations}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{fullhash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{fullhashraw}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{bibnamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authorbibnamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authornamehash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authorfullhash}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \strng{authorfullhashraw}{3cc54e2c0d69c1b76b4d49edb22dd6d1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Transforming our world: the 2030 Agenda for Sustainable Development}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sdgs.un.org/2030agenda
+      \endverb
+      \verb{url}
+      \verb https://sdgs.un.org/2030agenda
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

@@ -1,112 +1,164 @@
-\cleardoublepage % memastikan bab baru dimulai di halaman ganjil (kanan)
+\cleardoublepage
 \chapter{PENDAHULUAN}
 \label{chap:pendahuluan}
+
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Subbab ini menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di fasilitas kesehatan daerah pedesaan saat ini dan masalah yang dihadapi, berdasarkan hasil survei atau wawancara dengan pihak terkait.
-\item	Urgensi atau pentingnya penyelesaian masalah tersebut, misalnya dampak negatif yang ditimbulkan jika masalah tersebut tidak diselesaikan.
-\item	Berbagai solusi yang telah diterapkan maupun solusi yang memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut, berdasarkan hasil studi literatur, wawancara dengan pihak terkait, atau kunjungan lapangan.
-\item   Kelemahan atau kekurangan dari solusi yang telah diterapkan atau yang memungkinkan untuk diterapkan tersebut, yang menjadi dasar pemikiran dalam merumuskan masalah tugas akhir.
-\end{enumerate}
-Latar belakang dapat ditulis dalam 2-3 halaman. Penulisan latar belakang masalah yang baik akan mengantarkan pembaca kepada pemahaman yang jelas tentang topik yang akan dibahas, 
-sehingga pembaca dapat mengikuti pembahasan pada subbab-subbab berikutnya dengan baik. Oleh karena itu, 
-penulis diharapkan melakukan investigasi yang mendalam untuk mengumpulkan fakta-fakta yang relevan dengan topik yang dibahas, 
-baik melalui studi literatur, wawancara dengan pihak terkait, maupun kunjungan lapangan. Hasil studi ini dijelaskan secara \emph{ringkas} di dalam subbab ini.
-Penjelasan hasil studi literatur yang komprehensif dapat dijabarkan di Bab II Studi Literatur secara sistematis.
 
-Dalam menulis latar belakang, hindari penulisan yang bersifat terlalu umum atau terlalu luas cakupannya sehingga sulit untuk dihubungkan dengan topik yang dibahas dalam tugas akhir,
-seperti:
-\begin{enumerate}
-    \item "Pentingnya teknologi informasi dalam kehidupan manusia."
-    \item "Perkembangan pesat teknologi \emph{artificial intelligence} di era digital."
-    \item "Tantangan dalam pengelolaan data besar (\emph{big data}) di berbagai sektor industri."
-    \item "Peran teknologi informasi dalam meningkatkan kualitas layanan kesehatan."
-\end{enumerate}
-Penulisan yang terlalu umum atau luas cakupannya akan menyulitkan penulis dalam merumuskan masalah, tujuan, metodologi, dan evaluasi tugas akhir.
+Pertumbuhan populasi global dan urbanisasi yang pesat telah meningkatkan volume produksi sampah secara signifikan. Menurut World Bank, produksi sampah global diproyeksikan mencapai 3,4 miliar ton pada tahun 2050, meningkat dari 2,01 miliar ton pada tahun 2016 \autocite{kaza2018}.
+Peningkatan volume sampah ini menimbulkan tantangan kompleks dalam pengelolaan limbah yang efisien dan berkelanjutan.
 
-Jika ada referensi yang digunakan dalam penulisan latar belakang, cantumkan referensi tersebut dengan benar menggunakan \texttt{biblatex} sesuai dengan contoh penulisan kutipan dan daftar pustaka yang telah disediakan dalam template ini.
-Sebagai contoh, pada paragraf berikut ini terdapat kutipan dari dua referensi yang berbeda \autocite{laudon2020, pressman2019}. 
-Ada dua format penulisan sitasi yang dapat digunakan, yaitu format naratif dan format parentetik.
-Contoh penulisan kutipan dengan format naratif adalah sebagai berikut:
-\begin{displayquote}
-Menurut \textcite{laudon2020}, sistem informasi adalah kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi.
-\end{displayquote}
-Contoh penulisan kutipan dengan format parentetik adalah sebagai berikut:
-\begin{displayquote}
-    Sistem informasi merupakan kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi \autocite{laudon2020}.
-\end{displayquote}
+Salah satu tantangan utama dalam pengelolaan sampah adalah ketiadaan data terstruktur mengenai pola pembuangan. Pertanyaan seperti kapan terjadi puncak pembuangan, apakah ada perbedaan pola antara hari kerja dan akhir pekan, serta jenis sampah apa yang mendominasi, menjadi sulit dijawab tanpa sistem \textit{monitoring} yang memadai. Metode konvensional seperti pengecekan visual atau pencatatan manual memiliki keterbatasan dalam hal konsistensi, akurasi, dan cakupan waktu, sehingga pengambilan keputusan sering dilakukan tanpa basis data.
+
+Perkembangan teknologi \textit{Internet of Things} (IoT) membuka peluang untuk mengatasi permasalahan tersebut. Sensor yang dipasang pada tempat sampah dapat memantau tingkat kepenuhan secara periodik, menyimpan data ke basis data, dan menghasilkan \textit{insight} mengenai pola pembuangan. Di Indonesia, salah satu contoh perangkat \textit{Smart Waste Bin} yang telah dikembangkan adalah produk dari PT Layanan Cerdas Indonesia (LCI), yang telah diimplementasikan di beberapa kota untuk pemantauan kapasitas kontainer sampah \autocite{LCI2024}. Namun, perangkat \textit{Smart Waste Bin} yang tersedia secara komersial umumnya dirancang untuk skala perkotaan, sehingga konfigurasi perangkat termasuk \textit{firmware} belum tentu sesuai untuk lingkungan yang lebih kecil seperti kampus, di mana dinamika pembuangan sampah berubah dalam hitungan jam dan memerlukan resolusi data yang lebih tinggi.
+
+Berdasarkan permasalahan tersebut, penelitian ini bertujuan untuk mengembangkan sistem \textit{Smart Waste Bin} berbasis IoT yang disesuaikan dengan kebutuhan lingkungan kampus, baik dari sisi perangkat lunak sistem maupun \textit{firmware} perangkat. Sistem yang dibangun kemudian diuji di Gedung Labtek VIII ITB untuk mengumpulkan data dan menganalisis pola pembuangan sampah yang dihasilkan.
+
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
-\begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
-\end{enumerate}
-Hindari penulisan rumusan masalah yang terlalu umum atau terlalu luas cakupannya sehingga sulit untuk diselesaikan dalam jangka waktu pelaksanaan tugas akhir, 
-seperti:
-\begin{enumerate}
-    \item "Bagaimana cara meningkatkan kualitas layanan kesehatan di Indonesia?"
-    \item "Bagaimana cara mengoptimalkan penggunaan energi di perkotaan?"
-    \item "Bagaimana cara mengurangi kemacetan lalu lintas di kota besar?"
-    \item "Bagaimana cara membangun sistem irigasi sawah menggunakan \emph{AI}?"
-\end{enumerate}
-Rumusan masalah yang baik dan spesifik akan memudahkan penulis dalam menentukan tujuan, metodologi, dan evaluasi tugas akhir.
 
-Selain itu, hindari menuliskan pertanyaan yang merupakan sebuah keniscayaan yang harus dijawab atau dikerjakan 
-dalam pelaksanaan tugas akhir, seperti:
+Berdasarkan latar belakang dan permasalahan di atas, penelitian ini merumuskan pertanyaan penelitian sebagai berikut:
+
 \begin{enumerate}
-    \item "Bagaimana cara melakukan analisis kebutuhan sistem informasi rumah sakit?"
-    \item "Bagaimana cara merancang basis data untuk aplikasi X?"
-    \item "Bagaimana cara mengimplementasikan \textit{large language model} untuk deteksi penyakit Y?"
-    \item "Bagaimana cara menguji sistem penyiraman tanaman berbasis IoT yang akan dibuat?"
+    \item Bagaimana rancangan dan implementasi sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur?
+
+    \item Pola pembuangan sampah apa yang dapat diidentifikasi berdasarkan data yang dikumpulkan oleh sistem, dan seberapa valid pola tersebut terhadap observasi lapangan?
 \end{enumerate}
-Kegiatan analisis, perancangan, implementasi, dan pengujian merupakan tahapan yang harus dilakukan dalam pelaksanaan tugas akhir,
-sehingga pertanyaan-pertanyaan tersebut tidak perlu dimasukkan ke dalam rumusan masalah.
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan \textbf{tujuan utama} dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. 
-Fokuskan isi subbab ini pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan 
-terkait dengan penyelesaian persoalan pada rumusan masalah. 
-Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan 
-di akhir pelaksanaan tugas akhir. Oleh karena itu, tuliskan juga \emph{kriteria keberhasilan} tugas akhir ini.
+
+Penelitian ini bertujuan untuk merancang dan mengimplementasikan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things} untuk memahami pola pembuangan sampah di Gedung Labtek VIII ITB. Secara detil, tujuan penelitian ini adalah:
+
+\begin{enumerate}
+    \item Merancang arsitektur dan mengimplementasikan sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur.
+
+    \item Mengidentifikasi pola pembuangan sampah berdasarkan data yang dikumpulkan oleh sistem dan memvalidasinya melalui observasi lapangan.
+\end{enumerate}
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
 
-% --- Metodologi Pengerjaan TA ---
-\section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. 
-Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. 
-Berikut adalah contoh metodologi pengerjaan tugas akhir yang dapat diikuti, yaitu meliputi tahapan, langkah-langkah, 
-atau tata cara melakukan:
+Penelitian ini memiliki batasan-batasan berikut:
+
 \begin{enumerate}
-\item	Investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
-\item   Analisis kebutuhan pengguna dan sistem berdasarkan hasil investigasi dan studi literatur. Jelaskan metode yang digunakan untuk melakukan analisis kebutuhan, misalnya wawancara, survei, observasi, atau studi kasus. Hasil analisis kebutuhan ini akan dijelaskan secara rinci di Bab III Analisis.
-\item   Perancangan solusi berdasarkan hasil analisis kebutuhan. Jelaskan metode yang digunakan untuk melakukan perancangan, misalnya menggunakan diagram UML, ERD, atau prototyping. Hasil perancangan ini akan dijelaskan secara rinci di Bab IV Perancangan.
-\item   Implementasi solusi berdasarkan hasil perancangan. Jelaskan teknologi, bahasa pemrograman, atau alat yang digunakan untuk mengimplementasikan solusi. Hasil implementasi ini akan dijelaskan secara rinci di Bab V Implementasi.
-\item   Evaluasi terhadap solusi yang telah diimplementasikan. Jelaskan metode pengujian, metrik evaluasi, atau studi kasus yang digunakan untuk menilai keberhasilan solusi. Hasil evaluasi ini akan dijelaskan secara rinci di Bab VI Evaluasi.
-\item   Penarikan kesimpulan dan saran berdasarkan hasil pelaksanaan tugas akhir. Hasil kesimpulan dan saran ini akan dijelaskan secara rinci di Bab VII Kesimpulan dan Saran. 
-\vfill % memaksa konten di atas untuk berada di bagian atas halaman dan menyisakan ruang kosong di bawah konten ini akibat berakhirnya section ini
+    \item Pengujian lapangan dari sistem yang dibangun dilakukan di Lantai 4 area depan Laboratorium IoT, Gedung Labtek VIII Institut Teknologi Bandung.
+
+    \item Sistem menggunakan 3 unit perangkat \textit{Smart Waste Bin} yang masing-masing ditempatkan berdasarkan jenis sampah: organik, anorganik, dan residu.
+
+    \item Perangkat IoT yang digunakan merupakan modifikasi dari perangkat \textit{Smart Waste Bin} pihak ketiga yang disesuaikan untuk kebutuhan lingkungan kampus.
+
+    \item Interval pengumpulan data ditetapkan $\pm$2,5 jam berdasarkan pertimbangan kapasitas daya baterai perangkat.
+
+    \item Klasifikasi jenis sampah mengacu pada penempatan fisik tempat sampah (organik, anorganik, residu), bukan melalui sensor klasifikasi otomatis.
+
+    \item Analisis pola pembuangan sampah mencakup pola temporal (distribusi jam dan hari), tren volume, serta komposisi jenis sampah berdasarkan data yang dikumpulkan sistem.
+\end{enumerate}
+
+% --- Metodologi ---
+\section{Metodologi}
+
+Pelaksanaan tugas akhir ini didukung oleh studi literatur dan menggunakan metodologi \textit{Design Science Research} (DSR) untuk pengembangan sistem. Studi literatur dilakukan untuk membangun fondasi teoritis dan memahami teknologi yang relevan, sedangkan DSR digunakan sebagai kerangka kerja pengembangan dan evaluasi artefak yang berfokus pada pemenuhan kebutuhan (\textit{requirement}) yang telah ditetapkan.
+
+\subsection{Studi Literatur}
+
+Studi literatur dilakukan untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, mencakup teori, konsep, teknologi, dan penelitian terdahulu yang telah dilakukan oleh peneliti lain. Studi literatur ini menjadi fondasi dalam pengembangan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things}.
+
+Aktivitas yang dilakukan pada tahap studi literatur meliputi:
+
+\begin{enumerate}
+    \item \textbf{Pencarian Literatur}
+
+    Melakukan pencarian literatur dari berbagai sumber akademik dan ilmiah, seperti jurnal internasional, konferensi, artikel ilmiah, buku, dan dokumentasi teknis. Pencarian dilakukan menggunakan basis data akademik seperti IEEE \textit{Xplore}, \textit{Google Scholar}, \textit{ScienceDirect}, dan \textit{Springer}. Kata kunci yang digunakan dalam pencarian mencakup: ``\textit{smart waste bin}'', ``IoT \textit{waste management}'', ``\textit{waste pattern analysis}'', ``\textit{smart waste monitoring}'', ``\textit{sensor-based waste management}'', dan kombinasi kata kunci lainnya yang relevan.
+
+    \item \textbf{Pengelompokan Literatur}
+
+    Literatur yang diperoleh dikelompokkan berdasarkan kategori-kategori seperti konsep dan teori dasar tentang \textit{Internet of Things} (IoT), teknologi sensor dan perangkat keras untuk \textit{monitoring} sampah, arsitektur sistem dan integrasi IoT, penelitian terdahulu tentang \textit{smart waste bin} dan pengelolaan sampah berbasis teknologi, dan metode analisis data temporal.
+
+    \item \textbf{Penapisan dan Evaluasi Literatur}
+
+    Literatur yang telah dikumpulkan disaring berdasarkan relevansi, kualitas publikasi, dan kebaruan informasi.
+
+    \item \textbf{Sintesis dan Dokumentasi}
+
+    Hasil studi literatur disintesis untuk mengidentifikasi \textit{gap} penelitian, \textit{best practices}, dan pendekatan yang dapat diadopsi atau dikembangkan lebih lanjut. Seluruh proses studi literatur didokumentasikan dan hasil sintesisnya akan dijelaskan secara sistematis di Bab II Studi Literatur.
+\end{enumerate}
+
+\subsection{Metodologi \textit{Design Science Research}}
+
+Pengembangan sistem \textit{Smart Waste Bin} menggunakan metodologi \textit{Design Science Research} (DSR) sebagaimana dirumuskan oleh Peffers dkk. \autocite{peffers2007}. Metodologi ini dipilih karena penelitian ini berorientasi pada pembangunan dan evaluasi sebuah artefak, yaitu sistem \textit{Smart Waste Bin}, bukan pada riset perilaku pengguna. DSR menyediakan kerangka kerja yang sistematis dan teruji untuk penelitian yang menghasilkan artefak teknologi, dengan validasi yang difokuskan pada pemenuhan kebutuhan (\textit{requirement}) yang telah ditetapkan. DSR mencakup enam fase utama, yaitu identifikasi masalah dan motivasi, definisi tujuan solusi, perancangan dan pengembangan, demonstrasi, evaluasi, dan komunikasi. Berikut adalah penjelasan untuk setiap fase yang diterapkan secara spesifik pada penelitian ini:
+
+\begin{enumerate}
+    \item \textbf{Identifikasi Masalah dan Motivasi}
+
+    Fase ini bertujuan untuk mengidentifikasi permasalahan yang melatarbelakangi penelitian beserta motivasinya. Aktivitas pada fase ini meliputi:
+    \begin{enumerate}[a.]
+        \item Mengidentifikasi permasalahan pengelolaan sampah yang masih bergantung pada penjadwalan tetap tanpa mempertimbangkan kondisi aktual kepenuhan tempat sampah, serta ketiadaan data dan informasi kondisi sampah yang terstruktur.
+        \item Melakukan pengamatan langsung terhadap kondisi sistem pembuangan yang ada untuk memperkuat pemahaman terhadap permasalahan.
+    \end{enumerate}
+
+    \item \textbf{Definisi Tujuan Solusi}
+
+    Fase ini bertujuan untuk merumuskan tujuan solusi berdasarkan permasalahan yang telah diidentifikasi, yang dinyatakan dalam bentuk kebutuhan sistem. Aktivitas pada fase ini meliputi:
+    \begin{enumerate}[a.]
+        \item Mengolah hasil identifikasi masalah untuk merumuskan \textit{gap} dan kebutuhan akan sistem pengumpulan data yang terstruktur.
+        \item Merumuskan spesifikasi kebutuhan sistem, yang mencakup pendefinisian Kebutuhan Fungsional (pengumpulan data, penyimpanan, dan visualisasi pola) serta Kebutuhan Nonfungsional (performa dan reliabilitas). Spesifikasi kebutuhan inilah yang menjadi acuan utama dalam perancangan dan evaluasi.
+    \end{enumerate}
+
+    \item \textbf{Perancangan dan Pengembangan}
+
+    Fase ini bertujuan untuk merancang dan membangun artefak sistem \textit{Smart Waste Bin} berdasarkan kebutuhan yang telah ditetapkan. Aktivitas pada fase ini meliputi:
+    \begin{enumerate}[a.]
+        \item Mengeksplorasi berbagai alternatif arsitektur dan solusi teknologi, serta memilih alternatif terbaik menggunakan metode pengambilan keputusan yang terukur berdasarkan kriteria kelayakan teknis, kesesuaian tujuan, waktu, dan biaya.
+        \item Merancang dan mengimplementasikan adaptasi pada sisi \textit{firmware} perangkat keras bawaan untuk menyesuaikannya dengan karakteristik lingkungan kampus dan mengoptimalkan keandalan operasional.
+        \item Mengembangkan sistem penerimaan, transmisi, dan penyimpanan data pembuangan sampah sesuai dengan arsitektur yang terpilih.
+        \item Mengintegrasikan seluruh komponen perangkat keras dan perangkat lunak sehingga membentuk satu kesatuan sistem yang dapat beroperasi secara otomatis.
+    \end{enumerate}
+
+    \item \textbf{Demonstrasi}
+
+    Fase ini bertujuan untuk menunjukkan bahwa artefak yang telah dibangun dapat digunakan untuk menyelesaikan permasalahan, melalui penerapan di lapangan. Aktivitas pada fase ini meliputi:
+    \begin{enumerate}[a.]
+        \item Menempatkan unit \textit{smart waste bin} pada lokasi yang telah ditentukan untuk mengumpulkan data pembuangan sampah dalam periode tertentu.
+        \item Melakukan \textit{monitoring} terhadap operasional sistem selama periode pengumpulan data untuk memastikan sistem merekam dan mentransmisikan data dengan konsisten.
+    \end{enumerate}
+
+    \item \textbf{Evaluasi}
+
+    Fase ini bertujuan untuk mengukur seberapa baik artefak memenuhi kebutuhan yang telah ditetapkan pada fase definisi tujuan. Aktivitas pada fase ini meliputi:
+    \begin{enumerate}[a.]
+        \item Mengevaluasi pemenuhan Kebutuhan Fungsional dan Nonfungsional sistem berdasarkan data hasil demonstrasi.
+        \item Menganalisis data yang terkumpul menggunakan analisis statistik deskriptif dan analisis temporal untuk memahami pola pembuangan sampah di lokasi penelitian.
+        \item Mengevaluasi efektivitas adaptasi \textit{firmware} yang telah dikembangkan terhadap keandalan dan kualitas data sistem.
+    \end{enumerate}
+
+    \item \textbf{Komunikasi}
+
+    Fase ini bertujuan untuk mengomunikasikan permasalahan, artefak yang dihasilkan, dan hasil evaluasinya. Aktivitas pada fase ini berupa penyusunan dokumentasi penelitian secara sistematis dalam bentuk laporan tugas akhir, yang mencakup seluruh proses mulai dari identifikasi masalah hingga kesimpulan.
+    \vfill
 \end{enumerate}
 
 % --- Sistematika Penulisan ---
 \section{Sistematika Penulisan}
-Tuliskan gambaran umum isi dari setiap bab yang ada dalam laporan tugas akhir. Sistematika penulisan ini memberikan panduan bagi pembaca tentang struktur dan alur pembahasan dalam laporan tugas akhir. Berikut adalah contoh sistematika penulisan yang dapat diikuti:
+
+Laporan tugas akhir ini disusun dengan sistematika penulisan sebagai berikut:
+
 \begin{enumerate}
-\item	Bab I Pendahuluan: Berisi latar belakang, rumusan masalah, tujuan, batasan masalah, metodologi, dan sistematika penulisan laporan tugas akhir       .
-\item	Bab II Studi Literatur: Berisi kajian pustaka yang relevan dengan topik tugas akhir, termasuk teori-teori, konsep-konsep, dan hasil-hasil penelitian sebelumnya yang                mendukung pelaksanaan tugas akhir.
-\item	Bab III Analisis: Berisi penjelasan tentang analisis masalah dan kebutuhan pengguna serta berbagai alternatif solusinya.
-\item   Bab IV Perancangan: Berisi penjelasan tentang perancangan solusi yang diusulkan, misalnya arsitektur sistem, desain basis data, antarmuka pengguna, dan sebagainya.
-\item	Bab V Implementasi: Berisi penjelasan tentang proses implementasi solusi yang diusulkan, termasuk langkah-langkah yang diambil, teknologi yang digunakan, dan hasil yang diperoleh.
-\item	Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap solusi yang diimplementasikan, termasuk metode pengujian, hal-hal yang disiapkan sebelum pengujian, hasil pengujian, dan penilaian kinerja.                  
-\item   Bab VII Kesimpulan dan Saran: Berisi kesimpulan dari hasil pelaksanaan tugas akhir dan saran untuk pengembangan lebih lanjut.
-\item   Daftar Pustaka: Berisi daftar referensi yang digunakan dalam penyusunan laporan tugas akhir.
-\item   Lampiran: Berisi dokumen-dokumen pendukung seperti kode program, data lengkap hasil pengujian, rekaman wawancara, dan lain-lain. 
+    \item Bab I Pendahuluan: Berisi latar belakang, rumusan masalah, tujuan, batasan masalah, metodologi, dan sistematika penulisan laporan tugas akhir.
+
+    \item Bab II Studi Literatur: Berisi kajian pustaka yang relevan dengan topik tugas akhir, mencakup teori dan konsep dasar \textit{Internet of Things}, teknologi sensor dan perangkat keras untuk \textit{monitoring} sampah, arsitektur sistem IoT, serta penelitian terdahulu yang berkaitan dengan \textit{smart waste bin} dan pengelolaan sampah berbasis teknologi.
+
+    \item Bab III Analisis: Berisi penjelasan tentang analisis kebutuhan pengguna dan sistem, termasuk pendefinisian kebutuhan fungsional dan nonfungsional sistem \textit{Smart Waste Bin}.
+
+    \item Bab IV Perancangan: Berisi penjelasan tentang perancangan solusi yang diusulkan, mencakup arsitektur sistem IoT 4-\textit{layer}, perancangan perangkat keras, perangkat lunak, dan \textit{firmware}.
+
+    \item Bab V Implementasi: Berisi penjelasan tentang proses implementasi sistem, termasuk pengembangan \textit{firmware}, integrasi komponen, dan pengembangan \textit{dashboard} visualisasi data.
+
+    \item Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap sistem yang diimplementasikan, mencakup pengujian kebutuhan fungsional dan nonfungsional, analisis pola pembuangan sampah, serta evaluasi peningkatan \textit{firmware}.
+
+    \item Bab VII Kesimpulan dan Saran: Berisi kesimpulan dari hasil pelaksanaan tugas akhir dan saran untuk pengembangan lebih lanjut.
+
+    \item Daftar Pustaka: Berisi daftar referensi yang digunakan dalam penyusunan laporan tugas akhir.
+
+    \item Lampiran: Berisi dokumen-dokumen pendukung seperti data lengkap hasil pengujian dan dokumentasi lapangan.
 \end{enumerate}
