@@ -5,14 +5,14 @@
 \chapter{EVALUASI}
 \label{chap:evaluasi}
 
-Bab ini merupakan realisasi dari tahap \textit{Testing} dalam metodologi \textit{Design Thinking} yang telah diuraikan pada Bab I. Setelah sistem \textit{Smart Waste Bin} dirancang dan diimplementasikan pada Bab IV dan V, tahap selanjutnya adalah mengevaluasi kinerja sistem secara menyeluruh dan menganalisis data yang dikumpulkan untuk menjawab rumusan masalah penelitian.
+Bab ini merupakan pelaksanaan fase demonstrasi dan evaluasi dalam metodologi \textit{Design Science Research} yang telah diuraikan pada Bab I. Setelah sistem pemantauan sampah berbasis \textit{Internet of Things} dirancang dan diimplementasikan pada Bab IV dan V, tahap selanjutnya adalah mendemonstrasikan sistem di lapangan, mengevaluasi pemenuhannya terhadap kebutuhan yang telah ditetapkan, dan menganalisis data yang dikumpulkan untuk menjawab rumusan masalah penelitian.
 
 % ============================================================
 \section{Metode Evaluasi}
 \label{sec:metode-evaluasi}
 % ============================================================
 
-Evaluasi sistem \textit{Smart Waste Bin} dilakukan secara sistematis melalui beberapa skenario yang masing-masing dirancang untuk menjawab rumusan masalah yang telah ditetapkan pada Bab I. Sebelum menjelaskan skenario evaluasi, subbab ini terlebih dahulu mendeskripsikan konfigurasi sistem dan lingkungan pengujian yang digunakan selama periode evaluasi.
+Evaluasi sistem pemantauan sampah berbasis \textit{Internet of Things} dilakukan secara sistematis melalui beberapa skenario yang masing-masing dirancang untuk menjawab rumusan masalah yang telah ditetapkan pada Bab I. Sebelum menjelaskan skenario evaluasi, subbab ini terlebih dahulu mendeskripsikan konfigurasi sistem dan lingkungan pengujian yang digunakan selama periode evaluasi.
 
 \subsection{Konfigurasi Pengujian Sistem}
 
@@ -85,16 +85,49 @@ Skenario evaluasi dirancang untuk menjawab setiap rumusan masalah yang telah dit
     \hline
     \textbf{ID} & \textbf{Rumusan Masalah} & \textbf{Skenario Evaluasi} & \textbf{Tujuan Evaluasi} \\
     \hline
-    RM-1 & Rancangan dan implementasi sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data secara periodik dan terstruktur & SE-01: Evaluasi Fungsionalitas Sistem & Memverifikasi fungsi sistem berjalan sesuai rancangan \\
+    RM-1 & Rancangan dan implementasi sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) yang mampu mengumpulkan data secara periodik dan terstruktur & SE-01: Evaluasi Fungsionalitas Sistem & Memverifikasi fungsi sistem berjalan sesuai rancangan \\
     \hline
     RM-1 & & SE-02: Evaluasi Pengumpulan Data & Mengukur keberhasilan pengumpulan data periodik \\
     \hline
-    RM-2 & Pola pembuangan sampah yang dapat diidentifikasi berdasarkan data sistem dan validasinya terhadap observasi lapangan & SE-03: Analisis Pola Pembuangan & Mengidentifikasi pola temporal dan validasi lapangan \\
+    RM-1 & & SE-04: Evaluasi Adaptasi \textit{Firmware} & Mengevaluasi efektivitas adaptasi \textit{firmware} terhadap keandalan sistem \\
     \hline
-    RM-3 & Peningkatan \textit{firmware} agar perangkat \textit{Smart Waste Bin} skala perkotaan dapat beroperasi optimal di lingkungan kampus & SE-04: Evaluasi Peningkatan Sistem & Mengevaluasi efektivitas peningkatan \textit{firmware} \\
+    RM-2 & Pola pembuangan sampah yang dapat diidentifikasi berdasarkan data sistem dan validasinya terhadap observasi lapangan & SE-03: Analisis Pola Pembuangan & Mengidentifikasi pola temporal dan validasi lapangan \\
     \hline
   \end{tabularx}
 \end{table}
+
+\subsection{Metode Analisis Data}
+\label{sec:metode-analisis-data}
+
+Untuk menjawab RM-2, data yang terkumpul dianalisis menggunakan kombinasi metode analisis statistik deskriptif dan analisis temporal. Metode analisis ditetapkan terlebih dahulu sebelum pelaksanaan analisis agar proses identifikasi pola bersifat sistematis dan dapat ditelusuri. Tahapan dan metode analisis yang digunakan adalah sebagai berikut:
+
+\begin{enumerate}
+    \item \textbf{Praproses dan Pembersihan Data}
+
+    Data mentah hasil pengumpulan terlebih dahulu disaring untuk membuang data kotor (\textit{dirty data}) yang melanggar batas fisik yang valid, seperti nilai \textit{fillLevel} di luar rentang 0--100\% atau nilai baterai yang tidak wajar. Kriteria pembersihan ditetapkan berdasarkan batas operasional yang mustahil dicapai secara fisik, sehingga tidak ada data valid yang terbuang.
+
+    \item \textbf{Analisis Statistik Deskriptif}
+
+    Statistik deskriptif (nilai rata-rata, standar deviasi, nilai minimum dan maksimum, serta distribusi) dihitung untuk setiap sensor guna memberikan gambaran umum karakteristik data yang terkumpul, termasuk sebaran \textit{fillLevel} dan profil konsumsi daya.
+
+    \item \textbf{Analisis Delta (Deteksi \textit{Event} Penambahan)}
+
+    Karena fokus analisis adalah aktivitas pembuangan, dilakukan analisis delta, yaitu menghitung selisih nilai \textit{fillLevel} antar pembacaan berurutan. Selisih positif yang melampaui ambang tertentu diidentifikasi sebagai \textit{event} penambahan sampah. Pendekatan berbasis \textit{event} ini dipilih karena lebih relevan untuk menangkap perilaku pembuangan dibandingkan nilai \textit{fillLevel} absolut.
+
+    \item \textbf{Analisis Temporal}
+
+    \textit{Event} penambahan yang teridentifikasi kemudian dipetakan terhadap dimensi waktu (jam, hari, hari kerja vs akhir pekan, serta hari libur) untuk mengidentifikasi pola temporal, seperti jam puncak (\textit{peak hour}) dan rentang jam aktif.
+
+    \item \textbf{Analisis Komparatif Antar Jenis Sampah}
+
+    Distribusi \textit{event} dan kontribusi volume dibandingkan antar tiga jenis sampah (organik, anorganik, residu) untuk mengidentifikasi karakteristik dominasi jenis sampah.
+
+    \item \textbf{Validasi terhadap Observasi Lapangan}
+
+    Pola yang teridentifikasi dari data divalidasi kewajarannya melalui observasi langsung di lokasi penelitian, untuk memastikan pola yang ditemukan konsisten dengan kondisi aktual aktivitas di lapangan.
+\end{enumerate}
+
+Perlu ditegaskan bahwa proses analisis ini dilakukan oleh peneliti terhadap data yang telah dikumpulkan oleh sistem. Sistem berperan sebagai instrumen pengumpul dan penyaji data, sedangkan identifikasi pola merupakan hasil analisis yang dilakukan secara terpisah dari operasional sistem.
 
 % ============================================================
 \section{Hasil Evaluasi}
@@ -105,7 +138,7 @@ Bagian ini menyajikan hasil evaluasi untuk setiap skenario yang telah dirancang 
 
 \subsection{Hasil Evaluasi Fungsionalitas Sistem (SE-01)}
 
-Skenario SE-01 mengevaluasi fungsionalitas seluruh komponen sistem \textit{Smart Waste Bin} untuk memverifikasi bahwa arsitektur dan mekanisme berfungsi sesuai dengan desain pada Bab IV. Pengujian fungsionalitas dilakukan dengan metode \textit{black-box testing} pada setiap \textit{layer} arsitektur IoT.
+Skenario SE-01 mengevaluasi fungsionalitas seluruh komponen sistem pemantauan sampah berbasis \textit{Internet of Things} untuk memverifikasi bahwa arsitektur dan mekanisme berfungsi sesuai dengan desain pada Bab IV. Pengujian fungsionalitas dilakukan dengan metode \textit{black-box testing} pada setiap \textit{layer} arsitektur IoT.
 
 Tabel \ref{tab:pengujian-fungsionalitas} menyajikan komponen, aspek pengujian, dan kriteria keberhasilan untuk setiap \textit{layer}.
 
@@ -306,7 +339,7 @@ Pengujian antarmuka \textit{dashboard} dilakukan secara \textit{end-to-end} untu
   \end{tabularx}
 \end{table}
 
-Seluruh komponen sistem dari \textit{Perception Layer} hingga \textit{Application Layer} berfungsi sesuai dengan desain. Hasil pengujian ini menjawab RM-1 terkait komponen, arsitektur, dan mekanisme sistem \textit{Smart Waste Bin} berbasis IoT.
+Seluruh komponen sistem dari \textit{Perception Layer} hingga \textit{Application Layer} berfungsi sesuai dengan desain. Hasil pengujian ini menjawab RM-1 terkait komponen, arsitektur, dan mekanisme sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT).
 
 \subsection{Hasil Evaluasi Pengumpulan Data (SE-02)}
 
@@ -666,9 +699,9 @@ Analisis pola mingguan dilakukan dengan mengelompokkan rata-rata \textit{fillLev
   % RENAME: image17.png → pola-mingguan.png
 \end{figure}
 
-Rata-rata hari kerja: 5,2\% (Organik), 14,0\% (Anorganik), 6,3\% (Residu). Rata-rata \textit{weekend}: 5,9\% (Organik), 15,6\% (Anorganik), 5,8\% (Residu). Perbedaan antar hari kerja dan \textit{weekend} tidak signifikan karena \textit{fillLevel} bersifat kumulatif, di mana nilai tinggi pada hari tertentu dapat mencerminkan akumulasi dari hari-hari sebelumnya sebelum terjadi pengosongan.
+Rata-rata hari kerja: 5,2\% (Organik), 14,0\% (Anorganik), 6,3\% (Residu). Rata-rata \textit{weekend}: 5,9\% (Organik), 15,6\% (Anorganik), 5,8\% (Residu). Perbedaan antar hari kerja dan \textit{weekend} tidak signifikan karena \textit{fillLevel} bersifat kumulatif, sehingga nilai tinggi pada hari tertentu dapat mencerminkan akumulasi dari hari-hari sebelumnya sebelum terjadi pengosongan.
 
-\subsubsection{Pola Hari Libur}
+\subsubsection{Analisis Pengaruh Hari Libur}
 
 Tabel \ref{tab:pola-libur} menyajikan rata-rata \textit{fillLevel} berdasarkan kategori hari, dan Gambar \ref{fig:pola-libur} memvisualisasikan perbandingannya.
 
@@ -696,7 +729,7 @@ Tabel \ref{tab:pola-libur} menyajikan rata-rata \textit{fillLevel} berdasarkan k
   % RENAME: image18.png → pola-libur.png
 \end{figure}
 
-Hari libur nasional yang memiliki data dalam periode pengumpulan meliputi 25 sampai 26 Desember 2025 (Natal) dan 1 Januari 2026 (Tahun Baru). Tingginya rata-rata \textit{fillLevel} Anorganik pada hari libur (18,0\%) merupakan efek akumulasi kumulatif, di mana tempat sampah yang tidak dikosongkan saat libur membawa nilai \textit{fillLevel} dari hari-hari sebelumnya, bukan mencerminkan aktivitas pembuangan yang lebih tinggi.
+Hari libur nasional yang memiliki data dalam periode pengumpulan meliputi 25 sampai 26 Desember 2025 (Natal) dan 1 Januari 2026 (Tahun Baru). Tingginya rata-rata \textit{fillLevel} Anorganik pada hari libur (18,0\%) merupakan efek akumulasi kumulatif, yaitu tempat sampah yang tidak dikosongkan saat libur membawa nilai \textit{fillLevel} dari hari-hari sebelumnya, bukan mencerminkan aktivitas pembuangan yang lebih tinggi.
 
 \subsubsection{Analisis Penambahan (Delta)}
 
@@ -757,7 +790,7 @@ Tabel \ref{tab:delta-perjam} menyajikan distribusi temporal \textit{event} penam
 
 Total 27 \textit{event} penambahan terdeteksi selama periode observasi, dengan distribusi temporal divisualisasikan pada Gambar \ref{fig:distribusi-delta}. Penambahan terbanyak terjadi pada rentang 14:00--17:00 (29,6\%), diikuti 09:00--12:00 (22,2\%). Tidak ada penambahan yang terdeteksi pada malam hari (19:00--07:00), konsisten dengan tidak adanya aktivitas kampus.
 
-\subsubsection{Pola Jenis Sampah}
+\subsubsection{Analisis Komposisi Jenis Sampah}
 
 Tabel \ref{tab:pola-jenis} menyajikan perbandingan pola pembuangan antar jenis sampah.
 
@@ -824,14 +857,41 @@ Temuan utama dari observasi ketepatan klasifikasi adalah sebagai berikut.
 
 Temuan ini menunjukkan perlunya sosialisasi berkala tentang jenis sampah dan penyediaan infografis panduan singkat di dekat lokasi tempat sampah untuk meningkatkan ketepatan klasifikasi oleh pengguna.
 
-\subsection{Hasil Evaluasi Peningkatan Sistem (SE-04)}
+\subsubsection{Sintesis Temuan Analisis}
+\label{sec:sintesis-temuan}
 
-Skenario SE-04 mengevaluasi efektivitas peningkatan \textit{firmware} yang dilakukan terhadap perangkat \textit{Smart Waste Bin} untuk menjawab RM-3.
+Seluruh analisis pada subbab ini dilakukan menggunakan pendekatan \textit{analisis deskriptif}, yaitu pendekatan yang bertujuan mendeskripsikan dan merangkum karakteristik suatu fenomena berdasarkan data, tanpa melakukan inferensi kausal maupun prediksi \autocite{loeb2017descriptive}. Pendekatan ini dipilih karena tujuan penelitian adalah mengidentifikasi dan mengkarakterisasi pola pembuangan yang terjadi, bukan memodelkan atau memprediksinya. Analisis deskriptif terhadap data deret waktu (\textit{time series}) yang dikumpulkan mencakup peringkasan statistik, agregasi temporal, dan visualisasi untuk mengungkap struktur dalam data \autocite{wickham2016r}.
 
-Tabel \ref{tab:hasil-firmware} menyajikan hasil evaluasi untuk setiap peningkatan \textit{firmware}.
+Berdasarkan analisis deskriptif yang dilakukan, penelitian ini mengidentifikasi empat pola pembuangan sampah. Sebuah pola didefinisikan sebagai keteraturan yang konsisten muncul dalam data sepanjang periode pengamatan, bukan kejadian tunggal yang bersifat acak. Keempat pola ini dibedakan menjadi dua jenis berdasarkan dimensi analisisnya, yaitu tiga \textbf{pola temporal} (keteraturan pada dimensi waktu) dan satu \textbf{pola komposisi} (keteraturan pada dimensi jenis sampah). Setiap pola diberi nama yang jelas sebagai identitasnya. Tabel \ref{tab:sintesis-temuan} merangkum keempat pola tersebut beserta klasifikasinya.
 
 \begin{table}[H]
-  \caption{Hasil Evaluasi Peningkatan \textit{Firmware}}
+  \caption{Sintesis dan Klasifikasi Pola Pembuangan Sampah}
+  \label{tab:sintesis-temuan}
+  \begin{tabularx}{\textwidth}{| l | l | X |}
+    \hline
+    \textbf{Nama Pola} & \textbf{Jenis} & \textbf{Deskripsi Kuantitatif} \\
+    \hline
+    Pola \textit{Peak Hour} & Pola Temporal & Puncak penambahan pada pukul 14:00--17:00 (8 dari 27 \textit{event}, 29,6\%) \\
+    \hline
+    Pola Konsentrasi Jam Aktif & Pola Temporal & Seluruh \textit{event} terjadi pada rentang 07:00--19:00 di hari kerja \\
+    \hline
+    Pola Pengaruh Hari Libur & Pola Temporal & Aktivitas penambahan turun hingga nol pada hari libur nasional \\
+    \hline
+    Pola Dominasi Anorganik & Pola Komposisi & Sampah anorganik menyumbang 13 dari 27 \textit{event} (48,1\%) dan 51,7\% volume delta positif \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+Ketiga pola temporal, yaitu Pola \textit{Peak Hour}, Pola Konsentrasi Jam Aktif, dan Pola Pengaruh Hari Libur, merupakan keteraturan yang muncul pada dimensi waktu dan saling melengkapi dalam menggambarkan kapan aktivitas pembuangan terjadi. Sementara itu, Pola Dominasi Anorganik merupakan keteraturan pada dimensi komposisi jenis sampah, yang konsisten muncul sepanjang periode pengamatan (bukan fluktuasi acak), sehingga sah dikategorikan sebagai pola meskipun tidak berdimensi waktu. Keempat pola ini telah divalidasi kewajarannya terhadap observasi lapangan dan konsisten dengan karakteristik aktivitas di lokasi penelitian, serta secara bersama-sama menjawab RM-2.
+
+\subsection{Hasil Evaluasi Adaptasi \textit{Firmware} (SE-04)}
+
+Skenario SE-04 mengevaluasi efektivitas adaptasi \textit{firmware} yang dilakukan terhadap perangkat \textit{Smart Waste Bin}. Evaluasi ini merupakan bagian dari penilaian keberhasilan rancangan dan implementasi sistem (RM-1), khususnya untuk menilai sejauh mana adaptasi \textit{firmware} meningkatkan keandalan operasional dan kualitas data yang dikumpulkan sistem.
+
+Tabel \ref{tab:hasil-firmware} menyajikan hasil evaluasi untuk setiap adaptasi \textit{firmware}.
+
+\begin{table}[H]
+  \caption{Hasil Evaluasi Adaptasi \textit{Firmware}}
   \label{tab:hasil-firmware}
   \begin{tabularx}{\textwidth}{| X | X | X | l |}
     \hline
@@ -850,7 +910,7 @@ Tabel \ref{tab:hasil-firmware} menyajikan hasil evaluasi untuk setiap peningkata
   \end{tabularx}
 \end{table}
 
-Dari lima peningkatan \textit{firmware} yang diimplementasikan, empat menunjukkan efektivitas. Perubahan interval pengambilan data menjadi fondasi keberhasilan analisis pola. \textit{Median filter} berhasil mereduksi \textit{noise} selama periode pengujian. Mekanisme \textit{auto-recovery} terbukti efektif karena sebelum implementasi, sensor pernah mengalami kondisi \textit{hang} dan tidak mengirim data meskipun baterai masih baik, namun setelah \textit{firmware} baru di-\textit{upload}, kejadian tersebut tidak terulang. Satu peningkatan yang tidak efektif adalah GPIO \textit{isolation}, kemungkinan karena konsumsi daya utama berasal dari modul GSM SIM800L yang tidak terpengaruh oleh isolasi GPIO.
+Dari lima adaptasi \textit{firmware} yang diimplementasikan, empat menunjukkan efektivitas. Perubahan interval pengambilan data menjadi fondasi keberhasilan analisis pola. \textit{Median filter} berhasil mereduksi \textit{noise} selama periode pengujian. Mekanisme \textit{auto-recovery} terbukti efektif karena sebelum implementasi, sensor pernah mengalami kondisi \textit{hang} dan tidak mengirim data meskipun baterai masih baik, namun setelah \textit{firmware} baru di-\textit{upload}, kejadian tersebut tidak terulang. Satu adaptasi yang tidak efektif adalah GPIO \textit{isolation}, kemungkinan karena konsumsi daya utama berasal dari modul GSM SIM800L yang tidak terpengaruh oleh isolasi GPIO.
 
 % ============================================================
 \section{Pemenuhan Kebutuhan Sistem}
@@ -975,7 +1035,7 @@ Temuan penelitian ini memiliki beberapa implikasi praktis untuk pengelolaan samp
 
   \item Dominasi sampah anorganik (51,7\%) menunjukkan potensi program pengurangan kemasan sekali pakai atau penyediaan fasilitas \textit{refill} untuk menekan volume sampah.
 
-  \item Empat dari lima peningkatan \textit{firmware} yang telah diuji dapat direkomendasikan untuk diadopsi pada perangkat \textit{Smart Waste Bin} di lingkungan dengan aktivitas terkonsentrasi pada jam-jam tertentu.
+  \item Empat dari lima adaptasi \textit{firmware} yang telah diuji dapat direkomendasikan untuk diadopsi pada perangkat \textit{Smart Waste Bin} di lingkungan dengan aktivitas terkonsentrasi pada jam-jam tertentu.
 
-  \item Sistem \textit{Smart Waste Bin} memberikan data objektif untuk pengambilan keputusan pengelolaan sampah, menggantikan estimasi manual yang subjektif dan tidak terstruktur.
+  \item Sistem Pemantauan Sampah Berbasis \textit{Internet of Things} memberikan data objektif untuk pengambilan keputusan pengelolaan sampah, menggantikan estimasi manual yang subjektif dan tidak terstruktur.
 \end{enumerate}

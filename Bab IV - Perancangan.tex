@@ -2,25 +2,25 @@
 \chapter{PERANCANGAN SISTEM \textit{SMART WASTE BIN}}
 \label{chap:perancangan}
 
-Bab ini merupakan realisasi dari tahap \textit{Prototype} dalam metodologi \textit{Design Thinking} yang telah diuraikan pada Subbab I.5.2. Berdasarkan hasil analisis kebutuhan dan pemilihan solusi pada Bab III, dirancang sistem \textit{Smart Waste Bin} yang terdiri dari perangkat IoT, \textit{middleware}, \textit{database}, dan \textit{dashboard}.
+Bab ini merupakan bagian dari fase perancangan dan pengembangan dalam metodologi \textit{Design Science Research} yang telah diuraikan pada Subbab I.5.2. Berdasarkan hasil analisis kebutuhan dan pemilihan solusi pada Bab III, dirancang sistem pemantauan sampah berbasis \textit{Internet of Things} yang terdiri dari perangkat IoT, \textit{middleware}, \textit{database}, dan \textit{dashboard}.
 
-Komponen sistem dibedakan menjadi dua kategori: komponen eksternal berupa perangkat IoT \textit{Smart Waste Bin} dari pihak ketiga, serta komponen internal yang dikembangkan oleh peneliti meliputi \textit{middleware}, \textit{database}, dan \textit{dashboard}. Karena konfigurasi \textit{firmware} bawaan perangkat dirancang untuk skala perkotaan sebagaimana diidentifikasi pada Subbab \ref{sec:analisis-kondisi}, bab ini juga menjelaskan perancangan peningkatan \textit{firmware} yang dilakukan agar perangkat dapat beroperasi optimal di lingkungan kampus.
+Komponen sistem dibedakan menjadi dua kategori: komponen eksternal berupa perangkat IoT \textit{Smart Waste Bin} dari pihak ketiga, serta komponen internal yang dikembangkan oleh peneliti meliputi \textit{middleware}, \textit{database}, dan \textit{dashboard}. Karena konfigurasi \textit{firmware} bawaan perangkat dirancang untuk skala perkotaan sebagaimana diidentifikasi pada Subbab \ref{sec:analisis-kondisi}, bab ini juga menjelaskan perancangan adaptasi \textit{firmware} yang dilakukan agar perangkat dapat beroperasi optimal di lingkungan kampus.
 
 % ============================================================
 \section{Gambaran Umum Sistem}
 \label{sec:gambaran-umum}
 % ============================================================
 
-Subbab ini menyajikan gambaran umum sistem \textit{Smart Waste Bin} yang dikembangkan, mencakup arsitektur sistem secara keseluruhan, alur data dari pengumpulan hingga analisis, dan pemilihan teknologi. Gambaran umum ini bertujuan untuk memberikan pemahaman holistik mengenai struktur dan cara kerja sistem secara konseptual sebelum membahas perancangan detail pada subbab-subbab selanjutnya.
+Subbab ini menyajikan gambaran umum sistem pemantauan sampah berbasis \textit{Internet of Things} yang dikembangkan, mencakup arsitektur sistem secara keseluruhan, alur data dari pengumpulan hingga analisis, dan pemilihan teknologi. Gambaran umum ini bertujuan untuk memberikan pemahaman holistik mengenai struktur dan cara kerja sistem secara konseptual sebelum membahas perancangan detail pada subbab-subbab selanjutnya.
 
 \subsection{Arsitektur Sistem}
 
-Sistem \textit{Smart Waste Bin} dirancang menggunakan arsitektur berlapis (\textit{layered architecture}) yang mengacu pada model arsitektur IoT. Berbeda dengan model \textit{three-layer architecture} standar, sistem ini mengadopsi \textit{four-layer architecture} dengan penambahan \textit{Middleware Layer}. Pemilihan arsitektur empat \textit{layer} didasarkan pada kebutuhan untuk memisahkan fungsi transmisi data dengan fungsi pemrosesan dan \textit{routing} data, sehingga memberikan modularitas yang lebih baik dalam pengembangan dan pemeliharaan sistem.
+Sistem Pemantauan Sampah Berbasis \textit{Internet of Things} dirancang menggunakan arsitektur berlapis (\textit{layered architecture}) yang mengacu pada model arsitektur IoT. Berbeda dengan model \textit{three-layer architecture} standar, sistem ini mengadopsi \textit{four-layer architecture} dengan penambahan \textit{Middleware Layer}. Pemilihan arsitektur empat \textit{layer} didasarkan pada kebutuhan untuk memisahkan fungsi transmisi data dengan fungsi pemrosesan dan \textit{routing} data, sehingga memberikan modularitas yang lebih baik dalam pengembangan dan pemeliharaan sistem.
 
-Gambar \ref{fig:arsitektur-sistem} menunjukkan arsitektur keseluruhan sistem \textit{Smart Waste Bin} yang terdiri dari empat \textit{layer} utama beserta pembagian komponen berdasarkan tanggung jawab pengembangan.
+Gambar \ref{fig:arsitektur-sistem} menunjukkan arsitektur keseluruhan sistem pemantauan sampah berbasis \textit{Internet of Things} yang terdiri dari empat \textit{layer} utama beserta pembagian komponen berdasarkan tanggung jawab pengembangan.
 
 \begin{figure}[H]
-  \caption{Arsitektur Sistem \textit{Smart Waste Bin}}
+  \caption{Arsitektur Sistem Pemantauan Sampah Berbasis \textit{Internet of Things}}
   \label{fig:arsitektur-sistem}
   \includegraphics[width=0.7\textwidth]{images/arsitektur-sistem.png}
   % RENAME: image7.png → arsitektur-sistem.png
@@ -39,9 +39,9 @@ Arsitektur sistem juga membedakan komponen berdasarkan tanggung jawab pengembang
 
 \subsection{Alur Data Sistem}
 
-Sistem \textit{Smart Waste Bin} mengimplementasikan alur data yang terstruktur dari pengumpulan data di perangkat IoT hingga penyajian informasi kepada pengguna. Untuk menggambarkan alur data secara sistematis, digunakan \textit{Data Flow Diagram} (DFD) yang terdiri dari dua level: DFD Level 0 (\textit{Context Diagram}) dan DFD Level 1.
+Sistem Pemantauan Sampah Berbasis \textit{Internet of Things} mengimplementasikan alur data yang terstruktur dari pengumpulan data di perangkat IoT hingga penyajian informasi kepada pengguna. Untuk menggambarkan alur data secara sistematis, digunakan \textit{Data Flow Diagram} (DFD) yang terdiri dari dua level: DFD Level 0 (\textit{Context Diagram}) dan DFD Level 1.
 
-DFD Level 0 menggambarkan sistem \textit{Smart Waste Bin} sebagai satu kesatuan proses yang berinteraksi dengan entitas eksternal, sebagaimana ditunjukkan pada Gambar \ref{fig:dfd-level0}.
+DFD Level 0 menggambarkan sistem pemantauan sampah berbasis \textit{Internet of Things} sebagai satu kesatuan proses yang berinteraksi dengan entitas eksternal, sebagaimana ditunjukkan pada Gambar \ref{fig:dfd-level0}.
 
 \begin{figure}[H]
   \caption{\textit{Data Flow Diagram} Level 0}
@@ -50,7 +50,7 @@ DFD Level 0 menggambarkan sistem \textit{Smart Waste Bin} sebagai satu kesatuan 
   % RENAME: image8.png → dfd-level0.png
 \end{figure}
 
-Berdasarkan Gambar \ref{fig:dfd-level0}, terdapat dua entitas eksternal yang berinteraksi dengan sistem. Pertama, \textit{Smart Waste Bin} sebagai perangkat IoT sumber data yang mengirimkan data tingkat kepenuhan, identifier perangkat, dan \textit{timestamp} pembacaan secara periodik. Kedua, Pengguna yang mencakup pengelola gedung dan peneliti, yang mengirimkan \textit{request} data dan \textit{filter}, kemudian menerima visualisasi status, grafik historis, dan hasil analisis pola sebagai \textit{output}.
+Berdasarkan Gambar \ref{fig:dfd-level0}, terdapat dua entitas eksternal yang berinteraksi dengan sistem. Pertama, \textit{Smart Waste Bin} sebagai perangkat IoT sumber data yang mengirimkan data tingkat kepenuhan, identifier perangkat, dan \textit{timestamp} pembacaan secara periodik. Kedua, Pengguna yang mencakup pengelola gedung dan peneliti, yang mengirimkan \textit{request} data dan \textit{filter}, kemudian menerima visualisasi status dan grafik historis sebagai \textit{output}. Analisis pola terhadap data yang tersimpan dilakukan secara terpisah oleh peneliti, di luar alur operasional sistem.
 
 DFD Level 1 menunjukkan dekomposisi proses tunggal pada DFD Level 0 menjadi tiga proses utama, sebagaimana ditunjukkan pada Gambar \ref{fig:dfd-level1}.
 
@@ -104,6 +104,24 @@ Tabel \ref{tab:dfd-alur} menjelaskan setiap alur data yang dilalui dalam sistem.
     \hline
   \end{tabularx}
 \end{table}
+
+Selain DFD yang menggambarkan aliran data secara fungsional, alur data secara teknis end-to-end disajikan pada Gambar \ref{fig:data-workflow}. Diagram ini menunjukkan perjalanan data konkret mulai dari pembacaan sensor pada perangkat IoT, transmisi melalui MQTT, pemrosesan pada \textit{middleware} Node-RED, penyimpanan pada \textit{database} Supabase, hingga penyajian pada \textit{dashboard}, beserta format data dan mekanisme penanganan \textit{error} pada setiap tahap.
+
+\begin{figure}[H]
+  \caption{Alur Data (\textit{Data Workflow}) Sistem}
+  \label{fig:data-workflow}
+  \centering
+  \includegraphics[width=0.92\textwidth]{images/data-workflow.png}
+\end{figure}
+
+Untuk memberikan gambaran menyeluruh mengenai cara kerja sistem dalam konteks penelitian, Gambar \ref{fig:sistem-workflow} menyajikan alur kerja keseluruhan (\textit{workflow}) yang dipetakan terhadap fase-fase metodologi \textit{Design Science Research}. Diagram ini menegaskan pembagian peran antara sistem dan peneliti: sistem berperan pada fase perancangan-pengembangan dan demonstrasi (membangun serta mengumpulkan dan menyajikan data), sedangkan peneliti berperan pada fase evaluasi dan komunikasi (menganalisis data dan menyimpulkan).
+
+\begin{figure}[H]
+  \caption{Alur Kerja Keseluruhan Sistem (\textit{Workflow})}
+  \label{fig:sistem-workflow}
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/sistem-workflow.png}
+\end{figure}
 
 \subsection{Pemilihan Teknologi}
 
@@ -194,7 +212,34 @@ Mekanisme kerja perangkat secara fungsional adalah sebagai berikut. Setiap inter
 \end{equation}
 \eqcaption{Persamaan Konversi Tingkat Kepenuhan}
 
-dengan kedalaman \textit{bin} sebesar 1000 mm. Sensor INA219 mengukur tegangan dan arus baterai untuk menghitung \textit{State of Charge} (SoC) menggunakan Persamaan \ref{eq:battery-percent}.
+dengan kedalaman \textit{bin} sebesar 1000 mm. Persamaan ini memetakan seluruh rentang jarak terukur (0--1000 mm) menjadi nilai \textit{fillLevel} (0--100\%) secara linier dan kontinu, sehingga tidak terdapat rentang jarak yang tidak terdefinisi. Sebagai ilustrasi, Tabel \ref{tab:konversi-filllevel} menyajikan pemetaan beberapa rentang jarak terukur terhadap nilai \textit{fillLevel} yang dihasilkan.
+
+\begin{table}[H]
+  \caption{Pemetaan Jarak Terukur terhadap \textit{Fill Level}}
+  \label{tab:konversi-filllevel}
+  \centering
+  \begin{tabular}{| c | c | c |}
+    \hline
+    \textbf{Jarak Terukur (mm)} & \textbf{\textit{Fill Level} (\%)} & \textbf{Interpretasi} \\
+    \hline
+    0--99 & 91--100 & Hampir penuh \\
+    \hline
+    100--299 & 71--90 & Terisi banyak \\
+    \hline
+    300--499 & 51--70 & Terisi sedang \\
+    \hline
+    500--699 & 31--50 & Terisi sebagian \\
+    \hline
+    700--899 & 11--30 & Hampir kosong \\
+    \hline
+    900--1000 & 0--10 & Kosong \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Untuk menjaga validitas data, pembacaan jarak yang berada di luar rentang fisik \textit{bin} ditangani secara khusus. Jarak terukur yang melebihi 1000 mm (yang secara teoretis menghasilkan \textit{fillLevel} negatif) dibatasi (\textit{clamp}) menjadi 0\%, sedangkan pembacaan yang lebih kecil dari 0 mm dibatasi menjadi 100\%. Apabila sensor mengalami \textit{timeout} atau gagal melakukan pembacaan, nilai \textit{fillLevel} diisi dengan -1 sebagai penanda \textit{error}, yang kemudian disaring pada tahap praproses data. Dengan demikian, setiap kemungkinan nilai pembacaan, baik di dalam maupun di luar rentang valid, memiliki penanganan yang terdefinisi.
+
+Sensor INA219 mengukur tegangan dan arus baterai untuk menghitung \textit{State of Charge} (SoC) menggunakan Persamaan \ref{eq:battery-percent}.
 
 \begin{equation}
   \text{Battery Percent} (\%) = \frac{\text{Tegangan Terukur} - 5{,}60}{0{,}028}
@@ -277,14 +322,14 @@ Gambar \ref{fig:payload-contoh} menunjukkan contoh \textit{payload} data yang di
 \end{figure}
 
 % ============================================================
-\section{Perancangan Peningkatan \textit{Firmware}}
+\section{Perancangan Adaptasi \textit{Firmware}}
 \label{sec:perancangan-firmware}
 % ============================================================
 
-Sebagaimana diidentifikasi pada Subbab \ref{sec:analisis-kondisi}, perangkat \textit{Smart Waste Bin} yang tersedia memiliki konfigurasi \textit{firmware} yang dirancang untuk skala perkotaan. Untuk menyesuaikan dengan kebutuhan lingkungan kampus, dirancang lima peningkatan \textit{firmware}. Tabel \ref{tab:peningkatan-firmware} menyajikan ringkasan peningkatan yang dirancang.
+Sebagaimana diidentifikasi pada Subbab \ref{sec:analisis-kondisi}, perangkat \textit{Smart Waste Bin} yang tersedia memiliki konfigurasi \textit{firmware} yang dirancang untuk skala perkotaan. Untuk menyesuaikan dengan kebutuhan lingkungan kampus, dirancang lima adaptasi \textit{firmware}. Tabel \ref{tab:peningkatan-firmware} menyajikan ringkasan adaptasi yang dirancang.
 
 \begin{table}[H]
-  \caption{Rancangan Peningkatan \textit{Firmware}}
+  \caption{Rancangan Adaptasi \textit{Firmware}}
   \label{tab:peningkatan-firmware}
   \begin{tabularx}{\textwidth}{| X | X | X |}
     \hline
@@ -305,7 +350,11 @@ Sebagaimana diidentifikasi pada Subbab \ref{sec:analisis-kondisi}, perangkat \te
 
 \subsection{Perancangan Perubahan Interval Pengambilan Data}
 
-Interval pengambilan data diubah dari 8 jam menjadi 2 jam 30 menit berdasarkan dua alasan utama. Pertama, dinamika pembuangan sampah kampus yang sangat dinamis dan terkonsentrasi pada jam-jam tertentu, sehingga interval 8 jam berisiko kehilangan momen kritis pelaporan status. Kedua, kebutuhan resolusi data untuk analisis pola: interval 8 jam hanya menghasilkan sekitar 3 titik data per hari, sedangkan interval 2,5 jam menghasilkan 8 sampai 9 titik data per hari yang cukup untuk menangkap fluktuasi aktivitas kampus secara detail.
+Interval pengambilan data pada kondisi awal adalah 8 jam, yang merupakan konfigurasi bawaan pada \textit{firmware} vendor (didefinisikan melalui konstanta \texttt{TIME\_TO\_SLEEP} pada kode sumber perangkat). Konfigurasi ini dirancang untuk konteks pemantauan kontainer sampah skala perkotaan yang volumenya besar dan laju pengisiannya lambat, sehingga pelaporan tiga kali sehari dinilai memadai oleh vendor sekaligus menghemat daya baterai.
+
+Untuk konteks kampus, interval tersebut diubah menjadi 2 jam 30 menit berdasarkan pertimbangan berikut. Pertama, dari sisi kebutuhan resolusi data: dinamika pembuangan sampah kampus terkonsentrasi pada jam-jam tertentu dalam rentang jam aktif (sekitar 07:00--19:00), sehingga interval 8 jam yang hanya menghasilkan sekitar 3 titik data per hari berisiko melewatkan transisi antar sesi aktivitas (pagi, siang, sore). Interval 2,5 jam menghasilkan 8 sampai 9 titik data per hari, yang berarti terdapat sekitar 4--5 titik data dalam rentang jam aktif kampus, cukup untuk membedakan aktivitas antar sesi tanpa celah pengamatan yang lebar.
+
+Kedua, dari sisi batasan daya: setiap siklus pengiriman mengaktifkan modul GSM SIM800L yang merupakan konsumen daya terbesar pada perangkat. Memperpendek interval lebih jauh (misalnya 1 jam, yang berarti 24 siklus per hari) akan melipatgandakan frekuensi aktivasi GSM hingga hampir tiga kali lipat dibandingkan interval 2,5 jam, sehingga secara proporsional memperpendek umur baterai dan meningkatkan frekuensi penggantian baterai di lapangan. Interval 2,5 jam dipilih sebagai titik keseimbangan: resolusi data memadai untuk analisis pola harian, sementara frekuensi aktivasi GSM (9--10 siklus per hari) masih berada pada tingkat yang memungkinkan perangkat beroperasi beberapa hari tanpa penggantian baterai. Dengan demikian, nilai 2,5 jam bukan angka arbitrer, melainkan hasil pertimbangan rekayasa antara kebutuhan resolusi analisis dan keterbatasan daya perangkat.
 
 \subsection{Perancangan \textit{Median Filter}}
 
@@ -360,7 +409,7 @@ Dua mekanisme optimasi daya dirancang untuk memperpanjang masa operasi baterai. 
 
 \subsection{Arsitektur \textit{Flow} Node-RED}
 
-\textit{Flow} Node-RED untuk sistem \textit{Smart Waste Bin} dirancang untuk menerima data dari tiga perangkat sensor secara paralel dan meneruskannya ke \textit{database}. Gambar \ref{fig:flow-nodered} menunjukkan rancangan alur pemrosesan data secara konseptual, mulai dari penerimaan pesan hingga penyimpanan ke \textit{database}.
+\textit{Flow} Node-RED untuk sistem pemantauan sampah berbasis \textit{Internet of Things} dirancang untuk menerima data dari tiga perangkat sensor secara paralel dan meneruskannya ke \textit{database}. Gambar \ref{fig:flow-nodered} menunjukkan rancangan alur pemrosesan data secara konseptual, mulai dari penerimaan pesan hingga penyimpanan ke \textit{database}.
 
 \begin{figure}[H]
   \caption{Rancangan Alur Pemrosesan Data \textit{Middleware}}

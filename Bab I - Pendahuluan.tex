@@ -8,11 +8,11 @@
 Pertumbuhan populasi global dan urbanisasi yang pesat telah meningkatkan volume produksi sampah secara signifikan. Menurut World Bank, produksi sampah global diproyeksikan mencapai 3,4 miliar ton pada tahun 2050, meningkat dari 2,01 miliar ton pada tahun 2016 \autocite{kaza2018}.
 Peningkatan volume sampah ini menimbulkan tantangan kompleks dalam pengelolaan limbah yang efisien dan berkelanjutan.
 
-Salah satu tantangan utama dalam pengelolaan sampah adalah ketiadaan data terstruktur mengenai pola pembuangan. Pertanyaan seperti kapan terjadi puncak pembuangan, apakah ada perbedaan pola antara hari kerja dan akhir pekan, serta jenis sampah apa yang mendominasi, menjadi sulit dijawab tanpa sistem \textit{monitoring} yang memadai. Metode konvensional seperti pengecekan visual atau pencatatan manual memiliki keterbatasan dalam hal konsistensi, akurasi, dan cakupan waktu, sehingga pengambilan keputusan sering dilakukan tanpa basis data.
+Salah satu tantangan utama dalam pengelolaan sampah pada tingkat operasional adalah pengangkutan yang masih dilakukan berdasarkan jadwal tetap, tanpa mempertimbangkan kondisi aktual kepenuhan tempat sampah. Akibatnya, tempat sampah yang masih kosong tetap didatangi dan diperiksa, sementara tempat sampah yang sudah penuh berpotensi terlambat ditangani. Praktik ini terjadi karena tidak tersedianya informasi mengenai kondisi tempat sampah secara berkala; satu-satunya cara mengetahui kondisi adalah dengan pengecekan visual langsung ke lokasi. Ketiadaan informasi ini diperparah oleh ketiadaan data historis yang terstruktur mengenai pola pembuangan. Pertanyaan seperti kapan terjadi puncak pembuangan, apakah ada perbedaan pola antara hari kerja dan akhir pekan, serta jenis sampah apa yang mendominasi, menjadi sulit dijawab. Tanpa data tersebut, jadwal pengangkutan tidak dapat dioptimalkan dan pengambilan keputusan pengelolaan dilakukan tanpa basis data.
 
 Perkembangan teknologi \textit{Internet of Things} (IoT) membuka peluang untuk mengatasi permasalahan tersebut. Sensor yang dipasang pada tempat sampah dapat memantau tingkat kepenuhan secara periodik, menyimpan data ke basis data, dan menghasilkan \textit{insight} mengenai pola pembuangan. Di Indonesia, salah satu contoh perangkat \textit{Smart Waste Bin} yang telah dikembangkan adalah produk dari PT Layanan Cerdas Indonesia (LCI), yang telah diimplementasikan di beberapa kota untuk pemantauan kapasitas kontainer sampah \autocite{LCI2024}. Namun, perangkat \textit{Smart Waste Bin} yang tersedia secara komersial umumnya dirancang untuk skala perkotaan, sehingga konfigurasi perangkat termasuk \textit{firmware} belum tentu sesuai untuk lingkungan yang lebih kecil seperti kampus, di mana dinamika pembuangan sampah berubah dalam hitungan jam dan memerlukan resolusi data yang lebih tinggi.
 
-Berdasarkan permasalahan tersebut, penelitian ini bertujuan untuk mengembangkan sistem \textit{Smart Waste Bin} berbasis IoT yang disesuaikan dengan kebutuhan lingkungan kampus, baik dari sisi perangkat lunak sistem maupun \textit{firmware} perangkat. Sistem yang dibangun kemudian diuji di Gedung Labtek VIII ITB untuk mengumpulkan data dan menganalisis pola pembuangan sampah yang dihasilkan.
+Berdasarkan permasalahan tersebut, penelitian ini bertujuan untuk mengembangkan sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) yang disesuaikan dengan kebutuhan lingkungan kampus, baik dari sisi perangkat lunak sistem maupun \textit{firmware} perangkat. Sistem yang dibangun kemudian diuji di Gedung Labtek VIII ITB untuk mengumpulkan data pembuangan sampah, yang selanjutnya dianalisis untuk mengidentifikasi pola pembuangan yang dihasilkan.
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
@@ -20,7 +20,7 @@ Berdasarkan permasalahan tersebut, penelitian ini bertujuan untuk mengembangkan 
 Berdasarkan latar belakang dan permasalahan di atas, penelitian ini merumuskan pertanyaan penelitian sebagai berikut:
 
 \begin{enumerate}
-    \item Bagaimana rancangan dan implementasi sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur?
+    \item Bagaimana rancangan dan implementasi sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur?
 
     \item Pola pembuangan sampah apa yang dapat diidentifikasi berdasarkan data yang dikumpulkan oleh sistem, dan seberapa valid pola tersebut terhadap observasi lapangan?
 \end{enumerate}
@@ -28,10 +28,10 @@ Berdasarkan latar belakang dan permasalahan di atas, penelitian ini merumuskan p
 % --- Tujuan ---
 \section{Tujuan}
 
-Penelitian ini bertujuan untuk merancang dan mengimplementasikan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things} untuk memahami pola pembuangan sampah di Gedung Labtek VIII ITB. Secara detil, tujuan penelitian ini adalah:
+Penelitian ini bertujuan untuk merancang dan mengimplementasikan sistem pemantauan sampah berbasis \textit{Internet of Things} untuk memahami pola pembuangan sampah di Gedung Labtek VIII ITB. Secara detil, tujuan penelitian ini adalah:
 
 \begin{enumerate}
-    \item Merancang arsitektur dan mengimplementasikan sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur.
+    \item Merancang arsitektur dan mengimplementasikan sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) yang mampu mengumpulkan data pembuangan sampah secara periodik dan terstruktur.
 
     \item Mengidentifikasi pola pembuangan sampah berdasarkan data yang dikumpulkan oleh sistem dan memvalidasinya melalui observasi lapangan.
 \end{enumerate}
@@ -62,7 +62,7 @@ Pelaksanaan tugas akhir ini didukung oleh studi literatur dan menggunakan metodo
 
 \subsection{Studi Literatur}
 
-Studi literatur dilakukan untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, mencakup teori, konsep, teknologi, dan penelitian terdahulu yang telah dilakukan oleh peneliti lain. Studi literatur ini menjadi fondasi dalam pengembangan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things}.
+Studi literatur dilakukan untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, mencakup teori, konsep, teknologi, dan penelitian terdahulu yang telah dilakukan oleh peneliti lain. Studi literatur ini menjadi fondasi dalam pengembangan sistem pemantauan sampah berbasis \textit{Internet of Things}.
 
 Aktivitas yang dilakukan pada tahap studi literatur meliputi:
 
@@ -86,7 +86,7 @@ Aktivitas yang dilakukan pada tahap studi literatur meliputi:
 
 \subsection{Metodologi \textit{Design Science Research}}
 
-Pengembangan sistem \textit{Smart Waste Bin} menggunakan metodologi \textit{Design Science Research} (DSR) sebagaimana dirumuskan oleh Peffers dkk. \autocite{peffers2007}. Metodologi ini dipilih karena penelitian ini berorientasi pada pembangunan dan evaluasi sebuah artefak, yaitu sistem \textit{Smart Waste Bin}, bukan pada riset perilaku pengguna. DSR menyediakan kerangka kerja yang sistematis dan teruji untuk penelitian yang menghasilkan artefak teknologi, dengan validasi yang difokuskan pada pemenuhan kebutuhan (\textit{requirement}) yang telah ditetapkan. DSR mencakup enam fase utama, yaitu identifikasi masalah dan motivasi, definisi tujuan solusi, perancangan dan pengembangan, demonstrasi, evaluasi, dan komunikasi. Berikut adalah penjelasan untuk setiap fase yang diterapkan secara spesifik pada penelitian ini:
+Pengembangan sistem pemantauan sampah berbasis \textit{Internet of Things} menggunakan metodologi \textit{Design Science Research} (DSR) sebagaimana dirumuskan oleh Peffers dkk. \autocite{peffers2007}. Metodologi ini dipilih karena penelitian ini berorientasi pada pembangunan dan evaluasi sebuah artefak, yaitu sistem pemantauan sampah berbasis \textit{Internet of Things}, bukan pada riset perilaku pengguna. DSR menyediakan kerangka kerja yang sistematis dan teruji untuk penelitian yang menghasilkan artefak teknologi, dengan validasi yang difokuskan pada pemenuhan kebutuhan (\textit{requirement}) yang telah ditetapkan. DSR mencakup enam fase utama, yaitu identifikasi masalah dan motivasi, definisi tujuan solusi, perancangan dan pengembangan, demonstrasi, evaluasi, dan komunikasi. Berikut adalah penjelasan untuk setiap fase yang diterapkan secara spesifik pada penelitian ini:
 
 \begin{enumerate}
     \item \textbf{Identifikasi Masalah dan Motivasi}
@@ -107,7 +107,7 @@ Pengembangan sistem \textit{Smart Waste Bin} menggunakan metodologi \textit{Desi
 
     \item \textbf{Perancangan dan Pengembangan}
 
-    Fase ini bertujuan untuk merancang dan membangun artefak sistem \textit{Smart Waste Bin} berdasarkan kebutuhan yang telah ditetapkan. Aktivitas pada fase ini meliputi:
+    Fase ini bertujuan untuk merancang dan membangun artefak sistem pemantauan sampah berbasis \textit{Internet of Things} berdasarkan kebutuhan yang telah ditetapkan. Aktivitas pada fase ini meliputi:
     \begin{enumerate}[a.]
         \item Mengeksplorasi berbagai alternatif arsitektur dan solusi teknologi, serta memilih alternatif terbaik menggunakan metode pengambilan keputusan yang terukur berdasarkan kriteria kelayakan teknis, kesesuaian tujuan, waktu, dan biaya.
         \item Merancang dan mengimplementasikan adaptasi pada sisi \textit{firmware} perangkat keras bawaan untuk menyesuaikannya dengan karakteristik lingkungan kampus dan mengoptimalkan keandalan operasional.
@@ -148,13 +148,13 @@ Laporan tugas akhir ini disusun dengan sistematika penulisan sebagai berikut:
 
     \item Bab II Studi Literatur: Berisi kajian pustaka yang relevan dengan topik tugas akhir, mencakup teori dan konsep dasar \textit{Internet of Things}, teknologi sensor dan perangkat keras untuk \textit{monitoring} sampah, arsitektur sistem IoT, serta penelitian terdahulu yang berkaitan dengan \textit{smart waste bin} dan pengelolaan sampah berbasis teknologi.
 
-    \item Bab III Analisis: Berisi penjelasan tentang analisis kebutuhan pengguna dan sistem, termasuk pendefinisian kebutuhan fungsional dan nonfungsional sistem \textit{Smart Waste Bin}.
+    \item Bab III Analisis: Berisi penjelasan tentang analisis kebutuhan pengguna dan sistem, termasuk pendefinisian kebutuhan fungsional dan nonfungsional sistem pemantauan sampah berbasis \textit{Internet of Things}.
 
     \item Bab IV Perancangan: Berisi penjelasan tentang perancangan solusi yang diusulkan, mencakup arsitektur sistem IoT 4-\textit{layer}, perancangan perangkat keras, perangkat lunak, dan \textit{firmware}.
 
     \item Bab V Implementasi: Berisi penjelasan tentang proses implementasi sistem, termasuk pengembangan \textit{firmware}, integrasi komponen, dan pengembangan \textit{dashboard} visualisasi data.
 
-    \item Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap sistem yang diimplementasikan, mencakup pengujian kebutuhan fungsional dan nonfungsional, analisis pola pembuangan sampah, serta evaluasi peningkatan \textit{firmware}.
+    \item Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap sistem yang diimplementasikan, mencakup pengujian kebutuhan fungsional dan nonfungsional, analisis pola pembuangan sampah, serta evaluasi adaptasi \textit{firmware}.
 
     \item Bab VII Kesimpulan dan Saran: Berisi kesimpulan dari hasil pelaksanaan tugas akhir dan saran untuk pengembangan lebih lanjut.
 

@@ -2,7 +2,7 @@
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
 
-Bab ini merupakan pelaksanaan fase \textit{Empathize} dan \textit{Define} dari pendekatan \textit{Design Thinking} yang telah ditetapkan pada Subbab I.5.2. Pada fase \textit{Empathize}, dilakukan observasi langsung terhadap kondisi pengelolaan sampah di Gedung Labtek VIII ITB untuk memahami permasalahan yang dihadapi. Pada fase \textit{Define}, hasil observasi dirumuskan menjadi kebutuhan sistem, baik fungsional maupun nonfungsional, serta dilanjutkan dengan pemilihan solusi menggunakan metode AHP.
+Bab ini merupakan pelaksanaan fase identifikasi masalah dan definisi tujuan solusi dari metodologi \textit{Design Science Research} yang telah ditetapkan pada Subbab I.5.2. Pada fase identifikasi masalah, dilakukan observasi langsung terhadap kondisi pengelolaan sampah di Gedung Labtek VIII ITB untuk memahami permasalahan yang dihadapi. Pada fase definisi tujuan solusi, hasil observasi dirumuskan menjadi kebutuhan sistem, baik fungsional maupun nonfungsional. Bab ini ditutup dengan pemilihan alternatif solusi menggunakan metode AHP, yang menjadi titik transisi menuju fase perancangan dan pengembangan pada Bab IV, karena penetapan alternatif solusi terpilih merupakan masukan utama bagi perancangan artefak.
 
 Bab ini menguraikan tiga aspek. Pertama, analisis kondisi saat ini yang mengidentifikasi permasalahan pengelolaan sampah akibat tidak adanya data terstruktur mengenai pola pembuangan. Kedua, analisis kebutuhan yang merumuskan spesifikasi sistem berdasarkan permasalahan yang ditemukan. Ketiga, pemilihan solusi melalui evaluasi alternatif untuk menentukan pendekatan yang paling sesuai dengan tujuan penelitian.
 
@@ -26,12 +26,12 @@ Dari kondisi tersebut, teridentifikasi tiga permasalahan utama:
 
     \item \textbf{Pengelolaan Berdasarkan Jadwal Tetap tanpa Umpan Balik Data}
 
-    Pengumpulan sampah dilakukan berdasarkan jadwal tetap dan pengecekan visual secara manual tanpa mempertimbangkan kondisi aktual kepenuhan sebelum pengecekan. Pendekatan ini berpotensi menyebabkan inefisiensi, di mana pengumpulan dilakukan terlalu cepat saat tempat sampah masih kosong atau terlambat saat sudah penuh.
+    Pengumpulan sampah dilakukan berdasarkan jadwal tetap dan pengecekan visual secara manual tanpa mempertimbangkan kondisi aktual kepenuhan sebelum pengecekan. Pendekatan ini berpotensi menyebabkan inefisiensi, yaitu pengumpulan dilakukan terlalu cepat saat tempat sampah masih kosong atau terlambat saat sudah penuh.
 \end{enumerate}
 
-Di sisi lain, perangkat \textit{Smart Waste Bin} berbasis IoT yang tersedia secara komersial umumnya dirancang untuk skala perkotaan. Konfigurasi bawaan perangkat, termasuk interval pengiriman data dan mekanisme pembacaan sensor pada \textit{firmware}, belum tentu sesuai untuk lingkungan yang lebih kecil seperti kampus, di mana dinamika pembuangan sampah berubah dalam hitungan jam dan memerlukan titik data yang lebih tinggi. Hal ini menunjukkan bahwa selain membangun sistem pengumpulan data, diperlukan juga penyesuaian pada sisi \textit{firmware} perangkat agar dapat beroperasi secara optimal di lingkungan kampus.
+Di sisi lain, perangkat \textit{Smart Waste Bin} berbasis IoT yang tersedia secara komersial umumnya dirancang untuk skala perkotaan. Konfigurasi bawaan perangkat, termasuk interval pengiriman data dan mekanisme pembacaan sensor pada \textit{firmware}, belum tentu sesuai untuk lingkungan yang lebih kecil seperti kampus, yang dinamika pembuangan sampahnya berubah dalam hitungan jam dan memerlukan titik data yang lebih tinggi. Hal ini menunjukkan bahwa selain membangun sistem pengumpulan data, diperlukan juga penyesuaian pada sisi \textit{firmware} perangkat agar dapat beroperasi secara optimal di lingkungan kampus.
 
-Permasalahan tersebut menunjukkan bahwa pengelolaan sampah di lokasi pengujian masih berfungsi untuk keperluan dasar, namun tidak dilengkapi kemampuan untuk mengumpulkan dan menganalisis data mengenai pola pembuangan sampah. Kebutuhan akan sistem \textit{Smart Waste Bin} yang disesuaikan, baik dari sisi perangkat lunak maupun \textit{firmware}, menjadi dasar analisis kebutuhan pada subbab berikutnya.
+Permasalahan tersebut menunjukkan bahwa pengelolaan sampah di lokasi pengujian masih berfungsi untuk keperluan dasar, namun tidak dilengkapi kemampuan untuk mengumpulkan dan menganalisis data mengenai pola pembuangan sampah. Kebutuhan akan sistem pemantauan sampah berbasis \textit{Internet of Things} yang disesuaikan, baik dari sisi perangkat lunak maupun \textit{firmware}, menjadi dasar analisis kebutuhan pada subbab berikutnya.
 
 % ============================================================
 \section{Analisis Kebutuhan}
@@ -40,27 +40,27 @@ Permasalahan tersebut menunjukkan bahwa pengelolaan sampah di lokasi pengujian m
 
 Analisis kebutuhan terbagi menjadi tiga bagian utama. Pertama, identifikasi pengguna sistem untuk memahami \textit{stakeholder} yang terlibat dan ekspektasi mereka terhadap sistem. Kedua, perumusan kebutuhan fungsional yang mendeskripsikan fungsi-fungsi spesifik yang harus dimiliki sistem. Ketiga, spesifikasi kebutuhan nonfungsional yang mendefinisikan karakteristik kualitas sistem.
 
-\subsection{Identifikasi Pengguna}
+\subsection{Identifikasi Pemangku Kepentingan}
 
-Sistem \textit{Smart Waste Bin} yang akan dikembangkan memiliki beberapa pengguna dengan kebutuhan yang berbeda-beda, yaitu:
+Sebagai dasar untuk merumuskan kebutuhan sistem, dilakukan identifikasi pemangku kepentingan (\textit{stakeholder}) yang terkait dengan sistem pemantauan sampah berbasis \textit{Internet of Things}. Identifikasi ini bertujuan untuk memetakan pihak-pihak yang berkepentingan terhadap keluaran sistem sehingga kebutuhan fungsional dan nonfungsional dapat diturunkan secara tepat. Perlu ditegaskan bahwa kebutuhan sistem pada penelitian ini diturunkan dari permasalahan yang telah diidentifikasi, bukan dari pengujian terhadap pengguna. Pemangku kepentingan yang teridentifikasi adalah sebagai berikut:
 
 \begin{enumerate}
     \item \textbf{Pengurus Lantai/Pengelola Gedung}
 
-    Pengelola gedung bertanggung jawab untuk pengawasan pengelolaan sampah dan pengambilan keputusan terkait strategi pengelolaan. Kebutuhan utama pengelola gedung adalah akses terhadap informasi mengenai pola pembuangan sampah, tren volume sampah, dan \textit{insight} yang dapat mendukung perencanaan dan optimalisasi pengelolaan sampah.
+    Pengelola gedung berkepentingan terhadap pengawasan pengelolaan sampah dan pengambilan keputusan terkait strategi pengelolaan. Keluaran sistem yang relevan bagi pengelola gedung adalah informasi mengenai pola pembuangan sampah, tren volume sampah, dan \textit{insight} yang dapat mendukung perencanaan dan optimalisasi pengelolaan sampah.
 
-    \item \textbf{Peneliti/Developer Sistem}
+    \item \textbf{Peneliti/Pengembang Sistem}
 
-    Peneliti bertanggung jawab untuk pengembangan, implementasi, dan \textit{maintenance} sistem. Kebutuhan peneliti meliputi akses terhadap \textit{raw data} untuk analisis, kemampuan untuk konfigurasi sistem (seperti interval pembacaan sensor atau \textit{threshold}), dan \textit{interface} untuk \textit{monitoring} status operasional sistem.
+    Peneliti berkepentingan terhadap pengembangan, implementasi, dan \textit{maintenance} sistem. Keluaran sistem yang relevan meliputi ketersediaan \textit{raw data} untuk analisis, kemampuan konfigurasi sistem (seperti interval pembacaan sensor atau \textit{threshold}), dan \textit{interface} untuk \textit{monitoring} status operasional sistem.
 
-    \item \textbf{Pengguna Gedung (\textit{Indirect User})}
+    \item \textbf{Pengguna Gedung (\textit{Indirect Stakeholder})}
 
-    Meskipun pengguna gedung (mahasiswa, dosen, \textit{staff}) tidak berinteraksi langsung dengan sistem, mereka adalah sumber data pembuangan sampah. Keberadaan \textit{smart waste bin} tidak boleh mengubah atau mempersulit proses pembuangan sampah bagi pengguna gedung.
+    Meskipun pengguna gedung (mahasiswa, dosen, \textit{staff}) tidak berinteraksi langsung dengan sistem, mereka merupakan sumber data pembuangan sampah. Keberadaan \textit{smart waste bin} tidak boleh mengubah atau mempersulit proses pembuangan sampah yang sudah berjalan.
 \end{enumerate}
 
 \subsection{Kebutuhan Fungsional}
 
-Kebutuhan fungsional menjelaskan fungsi-fungsi dan fitur-fitur yang harus tersedia pada sistem. Berdasarkan identifikasi masalah dan kebutuhan pengguna, kebutuhan fungsional sistem \textit{Smart Waste Bin} disajikan pada Tabel \ref{tab:kebutuhan-fungsional}.
+Kebutuhan fungsional menjelaskan fungsi-fungsi dan fitur-fitur yang harus tersedia pada sistem. Berdasarkan identifikasi masalah dan kebutuhan pengguna, kebutuhan fungsional sistem pemantauan sampah berbasis \textit{Internet of Things} disajikan pada Tabel \ref{tab:kebutuhan-fungsional}.
 
 \begin{longtable}{| l | l | p{4cm} | p{5cm} |}
   \caption{Kebutuhan Fungsional}
@@ -106,11 +106,9 @@ Tabel \ref{tab:mapping-rm-kf} menyajikan \textit{mapping} setiap kebutuhan fungs
     \hline
     \textbf{Rumusan Masalah} & \textbf{Kebutuhan Fungsional} \\
     \hline
-    RM-1: Rancangan dan implementasi sistem \textit{Smart Waste Bin} berbasis IoT yang mampu mengumpulkan data secara periodik dan terstruktur & KF-01, KF-02, KF-03, KF-04, KF-05, KF-06 \\
+    RM-1: Rancangan dan implementasi sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) yang mampu mengumpulkan data secara periodik dan terstruktur & KF-01, KF-02, KF-03, KF-04, KF-05, KF-06 \\
     \hline
     RM-2: Pola pembuangan sampah yang dapat diidentifikasi berdasarkan data sistem dan validasinya terhadap observasi lapangan & KF-07, KF-08, KF-09, KF-10 \\
-    \hline
-    RM-3: Peningkatan \textit{firmware} agar perangkat \textit{Smart Waste Bin} skala perkotaan dapat beroperasi optimal di lingkungan kampus & KF-01, KF-02, KF-04 (evaluasi dan peningkatan) \\
     \hline
   \end{tabularx}
 \end{table}
@@ -150,13 +148,13 @@ Kebutuhan nonfungsional mendeskripsikan karakteristik kualitas sistem yang harus
 \label{sec:analisis-solusi}
 % ============================================================
 
-Berdasarkan analisis kondisi saat ini dan kebutuhan sistem yang telah diidentifikasi, terdapat beberapa alternatif pendekatan dalam pengembangan sistem \textit{Smart Waste Bin} berbasis IoT. Bagian ini menguraikan alternatif-alternatif solusi yang dapat diterapkan serta analisis pemilihan solusi menggunakan metode \textit{Analytical Hierarchy Process} (AHP).
+Berdasarkan analisis kondisi saat ini dan kebutuhan sistem yang telah diidentifikasi, terdapat beberapa alternatif pendekatan dalam pengembangan sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT). Bagian ini menguraikan alternatif-alternatif solusi yang dapat diterapkan serta analisis pemilihan solusi menggunakan metode \textit{Analytical Hierarchy Process} (AHP).
 
 \subsection{Alternatif Solusi}
 
-Berdasarkan analisis kebutuhan, seluruh alternatif solusi menggunakan perangkat \textit{Smart Waste Bin} yang tersedia dari pihak ketiga sebagai basis perangkat keras. Perbedaan antar alternatif terletak pada pendekatan \textit{software stack} untuk pengumpulan data, \textit{monitoring}, dan kemudahan \textit{maintenance} sistem. Analisis pola pembuangan (KF-07, KF-08) pada seluruh alternatif dilakukan melalui \textit{pipeline} analisis data terpisah menggunakan \textit{script} pengolahan data.
+Berdasarkan analisis kebutuhan, seluruh alternatif solusi menggunakan perangkat \textit{Smart Waste Bin} yang tersedia dari pihak ketiga sebagai basis perangkat keras. Perbedaan antar alternatif terletak pada pendekatan \textit{software stack} untuk pengumpulan data, \textit{monitoring}, dan kemudahan \textit{maintenance} sistem. Analisis pola pembuangan (KF-07, KF-08) pada seluruh alternatif dilakukan melalui \textit{pipeline} analisis data terpisah menggunakan \textit{script} pengolahan data. Perlu dicatat bahwa setiap alternatif yang dipertimbangkan harus mampu memenuhi seluruh kebutuhan fungsional yang telah ditetapkan, termasuk KF-09 (\textit{monitoring} data terkini) yang mensyaratkan keberadaan antarmuka \textit{dashboard}; oleh karena itu, pendekatan tanpa \textit{dashboard} tidak dimasukkan sebagai alternatif karena sejak awal bertentangan dengan kebutuhan fungsional.
 
-Terdapat tiga alternatif solusi yang dapat diimplementasikan:
+Terdapat dua alternatif solusi yang dapat diimplementasikan:
 
 \begin{enumerate}
     \item \textbf{Alternatif 1: Perangkat \textit{Smart Waste Bin} + \textit{Platform Cloud} (ThingSpeak/Blynk)}
@@ -166,10 +164,6 @@ Terdapat tiga alternatif solusi yang dapat diimplementasikan:
     \item \textbf{Alternatif 2: Perangkat \textit{Smart Waste Bin} + \textit{Backend Custom} + \textit{Dashboard}}
 
     Menggunakan perangkat \textit{Smart Waste Bin}, mengembangkan \textit{middleware} dan \textit{backend custom} (Supabase PostgreSQL), serta membangun \textit{dashboard} untuk \textit{monitoring}. Karakteristik alternatif ini: \textit{backend custom} memungkinkan \textit{query} fleksibel untuk analisis pola temporal, \textit{dashboard custom} untuk \textit{monitoring} status terkini dan visualisasi historis, dapat diintegrasikan dengan sistem lain, namun memerlukan \textit{effort} pengembangan \textit{middleware} dan \textit{dashboard}.
-
-    \item \textbf{Alternatif 3: Perangkat \textit{Smart Waste Bin} + \textit{Backend Custom} saja (Tanpa \textit{Dashboard})}
-
-    Menggunakan perangkat \textit{Smart Waste Bin} dan mengembangkan \textit{backend custom} untuk penyimpanan data, tanpa \textit{dashboard} visual. \textit{Monitoring} dilakukan melalui \textit{query database}. Karakteristik alternatif ini: \textit{backend custom} memungkinkan \textit{query} fleksibel, tidak ada \textit{interface} visual, dan \textit{effort} pengembangan lebih rendah.
 \end{enumerate}
 
 Tabel \ref{tab:pemenuhan-kf} menyajikan pemenuhan kebutuhan fungsional untuk setiap alternatif solusi.
@@ -177,19 +171,19 @@ Tabel \ref{tab:pemenuhan-kf} menyajikan pemenuhan kebutuhan fungsional untuk set
 \begin{table}[H]
   \caption{Pemenuhan Kebutuhan Fungsional per Alternatif}
   \label{tab:pemenuhan-kf}
-  \begin{tabularx}{\textwidth}{| X | l | l | l |}
+  \begin{tabularx}{\textwidth}{| X | l | l |}
     \hline
-    \textbf{Kebutuhan} & \textbf{Alt-1} & \textbf{Alt-2} & \textbf{Alt-3} \\
+    \textbf{Kebutuhan} & \textbf{Alt-1} & \textbf{Alt-2} \\
     \hline
-    KF-01 s.d. KF-04 (IoT \textit{Device}) & Terpenuhi & Terpenuhi & Terpenuhi \\
+    KF-01 s.d. KF-04 (IoT \textit{Device}) & Terpenuhi & Terpenuhi \\
     \hline
-    KF-05, KF-06 (\textit{Database}) & Terbatas & Terpenuhi & Terpenuhi \\
+    KF-05, KF-06 (\textit{Database}) & Terbatas & Terpenuhi \\
     \hline
-    KF-07, KF-08 (Analisis Pola) & Terbatas & Terpenuhi & Terpenuhi \\
+    KF-07, KF-08 (Analisis Pola) & Terbatas & Terpenuhi \\
     \hline
-    KF-09 (\textit{Monitoring} Terkini) & Terpenuhi & Terpenuhi & Tidak terpenuhi \\
+    KF-09 (\textit{Monitoring} Terkini) & Terpenuhi & Terpenuhi \\
     \hline
-    KF-10 (Visualisasi Historis) & Terbatas & Terpenuhi & Parsial \\
+    KF-10 (Visualisasi Historis) & Terbatas & Terpenuhi \\
     \hline
   \end{tabularx}
 \end{table}
@@ -226,7 +220,7 @@ Gambar \ref{fig:kriteria-ahp} menunjukkan struktur hierarki AHP yang terdiri dar
   \end{tabularx}
 \end{table}
 
-Penentuan bobot kriteria dilakukan melalui \textit{pairwise comparison matrix} menggunakan skala Saaty, sebagaimana disajikan pada Tabel \ref{tab:matriks-kriteria}. C-2 (Kesesuaian dengan tujuan penelitian) merupakan prioritas tertinggi karena sistem harus mendukung analisis pola dan evaluasi \textit{firmware}. C-1 (Kelayakan teknis) lebih penting dari C-3 (Waktu pengembangan). C-4 (Biaya) mendapat bobot terendah karena semua alternatif berada dalam \textit{range} biaya yang \textit{comparable}.
+Penentuan bobot kriteria dilakukan melalui \textit{pairwise comparison matrix} menggunakan skala Saaty sebagaimana dijelaskan pada Subbab \ref{sec:ahp-teori}, dengan hasil disajikan pada Tabel \ref{tab:matriks-kriteria}. C-2 (Kesesuaian dengan tujuan penelitian) merupakan prioritas tertinggi karena sistem harus mendukung analisis pola dan evaluasi \textit{firmware}. C-1 (Kelayakan teknis) lebih penting dari C-3 (Waktu pengembangan). C-4 (Biaya) mendapat bobot terendah karena semua alternatif berada dalam \textit{range} biaya yang \textit{comparable}.
 
 \begin{table}[H]
   \caption{Matriks Perbandingan Kriteria Berpasangan}
@@ -235,18 +229,20 @@ Penentuan bobot kriteria dilakukan melalui \textit{pairwise comparison matrix} m
     \hline
     & \textbf{C-1} & \textbf{C-2} & \textbf{C-3} & \textbf{C-4} \\
     \hline
-    \textbf{C-1} & 1     & 0,5   & 2     & 5 \\
+    \textbf{C-1} & 1     & 0,333 & 3     & 5 \\
     \hline
-    \textbf{C-2} & 2     & 1     & 3     & 7 \\
+    \textbf{C-2} & 3     & 1     & 3     & 7 \\
     \hline
-    \textbf{C-3} & 0,5   & 0,333 & 1     & 3 \\
+    \textbf{C-3} & 0,333 & 0,333 & 1     & 3 \\
     \hline
     \textbf{C-4} & 0,2   & 0,143 & 0,333 & 1 \\
     \hline
-    \textbf{Jumlah} & 3,7 & 1,976 & 6,333 & 16 \\
+    \textbf{Jumlah} & 4,533 & 1,810 & 7,333 & 16 \\
     \hline
   \end{tabular}
 \end{table}
+
+Nilai perbandingan pada matriks menggunakan skala fundamental Saaty dengan nilai ganjil (1, 3, 5, 7, 9) yang merepresentasikan tingkat kepentingan: sama penting (1), sedikit lebih penting (3), lebih penting (5), sangat lebih penting (7), dan mutlak lebih penting (9), beserta nilai kebalikannya (resiprokal). Sebagai contoh, C-2 dinilai sedikit lebih penting dari C-1 (nilai 3) karena kesesuaian dengan tujuan penelitian merupakan prioritas tertinggi, sedangkan C-2 dinilai sangat lebih penting dari C-4 (nilai 7) karena seluruh alternatif memiliki struktur biaya yang serupa sehingga biaya bukan faktor pembeda yang signifikan.
 
 Setelah proses normalisasi matriks dan perhitungan rata-rata baris, diperoleh bobot untuk setiap kriteria sebagaimana disajikan pada Tabel \ref{tab:bobot-kriteria}.
 
@@ -257,22 +253,22 @@ Setelah proses normalisasi matriks dan perhitungan rata-rata baris, diperoleh bo
     \hline
     \textbf{Kriteria} & \textbf{Bobot} & \textbf{Persentase} \\
     \hline
-    C-1 (Kelayakan Teknis)   & 0,288 & 28,8\% \\
+    C-1 (Kelayakan Teknis)   & 0,282 & 28,2\% \\
     \hline
-    C-2 (Kesesuaian Tujuan)  & 0,490 & 49,0\% \\
+    C-2 (Kesesuaian Tujuan)  & 0,515 & 51,5\% \\
     \hline
-    C-3 (Waktu Pengembangan) & 0,163 & 16,3\% \\
+    C-3 (Waktu Pengembangan) & 0,145 & 14,5\% \\
     \hline
-    C-4 (Biaya)              & 0,061 & 6,1\% \\
+    C-4 (Biaya)              & 0,058 & 5,8\% \\
     \hline
   \end{tabular}
 \end{table}
 
-Nilai \textit{Consistency Ratio} (CR) dihitung untuk memastikan konsistensi penilaian. Dengan $\lambda_{max} = 4{,}019$, $CI = 0{,}0063$, dan $RI = 0{,}90$, diperoleh $CR = 0{,}7\%$ yang berada di bawah batas 10\%, menunjukkan konsistensi yang baik.
+Nilai \textit{Consistency Ratio} (CR) dihitung untuk memastikan konsistensi penilaian. Dengan $\lambda_{max} = 4{,}141$, $CI = 0{,}047$, dan $RI = 0{,}90$, diperoleh $CR = 5{,}2\%$ yang berada di bawah batas 10\%, menunjukkan konsistensi yang baik.
 
 \subsection{Evaluasi dan Pemilihan Alternatif Solusi}
 
-Evaluasi dilakukan dengan membuat matriks perbandingan berpasangan untuk setiap kriteria terhadap tiga alternatif solusi. Tabel \ref{tab:justifikasi-kriteria} menyajikan justifikasi perbandingan untuk setiap kriteria.
+Evaluasi dilakukan dengan membuat matriks perbandingan berpasangan untuk setiap kriteria terhadap kedua alternatif solusi. Tabel \ref{tab:justifikasi-kriteria} menyajikan justifikasi perbandingan untuk setiap kriteria.
 
 \begin{table}[H]
   \caption{Justifikasi Perbandingan Alternatif pada Setiap Kriteria}
@@ -281,18 +277,18 @@ Evaluasi dilakukan dengan membuat matriks perbandingan berpasangan untuk setiap 
     \hline
     \textbf{Kriteria} & \textbf{Justifikasi Perbandingan} \\
     \hline
-    C-1 (Kelayakan) & Alt-1 paling mudah (\textit{platform} siap pakai). Alt-2 moderat (perlu \textit{develop middleware} + \textit{dashboard}). Alt-3 mudah tapi \textit{maintenance} sulit tanpa visual. \\
+    C-1 (Kelayakan) & Alt-1 sedikit lebih unggul (nilai 3): \textit{platform} siap pakai dengan konfigurasi minimal, sedangkan Alt-2 memerlukan pengembangan \textit{middleware} dan \textit{dashboard} sendiri. \\
     \hline
-    C-2 (Kesesuaian) & Alt-2 paling sesuai: memenuhi seluruh KF termasuk \textit{dashboard custom} untuk \textit{monitoring}. Alt-1 memenuhi KF-09/KF-10 tapi analisis terbatas fitur \textit{platform}. Alt-3 tidak memenuhi KF-09. \\
+    C-2 (Kesesuaian) & Alt-2 lebih unggul (nilai 5): memenuhi seluruh KF secara penuh, termasuk \textit{query} fleksibel untuk analisis pola temporal dan \textit{dashboard custom}; Alt-1 terbatas pada fitur analisis dan \textit{custom query} yang disediakan \textit{platform}. \\
     \hline
-    C-3 (Waktu) & Alt-1 tercepat (\textit{plug-and-play}). Alt-3 cukup cepat (tanpa \textit{dashboard}). Alt-2 perlu waktu \textit{develop dashboard}. \\
+    C-3 (Waktu) & Alt-1 lebih unggul (nilai 5): \textit{plug-and-play} dengan waktu \textit{deployment} singkat, sedangkan Alt-2 memerlukan waktu pengembangan \textit{middleware} dan \textit{dashboard}. \\
     \hline
-    C-4 (Biaya) & Alt-3 termurah (tanpa \textit{dashboard}). Alt-2 moderat (Supabase \textit{free tier} + \textit{hosting dashboard}). Alt-1 tergantung \textit{pricing platform cloud}. \\
+    C-4 (Biaya) & Setara (nilai 1): Alt-2 menggunakan layanan \textit{free tier} (Supabase, Vercel), sedangkan Alt-1 menggunakan \textit{platform} dengan \textit{tier} gratis yang tersedia; tidak ada perbedaan biaya yang signifikan. \\
     \hline
   \end{tabularx}
 \end{table}
 
-Tabel \ref{tab:bobot-lokal} menyajikan bobot lokal untuk setiap alternatif pada setiap kriteria hasil normalisasi matriks perbandingan berpasangan.
+Karena perbandingan hanya melibatkan dua alternatif, setiap matriks perbandingan berukuran $2 \times 2$ yang secara matematis selalu konsisten ($CR = 0\%$). Tabel \ref{tab:bobot-lokal} menyajikan bobot lokal untuk setiap alternatif pada setiap kriteria hasil normalisasi matriks perbandingan berpasangan.
 
 \begin{table}[H]
   \caption{Bobot Lokal Alternatif pada Setiap Kriteria}
@@ -301,11 +297,9 @@ Tabel \ref{tab:bobot-lokal} menyajikan bobot lokal untuk setiap alternatif pada 
     \hline
     \textbf{Alternatif} & \textbf{C-1} & \textbf{C-2} & \textbf{C-3} & \textbf{C-4} \\
     \hline
-    Alt-1: SWB + \textit{Platform Cloud}       & 0,539 & 0,110 & 0,581 & 0,250 \\
+    Alt-1: SWB + \textit{Platform Cloud}       & 0,750 & 0,167 & 0,833 & 0,500 \\
     \hline
-    Alt-2: SWB + \textit{Backend} + \textit{Dashboard} & 0,297 & 0,581 & 0,110 & 0,250 \\
-    \hline
-    Alt-3: SWB + \textit{Backend} saja         & 0,164 & 0,309 & 0,309 & 0,500 \\
+    Alt-2: SWB + \textit{Backend} + \textit{Dashboard} & 0,250 & 0,833 & 0,167 & 0,500 \\
     \hline
   \end{tabular}
 \end{table}
@@ -319,15 +313,13 @@ Skor global dihitung dengan mengalikan bobot lokal dengan bobot kriteria, sebaga
     \hline
     \textbf{Alternatif} & \textbf{Perhitungan} & \textbf{Skor} & \textbf{\%} \\
     \hline
-    Alt-1: SWB + \textit{Platform Cloud}       & $\Sigma(\text{bobot lokal} \times \text{bobot kriteria})$ & 0,318 & 31,8\% \\
+    Alt-1: SWB + \textit{Platform Cloud}       & $\Sigma(\text{bobot lokal} \times \text{bobot kriteria})$ & 0,447 & 44,7\% \\
     \hline
-    Alt-2: SWB + \textit{Backend} + \textit{Dashboard} & $\Sigma(\text{bobot lokal} \times \text{bobot kriteria})$ & 0,403 & 40,3\% \\
-    \hline
-    Alt-3: SWB + \textit{Backend} saja         & $\Sigma(\text{bobot lokal} \times \text{bobot kriteria})$ & 0,279 & 27,9\% \\
+    Alt-2: SWB + \textit{Backend} + \textit{Dashboard} & $\Sigma(\text{bobot lokal} \times \text{bobot kriteria})$ & 0,553 & 55,3\% \\
     \hline
   \end{tabularx}
 \end{table}
 
-Berdasarkan Tabel \ref{tab:skor-global}, Alternatif 2 terpilih sebagai solusi terbaik dengan skor 0,403 (40,3\%), unggul dibandingkan Alternatif 1 (31,8\%) dan Alternatif 3 (27,9\%). Keunggulan Alternatif 2 berasal dari dominasi pada kriteria C-2 (Kesesuaian dengan tujuan penelitian) yang memiliki bobot tertinggi (49\%). Meskipun Alternatif 1 unggul pada kelayakan (C-1) dan waktu (C-3), keterbatasan fitur analisis dan \textit{query} pada \textit{platform cloud} menyebabkan skor C-2 yang rendah. Alternatif 3 memiliki fleksibilitas \textit{query} yang sama dengan Alternatif 2, namun tidak memenuhi KF-09 (\textit{monitoring} data terkini) karena tidak memiliki \textit{dashboard}.
+Berdasarkan Tabel \ref{tab:skor-global}, Alternatif 2 terpilih sebagai solusi terbaik dengan skor 0,553 (55,3\%), unggul dibandingkan Alternatif 1 (44,7\%). Keunggulan Alternatif 2 berasal dari dominasi pada kriteria C-2 (Kesesuaian dengan tujuan penelitian) yang memiliki bobot tertinggi (51,5\%), dengan kontribusi sebesar $0{,}833 \times 0{,}515 = 0{,}429$ terhadap skor globalnya. Meskipun Alternatif 1 unggul pada kelayakan teknis (C-1) dan waktu pengembangan (C-3), keterbatasan fitur analisis dan \textit{custom query} pada \textit{platform cloud} menyebabkan skor C-2 yang rendah, padahal kemampuan analisis pola temporal merupakan inti dari tujuan penelitian ini.
 
-Dengan demikian, sistem \textit{Smart Waste Bin} akan diimplementasikan menggunakan Alternatif 2, yaitu perangkat \textit{Smart Waste Bin} dari pihak ketiga dengan \textit{backend custom} (Supabase) dan \textit{dashboard} untuk \textit{monitoring}. Analisis pola pembuangan dilakukan melalui \textit{pipeline} analisis data terpisah. Selain pengembangan \textit{software stack}, peningkatan pada sisi \textit{firmware} perangkat juga akan dilakukan untuk menyesuaikan konfigurasi bawaan yang dirancang untuk skala perkotaan agar optimal di lingkungan kampus, sebagaimana telah diidentifikasi pada Subbab \ref{sec:analisis-kondisi}.
+Dengan demikian, sistem pemantauan sampah berbasis \textit{Internet of Things} akan diimplementasikan menggunakan Alternatif 2, yaitu perangkat \textit{Smart Waste Bin} dari pihak ketiga dengan \textit{backend custom} (Supabase) dan \textit{dashboard} untuk \textit{monitoring}. Analisis pola pembuangan dilakukan melalui \textit{pipeline} analisis data terpisah. Selain pengembangan \textit{software stack}, adaptasi pada sisi \textit{firmware} perangkat juga akan dilakukan untuk menyesuaikan konfigurasi bawaan yang dirancang untuk skala perkotaan agar optimal di lingkungan kampus, sebagaimana telah diidentifikasi pada Subbab \ref{sec:analisis-kondisi}.

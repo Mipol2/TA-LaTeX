@@ -2,37 +2,35 @@
 \chapter{KESIMPULAN DAN SARAN}
 \label{chap:penutup}
 
-Bab ini merangkum temuan-temuan utama dari hasil perancangan, implementasi, dan pengujian sistem \textit{Smart Waste Bin}, serta menguraikan rekomendasi praktis dan akademis untuk pengembangan penelitian maupun penyempurnaan perangkat di masa mendatang.
+Bab ini merangkum temuan-temuan utama dari hasil perancangan, implementasi, dan pengujian sistem pemantauan sampah berbasis \textit{Internet of Things}, serta menguraikan rekomendasi praktis dan akademis untuk pengembangan penelitian maupun penyempurnaan perangkat di masa mendatang.
 
 % ============================================================
 \section{Kesimpulan}
 \label{sec:kesimpulan}
 % ============================================================
 
-Penelitian ini telah berhasil mengembangkan dan mengimplementasikan sistem \textit{Smart Waste Bin} berbasis \textit{Internet of Things} (IoT) untuk keperluan otomatisasi pengumpulan data dan analisis pola pembuangan sampah di Gedung Labtek VIII Institut Teknologi Bandung, khususnya pada Laboratorium \textit{Internet of Things} Lantai 4. Selama periode observasi 37 hari, sistem berhasil mengumpulkan 816 \textit{records} data dari tiga unit perangkat sensor dengan tingkat keberhasilan pengiriman mencapai 91,9\%, dengan 805 \textit{records} valid setelah \textit{filtering} data kotor. Berdasarkan hasil evaluasi menyeluruh pada Bab VI, seluruh rumusan masalah dalam penelitian ini telah berhasil dijawab dengan rincian sebagai berikut.
+Penelitian ini telah berhasil mengembangkan dan mengimplementasikan sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT) untuk keperluan otomatisasi pengumpulan data dan analisis pola pembuangan sampah di Gedung Labtek VIII Institut Teknologi Bandung, khususnya pada Laboratorium \textit{Internet of Things} Lantai 4. Selama periode observasi 37 hari, sistem berhasil mengumpulkan 816 \textit{records} data dari tiga unit perangkat sensor dengan tingkat keberhasilan pengiriman mencapai 91,9\%, dengan 805 \textit{records} valid setelah \textit{filtering} data kotor. Berdasarkan hasil evaluasi menyeluruh pada Bab VI, seluruh rumusan masalah dalam penelitian ini telah berhasil dijawab dengan rincian sebagai berikut.
 
 \begin{enumerate}
   \item \textbf{Rancangan dan Implementasi Sistem (Menjawab RM-1)}
 
-  Penelitian ini berhasil merancang sistem \textit{Smart Waste Bin} terintegrasi dengan arsitektur IoT 4-\textit{layer}. Arsitektur ini mencakup \textit{Perception Layer} (ESP32, VL53L0X, INA219, SIM800L) untuk akuisisi data fisik, \textit{Network Layer} (MQTT) untuk transmisi nirkabel, \textit{Middleware Layer} (Node-RED) untuk pemrosesan aliran data, dan \textit{Application Layer} (Supabase, Next.js) untuk penyimpanan dan visualisasi antarmuka. Seluruh komponen terbukti berfungsi sesuai dengan desain, di mana 10 kebutuhan fungsional dan 7 dari 8 kebutuhan nonfungsional telah terpenuhi.
+  Penelitian ini berhasil merancang sistem pemantauan sampah berbasis \textit{Internet of Things} terintegrasi dengan arsitektur IoT 4-\textit{layer}. Arsitektur ini mencakup \textit{Perception Layer} (ESP32, VL53L0X, INA219, SIM800L) untuk akuisisi data fisik, \textit{Network Layer} (MQTT) untuk transmisi nirkabel, \textit{Middleware Layer} (Node-RED) untuk pemrosesan aliran data, dan \textit{Application Layer} (Supabase, Next.js) untuk penyimpanan dan visualisasi antarmuka. Seluruh komponen terbukti berfungsi sesuai dengan desain, dengan 10 kebutuhan fungsional dan 7 dari 8 kebutuhan nonfungsional telah terpenuhi.
+
+  Sebagai bagian dari implementasi sistem, perangkat bawaan dari pihak ketiga juga diadaptasi melalui lima penyesuaian \textit{firmware} agar sesuai dengan karakteristik lingkungan kampus, meliputi perubahan interval pengambilan data, implementasi \textit{median filter}, mekanisme \textit{auto-recovery}, \textit{warm-up readings}, dan GPIO \textit{isolation}. Empat dari lima adaptasi terbukti efektif dalam mengatasi masalah yang ditargetkan dan meningkatkan keandalan data. GPIO \textit{isolation} tidak menunjukkan perubahan signifikan pada konsumsi daya karena sumber konsumsi utama berasal dari modul GSM yang tidak terpengaruh oleh kondisi GPIO. Adaptasi yang terbukti efektif dapat direkomendasikan untuk diadopsi pada produk \textit{Smart Waste Bin} standar vendor.
 
   \item \textbf{Identifikasi Pola Pembuangan Sampah (Menjawab RM-2)}
 
-  Melalui analisis data historis dan analisis delta, sistem berhasil mengidentifikasi empat pola temporal pembuangan sampah di lingkungan kampus yang telah divalidasi melalui observasi lapangan, yaitu:
+  Melalui analisis deskriptif terhadap data historis yang dikumpulkan sistem, penelitian ini berhasil mengidentifikasi empat pola pembuangan sampah di lingkungan kampus, yang terdiri dari tiga pola temporal dan satu pola komposisi, dan seluruhnya telah divalidasi kewajarannya melalui observasi lapangan, yaitu:
 
   \begin{enumerate}[a.]
-    \item \textit{Peak hour} (jam sibuk) secara konsisten pada pukul 14:00 sampai 17:00, ditunjukkan oleh 8 \textit{event} penambahan (29,6\% dari total 27 \textit{event}). Pola ini konsisten dengan perilaku membuang sampah setelah aktivitas makan siang.
+    \item \textbf{Pola \textit{Peak Hour}} (pola temporal): aktivitas penambahan memuncak secara konsisten pada pukul 14:00 sampai 17:00, ditunjukkan oleh 8 \textit{event} penambahan (29,6\% dari total 27 \textit{event}), konsisten dengan perilaku membuang sampah setelah aktivitas makan siang.
 
-    \item Seluruh \textit{event} penambahan sampah terjadi pada jam aktif hari kerja (07:00 sampai 19:00), tanpa satu pun penambahan yang terdeteksi pada malam hari maupun akhir pekan.
+    \item \textbf{Pola Konsentrasi Jam Aktif} (pola temporal): seluruh \textit{event} penambahan sampah terjadi pada jam aktif hari kerja (07:00 sampai 19:00), tanpa satu pun penambahan yang terdeteksi pada malam hari maupun akhir pekan.
 
-    \item Aktivitas pembuangan sampah turun drastis pada hari libur nasional, di mana tidak terdeteksi adanya \textit{event} penambahan pada 25 sampai 26 Desember 2025 dan 1 Januari 2026. Nilai \textit{fillLevel} tinggi pada hari libur merupakan efek akumulasi kumulatif, bukan cerminan aktivitas pembuangan.
+    \item \textbf{Pola Pengaruh Hari Libur} (pola temporal): aktivitas pembuangan sampah turun drastis pada hari libur nasional, yaitu tidak terdeteksi adanya \textit{event} penambahan pada 25 sampai 26 Desember 2025 dan 1 Januari 2026. Nilai \textit{fillLevel} tinggi pada hari libur merupakan efek akumulasi kumulatif, bukan cerminan aktivitas pembuangan.
 
-    \item Dominasi sampah anorganik yang menyumbang 13 dari 27 \textit{event} penambahan (48,1\%) dengan total delta positif sebesar 150\%, konsisten dengan karakteristik lokasi sebagai area laboratorium yang menghasilkan banyak sampah kemasan sekali pakai.
+    \item \textbf{Pola Dominasi Anorganik} (pola komposisi): sampah anorganik menyumbang 13 dari 27 \textit{event} penambahan (48,1\%) dengan total delta positif sebesar 150\%, konsisten dengan karakteristik lokasi sebagai area laboratorium yang menghasilkan banyak sampah kemasan sekali pakai.
   \end{enumerate}
-
-  \item \textbf{Peningkatan \textit{Firmware Smart Waste Bin} (Menjawab RM-3)}
-
-  Perangkat bawaan dari pihak ketiga telah berhasil dioptimasi melalui lima peningkatan \textit{firmware} agar sesuai dengan kebutuhan lingkungan kampus, meliputi perubahan interval pengambilan data, implementasi \textit{median filter}, mekanisme \textit{auto-recovery}, \textit{warm-up readings}, dan GPIO \textit{isolation}. Empat dari lima peningkatan terbukti efektif dalam mengatasi masalah yang ditargetkan. GPIO \textit{isolation} tidak menunjukkan perubahan signifikan pada konsumsi daya karena sumber konsumsi utama berasal dari modul GSM yang tidak terpengaruh oleh kondisi GPIO. Peningkatan yang terbukti efektif dapat direkomendasikan untuk diadopsi pada produk \textit{Smart Waste Bin} standar vendor, khususnya untuk \textit{deployment} di lingkungan dengan karakteristik aktivitas yang terkonsentrasi pada jam-jam tertentu.
 \end{enumerate}
 
 % ============================================================
@@ -63,7 +61,7 @@ Bagi penyedia perangkat \textit{Smart Waste Bin}, beberapa rekomendasi berikut d
 \begin{enumerate}
   \item Ditemukan variasi konsumsi arus hampir dua kali lipat antar unit dengan spesifikasi identik, yaitu 110 sampai 140 mA pada dua unit dan 210 sampai 235 mA pada satu unit. Investigasi terhadap kebocoran daya pada jalur komponen perlu dilakukan, termasuk penerapan \textit{quality control} dan \textit{burn-in testing} sebelum perangkat dipasarkan.
 
-  \item Empat peningkatan \textit{firmware} yang terbukti efektif, yaitu perubahan interval, \textit{median filter}, \textit{auto-recovery}, dan \textit{warm-up readings}, dapat diadopsi ke produk standar untuk meningkatkan keandalan sistem, khususnya di lingkungan dengan karakteristik aktivitas yang dinamis.
+  \item Empat adaptasi \textit{firmware} yang terbukti efektif, yaitu perubahan interval, \textit{median filter}, \textit{auto-recovery}, dan \textit{warm-up readings}, dapat diadopsi ke produk standar untuk meningkatkan keandalan sistem, khususnya di lingkungan dengan karakteristik aktivitas yang dinamis.
 
   \item Dokumentasi teknis perlu dilengkapi dengan skema rangkaian dan \textit{source code firmware} agar mempermudah proses pemeliharaan dan \textit{troubleshooting} oleh pengguna.
 \end{enumerate}

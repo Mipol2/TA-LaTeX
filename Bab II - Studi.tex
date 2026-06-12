@@ -2,7 +2,7 @@
 \chapter{STUDI LITERATUR}
 \label{chap:studi-literatur}
 
-Bab ini menyajikan hasil studi literatur sebagaimana ditetapkan pada Subbab I.5.1. Studi literatur dilakukan untuk membangun fondasi teoritis yang mendasari perancangan dan implementasi sistem \textit{Smart Waste Bin} berbasis IoT. Pembahasan mencakup tiga topik utama: pengelolaan sampah dan tantangannya dalam konteks lingkungan kampus, teknologi \textit{Internet of Things} beserta arsitektur dan komponen yang relevan, serta studi terkait sistem \textit{Smart Waste Bin} yang telah dikembangkan sebelumnya.
+Bab ini menyajikan hasil studi literatur sebagaimana ditetapkan pada Subbab I.5.1. Studi literatur dilakukan untuk membangun fondasi teoritis yang mendasari perancangan dan implementasi sistem pemantauan sampah berbasis \textit{Internet of Things} (IoT). Pembahasan mencakup tiga topik utama: pengelolaan sampah dan tantangannya dalam konteks lingkungan kampus, teknologi \textit{Internet of Things} beserta arsitektur dan komponen yang relevan, serta studi terkait sistem pemantauan sampah berbasis \textit{Internet of Things} yang telah dikembangkan sebelumnya.
 
 % ============================================================
 \section{Pengelolaan Sampah}
@@ -14,7 +14,7 @@ Pengelolaan sampah merupakan kegiatan sistematis yang mencakup pengumpulan, peng
 
 Dalam konteks hierarki pengelolaan sampah, terdapat beberapa tingkatan prioritas yang harus dipertimbangkan berdasarkan \textit{Waste Framework Directive}. Tingkatan tertinggi adalah pencegahan dan pengurangan sampah di sumber (\textit{waste prevention and reduction}), diikuti oleh persiapan untuk penggunaan kembali (\textit{preparing for reuse}), daur ulang (\textit{recycling}), pemulihan energi (\textit{energy recovery}), dan terakhir adalah pembuangan akhir (\textit{disposal}) \autocite{ec2008}. Pendekatan hierarkis ini menekankan pentingnya upaya preventif dan pemanfaatan nilai ekonomi dari sampah sebelum melakukan pembuangan.
 
-Pengelolaan sampah modern juga menerapkan prinsip \textit{circular economy} yang bertujuan untuk meminimalkan limbah dan memaksimalkan pemanfaatan sumber daya melalui sistem yang tertutup. \textit{Circular economy} didefinisikan sebagai sistem regeneratif di mana \textit{input} sumber daya, limbah, emisi, dan kebocoran energi diminimalkan melalui strategi memperlambat, menutup, dan mempersempit aliran material dan energi \autocite{geissdoerfer2017}. Dalam konteks institusi pendidikan tinggi, penerapan \textit{circular economy} mencakup tiga dimensi keberlanjutan: ekonomi, ekologi, dan sosial, yang bekerja secara sinergis untuk menciptakan sistem pengelolaan sampah yang tidak hanya ramah lingkungan, tetapi juga bertanggung jawab secara ekonomi dan sosial \autocite{giurea2024}.
+Pengelolaan sampah modern juga menerapkan prinsip \textit{circular economy} yang bertujuan untuk meminimalkan limbah dan memaksimalkan pemanfaatan sumber daya melalui sistem yang tertutup. \textit{Circular economy} didefinisikan sebagai sistem regeneratif yang \textit{input} sumber daya, limbah, emisi, dan kebocoran energi diminimalkan melalui strategi memperlambat, menutup, dan mempersempit aliran material dan energi \autocite{geissdoerfer2017}. Dalam konteks institusi pendidikan tinggi, penerapan \textit{circular economy} mencakup tiga dimensi keberlanjutan: ekonomi, ekologi, dan sosial, yang bekerja secara sinergis untuk menciptakan sistem pengelolaan sampah yang tidak hanya ramah lingkungan, tetapi juga bertanggung jawab secara ekonomi dan sosial \autocite{giurea2024}.
 
 \textit{Sustainable Development Goals} (SDGs) yang ditetapkan oleh \textit{United Nations} juga menekankan pentingnya pengelolaan sampah berkelanjutan sebagai bagian dari upaya mencapai dunia yang lebih berkelanjutan dan berkeadilan pada tahun 2030 \autocite{un2015}. Pengelolaan sampah yang efektif berkontribusi pada beberapa SDGs, termasuk kota dan komunitas berkelanjutan (SDG 11), konsumsi dan produksi yang bertanggung jawab (SDG 12), serta aksi iklim (SDG 13).
 
@@ -71,19 +71,19 @@ Berikut adalah penjelasan untuk setiap \textit{layer} pada arsitektur IoT berdas
 
   \textit{Perception Layer}, yang juga dikenal sebagai \textit{Physical Layer} atau \textit{Device Layer}, merupakan lapisan paling bawah dalam arsitektur IoT. \textit{Layer} ini terdiri dari perangkat fisik seperti sensor, aktuator, \textit{RFID tags}, dan perangkat IoT lainnya yang berinteraksi langsung dengan lingkungan fisik \autocite{alfuqaha2015}. Fungsi utamanya adalah mengumpulkan data dari lingkungan sekitar, seperti suhu, kelembaban, tekanan, gerak, atau parameter lainnya sesuai dengan jenis sensor yang digunakan.
 
-  Dalam konteks sistem \textit{Smart Waste Bin}, \textit{Perception Layer} mencakup sensor ultrasonik atau sensor \textit{Time-of-Flight} yang dipasang pada tempat sampah untuk mengukur tingkat kepenuhan secara periodik. Karakteristik penting dari \textit{layer} ini adalah kemampuannya untuk beroperasi dalam berbagai kondisi lingkungan, efisiensi energi untuk perangkat berbasis baterai, dan akurasi dalam pengukuran.
+  Dalam konteks sistem pemantauan sampah berbasis \textit{Internet of Things}, \textit{Perception Layer} mencakup sensor ultrasonik atau sensor \textit{Time-of-Flight} yang dipasang pada tempat sampah untuk mengukur tingkat kepenuhan secara periodik. Karakteristik penting dari \textit{layer} ini adalah kemampuannya untuk beroperasi dalam berbagai kondisi lingkungan, efisiensi energi untuk perangkat berbasis baterai, dan akurasi dalam pengukuran.
 
   \item \textit{Network Layer}
 
   \textit{Network Layer} berfungsi sebagai jembatan komunikasi yang menghubungkan \textit{Perception Layer} dengan \textit{Application Layer}. \textit{Layer} ini bertanggung jawab untuk transmisi data yang dikumpulkan oleh sensor ke sistem pemrosesan atau \textit{cloud server} \autocite{alfuqaha2015}. \textit{Network Layer} menggunakan berbagai protokol komunikasi dan teknologi jaringan seperti Wi-Fi, Ethernet, LoRaWAN, NB-IoT, Zigbee, Bluetooth, atau protokol lainnya tergantung pada kebutuhan jarak, \textit{bandwidth}, dan konsumsi energi.
 
-  Dalam sistem \textit{Smart Waste Bin}, \textit{Network Layer} dapat menggunakan koneksi Wi-Fi atau \textit{cellular network} (seperti 4G/5G) untuk mengirimkan data tingkat kepenuhan sampah dari lokasi tempat sampah ke \textit{server} pusat secara periodik.
+  Dalam sistem pemantauan sampah berbasis \textit{Internet of Things}, \textit{Network Layer} dapat menggunakan koneksi Wi-Fi atau \textit{cellular network} (seperti 4G/5G) untuk mengirimkan data tingkat kepenuhan sampah dari lokasi tempat sampah ke \textit{server} pusat secara periodik.
 
   \item \textit{Application Layer}
 
   \textit{Application Layer} merupakan lapisan tertinggi dalam arsitektur IoT yang berfungsi untuk menyediakan layanan dan antarmuka kepada pengguna akhir \autocite{alfuqaha2015}. \textit{Layer} ini mencakup aplikasi yang memproses, menganalisis, dan memvisualisasikan data yang diterima dari \textit{Network Layer}. Pada \textit{layer} ini terdapat sistem manajemen data, analitik, dan \textit{dashboard} yang memungkinkan pengguna untuk memantau kondisi, mengambil keputusan, atau melakukan kontrol terhadap perangkat IoT.
 
-  Dalam konteks sistem \textit{Smart Waste Bin}, \textit{Application Layer} mencakup sistem \textit{database} untuk menyimpan data pembuangan sampah secara terstruktur, serta \textit{dashboard} yang memungkinkan pengelola untuk melihat status tempat sampah dan hasil analisis pola pembuangan.
+  Dalam konteks sistem pemantauan sampah berbasis \textit{Internet of Things}, \textit{Application Layer} mencakup sistem \textit{database} untuk menyimpan data pembuangan sampah secara terstruktur, serta \textit{dashboard} yang memungkinkan pengelola untuk melihat status tempat sampah dan hasil analisis pola pembuangan.
 \end{enumerate}
 
 \subsection{Komponen Perangkat Keras pada IoT}
@@ -135,6 +135,7 @@ Implementasi sistem IoT memerlukan komponen \textit{hardware} yang berfungsi seb
 \end{enumerate}
 
 \subsection{Protokol Komunikasi IoT}
+\label{sec:studi-protokol}
 
 Protokol komunikasi dalam sistem IoT memainkan peran krusial dalam memastikan interoperabilitas dan efisiensi pertukaran data antar perangkat yang terhubung. Protokol-protokol ini dirancang untuk mengatasi tantangan spesifik yang dihadapi oleh perangkat IoT, seperti keterbatasan daya, \textit{bandwidth} terbatas, dan kebutuhan akan komunikasi yang andal dalam berbagai kondisi jaringan \autocite{alfuqaha2015}.
 
@@ -167,12 +168,30 @@ Konsep utama Node-RED adalah \textit{flow}, yaitu rangkaian \textit{node} yang s
 Dalam konteks sistem IoT, Node-RED sering digunakan sebagai lapisan \textit{middleware} yang menerima data dari perangkat sensor melalui protokol MQTT atau HTTP, kemudian memvalidasi, mentransformasi, dan meneruskan data tersebut ke sistem penyimpanan atau layanan lainnya. Keunggulan Node-RED meliputi kemudahan konfigurasi melalui antarmuka visual, ekosistem \textit{node} yang kaya (tersedia lebih dari 4.000 \textit{node} tambahan di repositori publik), serta kemampuan \textit{deployment} yang cepat tanpa memerlukan proses kompilasi \autocite{clerissi2018}.
 
 % ============================================================
+\section{\textit{Analytical Hierarchy Process} (AHP)}
+\label{sec:ahp-teori}
+% ============================================================
+
+\textit{Analytical Hierarchy Process} (AHP) adalah metode pengambilan keputusan multikriteria yang dikembangkan oleh \textcite{saaty1980ahp} untuk menyusun prioritas di antara beberapa alternatif berdasarkan sejumlah kriteria. AHP bekerja dengan menguraikan masalah ke dalam struktur hierarki (tujuan, kriteria, dan alternatif), lalu melakukan perbandingan berpasangan (\textit{pairwise comparison}) antar elemen untuk menentukan bobot prioritas \autocite{saaty1980ahp}.
+
+Perbandingan berpasangan dilakukan menggunakan skala fundamental Saaty yang bernilai 1 hingga 9, sebagaimana disajikan pada Gambar \ref{fig:skala-saaty}. Pada penelitian ini digunakan nilai ganjil (1, 3, 5, 7, 9) beserta resiprokalnya agar setiap perbandingan memiliki makna verbal yang jelas dan dapat dipertanggungjawabkan.
+
+\begin{figure}[H]
+  \caption{Skala Fundamental Saaty}
+  \label{fig:skala-saaty}
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/skala-saaty.png}
+\end{figure}
+
+Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR). Penilaian dianggap konsisten dan dapat diterima apabila nilai CR tidak melebihi 0,1 (10\%) \autocite{saaty1980ahp}.
+
+% ============================================================
 \section{Studi Terkait}
 % ============================================================
 
-Bagian ini mengkaji penelitian-penelitian terdahulu yang relevan dengan topik pengembangan sistem \textit{Smart Waste Bin}, dengan fokus pada metode yang digunakan, hasil yang diperoleh, dan \textit{gap} yang menjadi dasar penelitian ini.
+Bagian ini mengkaji penelitian-penelitian terdahulu yang relevan dengan topik pengembangan sistem pemantauan sampah berbasis \textit{Internet of Things}, dengan fokus pada metode yang digunakan, hasil yang diperoleh, dan \textit{gap} yang menjadi dasar penelitian ini.
 
-\subsection{Sistem \textit{Smart Waste Bin} Berbasis IoT}
+\subsection{Sistem Pemantauan Sampah Berbasis \textit{Internet of Things}}
 
 \textcite{latifah2021} mengembangkan sistem \textit{Automated Trash Volume Monitoring} berbasis IoT untuk meningkatkan efisiensi pengelolaan sampah perkotaan. Sistem yang dikembangkan mengintegrasikan sensor ultrasonik HC-SR04 untuk \textit{monitoring} tingkat kepenuhan tempat sampah secara \textit{real-time}, mikrokontroler NodeMCU ESP8266 sebagai unit pemrosesan, dan \textit{platform} Blynk sebagai \textit{interface} untuk visualisasi dan notifikasi kepada petugas kebersihan. Sistem juga dilengkapi dengan servo motor yang mengoperasikan mekanisme pembukaan dan penutupan tutup tempat sampah secara otomatis ketika sensor infrared mendeteksi keberadaan pengguna pada jarak 50 cm.
 
@@ -182,4 +201,35 @@ Hasil pengujian sistem menunjukkan akurasi pengukuran volume sebesar 97\% dengan
 
 Hasil penelitian menunjukkan bahwa sistem berbasis sensor ToF mampu memberikan akurasi pengukuran yang lebih konsisten dibandingkan sensor ultrasonik dalam kondisi penggunaan nyata. Data yang dikumpulkan selama periode evaluasi menunjukkan pola temporal yang jelas dalam pembuangan sampah, dengan \textit{peak} aktivitas yang berulang pada waktu-waktu tertentu. Penelitian ini memperkuat argumen bahwa sistem IoT berbasis data dapat menghasilkan \textit{insight} yang bernilai untuk optimalisasi pengelolaan sampah perkotaan.
 
-Dibandingkan dengan kedua penelitian tersebut, penelitian ini memiliki perbedaan yang signifikan. Pertama, fokus utama bukan hanya pada \textit{monitoring} kepenuhan, tetapi pada analisis pola pembuangan sampah secara temporal untuk menghasilkan \textit{insight} yang dapat digunakan dalam pengambilan keputusan. Kedua, penelitian ini dilakukan pada lingkungan kampus dengan karakteristik yang berbeda dari lingkungan perkotaan umum, dan melibatkan optimasi \textit{firmware} perangkat pihak ketiga untuk menyesuaikan dengan kebutuhan lingkungan kampus. Ketiga, penelitian ini menggunakan arsitektur IoT 4-\textit{layer} yang lebih komprehensif dengan integrasi \textit{middleware} Node-RED, \textit{database} Supabase, dan \textit{dashboard} berbasis Next.js.
+\textcite{iotsmartwaste2025urban} mengembangkan sistem manajemen sampah IoT berbiaya rendah yang mengintegrasikan lima sensor (ultrasonik HC-SR04 untuk tingkat kepenuhan, \textit{load-cell} HX711 untuk berat, DHT22 untuk suhu dan kelembapan, sensor gas MQ-135, serta GPS) di sekitar inti Arduino-ESP8266 dengan analitik \textit{cloud} Firebase. Yang relevan untuk penelitian ini adalah metode pengujiannya: sistem diuji melalui \textit{field trial} selama 30 hari pada 12 tempat sampah dengan hasil akurasi tingkat kepenuhan 85\%, \textit{mean absolute error} berat di bawah 3\%, dan deteksi kondisi berbahaya 100\%. Penelitian ini menunjukkan pendekatan pengujian berbasis penempatan lapangan dalam periode tertentu, serupa dengan pendekatan pada penelitian ini.
+
+\textcite{addas2024waste} mengembangkan sistem \textit{Waste Management 2.0} yang memanfaatkan sensor ultrasonik dengan arsitektur konektivitas LoRaWAN dan seluler serta analitik \textit{cloud} untuk pengelolaan sampah skala kota. Sistem ini dikembangkan dan divalidasi melalui eksperimen ekstensif berbasis data dalam jumlah besar, tanpa melibatkan pengujian pengguna (\textit{user testing}). Pendekatan ini menegaskan bahwa pada domain pengembangan sistem pemantauan sampah, validasi umumnya dilakukan terhadap kinerja dan keandalan artefak, bukan terhadap penerimaan pengguna, yang sejalan dengan metodologi \textit{Design Science Research} yang digunakan pada penelitian ini.
+
+\textcite{swe2025sustainability} mengevaluasi akurasi sensor ultrasonik untuk deteksi tingkat kepenuhan dalam kondisi terkontrol, dengan menempatkan sampah pada berbagai tingkat yang telah diketahui (25\%, 50\%, 75\%, 90\%, dan 100\%) dan membandingkan pembacaan sensor terhadap nilai aktual tersebut. Hasilnya menunjukkan konsistensi akurasi dengan \textit{margin of error} dalam rentang $\pm$3\%. Pendekatan pengujian akurasi dengan membandingkan pembacaan sensor terhadap nilai acuan yang diketahui ini menjadi referensi metode bagi evaluasi akurasi sensor pada penelitian ini.
+
+Untuk memberikan gambaran posisi penelitian ini di antara penelitian terdahulu, Tabel \ref{tab:perbandingan-penelitian} menyajikan perbandingan berdasarkan sensor, konektivitas, fokus penelitian, metode pengujian, dan ada tidaknya analisis pola.
+
+\begin{table}[H]
+  \caption{Perbandingan dengan Penelitian Terdahulu}
+  \label{tab:perbandingan-penelitian}
+  \footnotesize
+  \begin{tabularx}{\textwidth}{| l | l | X | l |}
+    \hline
+    \textbf{Penelitian} & \textbf{Sensor} & \textbf{Fokus \& Metode Pengujian} & \textbf{Analisis Pola} \\
+    \hline
+    \textcite{latifah2021} & Ultrasonik & \textit{Monitoring} kepenuhan; uji akurasi volume (97\%) & Tidak \\
+    \hline
+    \textcite{pires2025} & ToF & \textit{Monitoring} real-time urban; uji berbasis skenario & Tidak \\
+    \hline
+    \textcite{iotsmartwaste2025urban} & Ultrasonik + berat & \textit{Monitoring} + \textit{routing}; \textit{field trial} 30 hari, 12 \textit{bin} (akurasi 85\%) & Tidak \\
+    \hline
+    \textcite{addas2024waste} & Ultrasonik & \textit{Routing} skala kota; eksperimen data besar tanpa \textit{user testing} & Tidak \\
+    \hline
+    \textcite{swe2025sustainability} & Ultrasonik & Uji akurasi sensor pada tingkat acuan terkontrol ($\pm$3\%) & Tidak \\
+    \hline
+    \textbf{Penelitian ini} & ToF (VL53L0X) & Analisis \textbf{pola temporal} kampus; \textit{deployment} 37 hari + evaluasi \textit{requirement} & \textbf{Ya} \\
+    \hline
+  \end{tabularx}
+\end{table}
+
+Dibandingkan dengan penelitian-penelitian tersebut, penelitian ini memiliki perbedaan yang signifikan. Pertama, fokus utama bukan hanya pada \textit{monitoring} kepenuhan, tetapi pada analisis pola pembuangan sampah secara temporal untuk menghasilkan \textit{insight} yang dapat digunakan dalam pengambilan keputusan; sebagaimana terlihat pada Tabel \ref{tab:perbandingan-penelitian}, tidak ada penelitian pembanding yang menjadikan analisis pola sebagai fokus. Kedua, penelitian ini dilakukan pada lingkungan kampus dengan karakteristik yang berbeda dari lingkungan perkotaan umum, dan melibatkan adaptasi \textit{firmware} perangkat pihak ketiga untuk menyesuaikan dengan kebutuhan lingkungan kampus. Ketiga, penelitian ini menggunakan arsitektur IoT 4-\textit{layer} yang lebih komprehensif dengan integrasi \textit{middleware} Node-RED, \textit{database} Supabase, dan \textit{dashboard} berbasis Next.js. Keempat, sebagaimana penelitian terdahulu yang umumnya memvalidasi sistem terhadap kinerja artefak alih-alih penerimaan pengguna, penelitian ini juga menggunakan pendekatan validasi terhadap pemenuhan kebutuhan, sesuai dengan metodologi \textit{Design Science Research}.
